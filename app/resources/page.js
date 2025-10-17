@@ -97,7 +97,7 @@ export default function Resources() {
       <Navigation />
       
       {/* Hero */}
-      <section className="relative min-h-[50vh] bg-black flex items-center overflow-hidden pt-32">
+      <section className="relative min-h-[40vh] bg-black flex items-center overflow-hidden pt-32">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
             Financial <span className="text-[#FF5007]">Resources</span>

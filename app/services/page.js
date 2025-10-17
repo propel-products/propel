@@ -80,7 +80,7 @@ export default function Services() {
       <Navigation />
       
       {/* Hero */}
-      <section className="relative min-h-[60vh] bg-black flex items-center overflow-hidden pt-32">
+      <section className="relative min-h-[40vh] bg-black flex items-center overflow-hidden pt-32">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-96 h-96 bg-[#FF5007] rounded-full blur-3xl"></div>
         </div>

@@ -1,9 +1,9 @@
 export default function Stats() {
   const stats = [
-    { number: '500+', label: 'Businesses Trust OCO' },
-    { number: '98%', label: 'Client Satisfaction' },
-    { number: '15+', label: 'Years Experience' },
-    { number: '$2B+', label: 'Assets Under Management' }
+    { number: 'Expert', label: 'Financial Guidance' },
+    { number: 'Trusted', label: 'Business Partner' },
+    { number: 'Proven', label: 'Track Record' },
+    { number: 'Dedicated', label: 'Client Support' }
   ];
 
   return (
