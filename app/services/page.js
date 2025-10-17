@@ -85,11 +85,11 @@ export default function Services() {
           <div className="absolute top-20 left-10 w-96 h-96 bg-[#FF5007] rounded-full blur-3xl"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
             Our <span className="text-[#FF5007]">Services</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Comprehensive financial solutions designed to support your business at every stage of growth
           </p>
         </div>

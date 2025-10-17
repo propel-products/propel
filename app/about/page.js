@@ -33,11 +33,11 @@ export default function About() {
       
       {/* Hero */}
       <section className="relative min-h-[40vh] bg-black flex items-center overflow-hidden pt-32">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
             About <span className="text-[#FF5007]">OCO</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Empowering businesses with clarity, strategy, and confidence since 2010
           </p>
         </div>

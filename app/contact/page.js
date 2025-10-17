@@ -30,11 +30,11 @@ export default function Contact() {
       
       {/* Hero */}
       <section className="relative min-h-[40vh] bg-black flex items-center overflow-hidden pt-32">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
             Let's <span className="text-[#FF5007]">Connect</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Ready to transform your financial operations? We're here to help.
           </p>
         </div>

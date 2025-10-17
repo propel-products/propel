@@ -98,11 +98,11 @@ export default function Resources() {
       
       {/* Hero */}
       <section className="relative min-h-[40vh] bg-black flex items-center overflow-hidden pt-32">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
             Financial <span className="text-[#FF5007]">Resources</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Access our comprehensive library of guides, templates, and tools to help your business thrive.
           </p>
         </div>
