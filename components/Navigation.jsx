@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Lock } from 'lucide-react';
 import Link from 'next/link';
 import AnimatedLogo from './AnimatedLogo';
 
@@ -17,7 +17,7 @@ export default function Navigation() {
   const navLinks = [
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
-    { href: '/resources', label: 'Resources' },
+    { href: '/resources', label: 'Resources', icon: <Lock size={14} /> },
     { href: '/contact', label: 'Contact' }
   ];
 
@@ -35,9 +35,10 @@ export default function Navigation() {
             <Link 
               key={link.href} 
               href={link.href}
-              className="text-white hover:text-[#FF5007] transition-colors"
+              className="text-white hover:text-[#FF5007] transition-colors flex items-center gap-1"
             >
               {link.label}
+              {link.icon}
             </Link>
           ))}
           <Link 
@@ -63,10 +64,11 @@ export default function Navigation() {
               <Link 
                 key={link.href}
                 href={link.href}
-                className="text-white hover:text-[#FF5007] transition-colors py-2"
+                className="text-white hover:text-[#FF5007] transition-colors py-2 flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
+                {link.icon}
               </Link>
             ))}
             <Link 
