@@ -79,7 +79,7 @@ export default function About() {
       {/* CTA */}
       <section className="py-24 bg-black text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">Join 500+ Businesses</h2>
+          <h2 className="text-5xl font-bold mb-6">Join Trusted Businesses</h2>
           <p className="text-xl text-gray-300 mb-8">
             Experience the OCO difference
           </p>

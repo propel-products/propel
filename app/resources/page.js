@@ -103,7 +103,7 @@ export default function Resources() {
             Financial <span className="text-[#FF5007]">Resources</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Access our comprehensive library of guides, templates, and tools to help your business thrive.
+            Essential guides, templates, and tools for business success.
           </p>
         </div>
       </section>

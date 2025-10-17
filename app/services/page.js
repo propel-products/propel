@@ -90,7 +90,7 @@ export default function Services() {
             Our <span className="text-[#FF5007]">Services</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Comprehensive financial solutions designed to support your business at every stage of growth
+            Financial solutions for every stage of business growth.
           </p>
         </div>
       </section>

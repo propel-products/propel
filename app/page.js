@@ -100,16 +100,16 @@ export default function Home() {
             <AnimatedSection delay={0.2}>
               <div className="relative">
                 <div className="bg-gradient-to-br from-[#FF5007] to-[#ff6a2e] p-12 rounded-3xl">
-                  <div className="text-6xl font-bold mb-4">500+</div>
-                  <p className="text-2xl mb-8">Businesses Trust OCO</p>
+                  <div className="text-6xl font-bold mb-4">Trusted</div>
+                  <p className="text-2xl mb-8">Business Partner</p>
                   <div className="space-y-4">
                     <div className="bg-white/10 backdrop-blur-lg p-4 rounded-xl">
-                      <div className="text-3xl font-bold">98%</div>
-                      <div className="text-sm">Client Satisfaction</div>
+                      <div className="text-3xl font-bold">Expert</div>
+                      <div className="text-sm">Financial Guidance</div>
                     </div>
                     <div className="bg-white/10 backdrop-blur-lg p-4 rounded-xl">
-                      <div className="text-3xl font-bold">15+</div>
-                      <div className="text-sm">Years Experience</div>
+                      <div className="text-3xl font-bold">Proven</div>
+                      <div className="text-sm">Track Record</div>
                     </div>
                   </div>
                 </div>

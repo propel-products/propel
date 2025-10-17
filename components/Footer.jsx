@@ -15,7 +15,6 @@ export default function Footer() {
     ],
     connect: [
       { label: 'LinkedIn', href: 'https://linkedin.com/company/oco-accounting' },
-      { label: 'Twitter', href: 'https://twitter.com/ocoaccounting' },
       { label: 'Email', href: 'mailto:hello@ocoiom.com' }
     ]
   };
@@ -26,7 +25,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="mb-4">
-              <AnimatedLogo size="small" />
+              <AnimatedLogo size="small" color="white" />
             </div>
             <p className="text-gray-400">Financial clarity for modern businesses</p>
           </div>
