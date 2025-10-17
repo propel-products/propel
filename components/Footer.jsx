@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="mb-4">
               <AnimatedLogo size="small" color="white" />
             </div>
-            <p className="text-gray-400">Financial clarity for modern businesses</p>
+            <p className="text-gray-400">Accounting / Advisory</p>
           </div>
           
           <div>

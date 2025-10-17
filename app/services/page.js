@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
+import FadeInText from '@/components/FadeInText';
 
 export const metadata = {
   title: 'Our Services | OCO Accounting & Advisory',
@@ -99,10 +100,12 @@ export default function Services() {
       {detailedServices.map((category, idx) => (
         <section key={idx} className={`py-24 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
           <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-black mb-4">{category.category}</h2>
-              <p className="text-xl text-gray-600">{category.tagline}</p>
-            </div>
+            <FadeInText delay={0.2}>
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-black mb-4">{category.category}</h2>
+                <p className="text-xl text-gray-600">{category.tagline}</p>
+              </div>
+            </FadeInText>
 
             <div className="grid md:grid-cols-3 gap-8">
               {category.services.map((service, serviceIdx) => (
