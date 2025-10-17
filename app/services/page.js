@@ -100,11 +100,9 @@ export default function Services() {
       {detailedServices.map((category, idx) => (
         <section key={idx} className={`py-24 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
           <div className="max-w-7xl mx-auto px-6">
-            <FadeInText delay={0.2}>
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-black mb-4">{category.category}</h2>
-                <p className="text-xl text-gray-600">{category.tagline}</p>
-              </div>
+            <FadeInText delay={0.2} className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-black mb-4">{category.category}</h2>
+              <p className="text-xl text-gray-600">{category.tagline}</p>
             </FadeInText>
 
             <div className="grid md:grid-cols-3 gap-8">

@@ -54,21 +54,17 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <FadeInText delay={0.2}>
-            <AnimatedSection className="text-center mb-16">
-              <h2 className="text-5xl font-bold text-black mb-4">Our Services</h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Comprehensive financial solutions tailored to your business needs
-              </p>
-            </AnimatedSection>
+          <FadeInText delay={0.2} className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-black mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Comprehensive financial solutions tailored to your business needs
+            </p>
           </FadeInText>
 
           <FadeInText delay={0.4}>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((service, idx) => (
-                <AnimatedSection key={idx} delay={idx * 0.1}>
-                  <ServiceCard {...service} />
-                </AnimatedSection>
+                <ServiceCard key={idx} {...service} />
               ))}
             </div>
           </FadeInText>

@@ -1,6 +1,8 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
+import TeamMember from '@/components/TeamMember';
+import FadeInText from '@/components/FadeInText';
 
 export const metadata = {
   title: 'About Us | OCO Accounting & Advisory',
@@ -24,6 +26,51 @@ export default function About() {
     {
       title: "Partnership",
       description: "We build long-term relationships based on trust and mutual success"
+    }
+  ];
+
+  const teamMembers = [
+    {
+      name: "Gary O'Connor",
+      role: "Managing Director",
+      summary: "Leading OCO with over 15 years of experience in financial strategy and business advisory. Gary specialises in helping growing businesses achieve their financial goals.",
+      email: "gary@ocoiom.com",
+      phone: "+44162400001"
+    },
+    {
+      name: "Sarah Mitchell",
+      role: "Senior Accountant",
+      summary: "Chartered accountant with expertise in tax planning and compliance. Sarah ensures our clients stay ahead of regulatory changes and optimise their tax position.",
+      email: "sarah@ocoiom.com",
+      phone: "+44162400002"
+    },
+    {
+      name: "David Thompson",
+      role: "CFO Services Director",
+      summary: "Former finance director with extensive experience in scaling businesses. David provides strategic financial leadership to help companies make informed decisions.",
+      email: "david@ocoiom.com",
+      phone: "+44162400003"
+    },
+    {
+      name: "Emma Richardson",
+      role: "Advisory Consultant",
+      summary: "Specialist in business transformation and process improvement. Emma helps clients streamline operations and implement best practices for sustainable growth.",
+      email: "emma@ocoiom.com",
+      phone: "+44162400004"
+    },
+    {
+      name: "James Wilson",
+      role: "Tax Specialist",
+      summary: "Expert in corporate tax strategy and international compliance. James works with multinational businesses to optimise their tax structure and ensure compliance.",
+      email: "james@ocoiom.com",
+      phone: "+44162400005"
+    },
+    {
+      name: "Lisa Chen",
+      role: "Client Relations Manager",
+      summary: "Dedicated to ensuring exceptional client experience and building lasting partnerships. Lisa coordinates our advisory services and maintains strong client relationships.",
+      email: "lisa@ocoiom.com",
+      phone: "+44162400006"
     }
   ];
 
@@ -73,6 +120,34 @@ export default function About() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <FadeInText delay={0.2} className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-black mb-4">Our Team</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Meet the experienced professionals who make OCO a trusted partner for your financial success
+            </p>
+          </FadeInText>
+
+          <FadeInText delay={0.4}>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {teamMembers.map((member, idx) => (
+                <TeamMember
+                  key={idx}
+                  name={member.name}
+                  role={member.role}
+                  summary={member.summary}
+                  email={member.email}
+                  phone={member.phone}
+                  imageSrc="/gary-oconnor.jpg"
+                />
+              ))}
+            </div>
+          </FadeInText>
         </div>
       </section>
 
