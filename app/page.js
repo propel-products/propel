@@ -6,6 +6,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import FadeInText from '@/components/FadeInText';
+import { SequentialText, SequentialSection } from '@/components/SequentialText';
 import { Check } from 'lucide-react';
 
 export default function Home() {
@@ -52,32 +53,36 @@ export default function Home() {
       <Hero />
       
       {/* Services Section */}
-      <section id="services" className="py-24 bg-white">
+      <SequentialSection delay={3.5} className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <FadeInText delay={0.2} className="text-center mb-16">
+          <SequentialText delay={3.7} className="text-center mb-16">
             <h2 className="text-5xl font-bold text-black mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Comprehensive financial solutions tailored to your business needs
             </p>
-          </FadeInText>
+          </SequentialText>
 
-          <FadeInText delay={0.4}>
+          <SequentialText delay={4.2}>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((service, idx) => (
-                <ServiceCard key={idx} {...service} />
+                <SequentialText key={idx} delay={4.4 + (idx * 0.2)}>
+                  <ServiceCard {...service} />
+                </SequentialText>
               ))}
             </div>
-          </FadeInText>
+          </SequentialText>
         </div>
-      </section>
+      </SequentialSection>
 
-      <Stats />
+      <SequentialSection delay={5.5} className="py-24 bg-black text-white">
+        <Stats />
+      </SequentialSection>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-black text-white">
+      <SequentialSection delay={6.5} className="py-24 bg-black text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <AnimatedSection>
+            <SequentialText delay={6.7}>
               <div>
                 <h2 className="text-5xl font-bold mb-6">
                   Why Choose <span className="text-[#FF5007]">OCO</span>
@@ -87,55 +92,61 @@ export default function Home() {
                 </p>
                 <div className="space-y-6">
                   {whyChooseUs.map((item, idx) => (
-                    <div key={idx} className="flex gap-4">
-                      <div className="w-2 h-2 bg-[#FF5007] rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                        <p className="text-gray-400">{item.desc}</p>
+                    <SequentialText key={idx} delay={6.9 + (idx * 0.2)}>
+                      <div className="flex gap-4">
+                        <div className="w-2 h-2 bg-[#FF5007] rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
+                          <p className="text-gray-400">{item.desc}</p>
+                        </div>
                       </div>
-                    </div>
+                    </SequentialText>
                   ))}
                 </div>
               </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
+            </SequentialText>
+            <SequentialText delay={7.5}>
               <div className="relative">
                 <div className="bg-gradient-to-br from-[#FF5007] to-[#ff6a2e] p-12 rounded-3xl">
                   <div className="text-6xl font-bold mb-4">Trusted</div>
                   <p className="text-2xl mb-8">Business Partner</p>
                   <div className="space-y-4">
-                    <div className="bg-white/10 backdrop-blur-lg p-4 rounded-xl">
-                      <div className="text-3xl font-bold">Expert</div>
-                      <div className="text-sm">Financial Guidance</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-lg p-4 rounded-xl">
-                      <div className="text-3xl font-bold">Proven</div>
-                      <div className="text-sm">Track Record</div>
-                    </div>
+                    <SequentialText delay={7.7}>
+                      <div className="bg-white/10 backdrop-blur-lg p-4 rounded-xl">
+                        <div className="text-3xl font-bold">Expert</div>
+                        <div className="text-sm">Financial Guidance</div>
+                      </div>
+                    </SequentialText>
+                    <SequentialText delay={7.9}>
+                      <div className="bg-white/10 backdrop-blur-lg p-4 rounded-xl">
+                        <div className="text-3xl font-bold">Proven</div>
+                        <div className="text-sm">Track Record</div>
+                      </div>
+                    </SequentialText>
                   </div>
                 </div>
               </div>
-            </AnimatedSection>
+            </SequentialText>
           </div>
         </div>
-      </section>
+      </SequentialSection>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-white">
+      <SequentialSection delay={8.5} className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection>
+          <SequentialText delay={8.7}>
             <h2 className="text-5xl font-bold text-black mb-6">
               Ready to Transform Your Finances?
             </h2>
             <p className="text-xl text-gray-600 mb-12">
               Let's discuss how OCO can help your business achieve financial clarity and sustainable growth.
             </p>
-          </AnimatedSection>
-          <AnimatedSection delay={0.2}>
+          </SequentialText>
+          <SequentialText delay={9.2}>
             <ContactForm />
-          </AnimatedSection>
+          </SequentialText>
         </div>
-      </section>
+      </SequentialSection>
 
       <Footer />
     </>

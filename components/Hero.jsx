@@ -1,4 +1,5 @@
 import Button from './Button';
+import { SequentialText, SequentialWords } from './SequentialText';
 
 export default function Hero() {
   return (
@@ -10,21 +11,38 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto px-6 py-32 relative z-10">
         <div className="max-w-4xl">
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
-            Financial Clarity.
-            <span className="text-[#FF5007]"> Strategic Growth.</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl">
-            Expert accounting and advisory services that empower businesses to make confident financial decisions and achieve sustainable growth.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <SequentialText delay={0.5} className="mb-6">
+            <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight">
+              <SequentialWords 
+                text="Financial Clarity." 
+                delay={0.5} 
+                wordDelay={0.15}
+                className="text-white"
+              />
+              <br />
+              <SequentialWords 
+                text="Strategic Growth." 
+                delay={1.2} 
+                wordDelay={0.15}
+                className="text-[#FF5007]"
+              />
+            </h1>
+          </SequentialText>
+          
+          <SequentialText delay={1.8} className="mb-12">
+            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
+              Expert accounting and advisory services that empower businesses to make confident financial decisions and achieve sustainable growth.
+            </p>
+          </SequentialText>
+          
+          <SequentialText delay={2.5} className="flex flex-col sm:flex-row gap-4">
             <Button href="/contact" icon>
               Schedule Consultation
             </Button>
             <Button href="/services" variant="secondary">
               Explore Services
             </Button>
-          </div>
+          </SequentialText>
         </div>
       </div>
     </section>
