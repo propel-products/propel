@@ -10,22 +10,25 @@
   body {
     @apply antialiased;
     background: 
-      /* Subtle dot pattern texture */
-      radial-gradient(circle at 2px 2px, rgba(255,255,255,0.015) 1px, transparent 0),
-      /* Crosshatch texture */
-      linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.005) 50%, transparent 60%),
-      linear-gradient(-45deg, transparent 40%, rgba(255,255,255,0.005) 50%, transparent 60%),
+      /* Noise texture pattern - more visible */
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.25) 1px, transparent 0),
+      radial-gradient(circle at 3px 3px, rgba(255,255,255,0.15) 1px, transparent 0),
+      /* More visible dot pattern texture */
+      radial-gradient(circle at 5px 5px, rgba(255,255,255,0.08) 1px, transparent 0),
+      /* More visible crosshatch texture */
+      linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.04) 50%, transparent 70%),
+      linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.04) 50%, transparent 70%),
       /* Orange accent gradients */
-      radial-gradient(circle at 20% 80%, rgba(255, 80, 7, 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(255, 80, 7, 0.04) 0%, transparent 50%),
-      radial-gradient(circle at 50% 50%, rgba(255, 80, 7, 0.02) 0%, transparent 70%),
+      radial-gradient(circle at 20% 80%, rgba(255, 80, 7, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 80, 7, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(255, 80, 7, 0.05) 0%, transparent 70%),
       /* Main dark gradient */
       linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
-    background-size: 30px 30px, 40px 40px, 40px 40px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    background-size: 2px 2px, 4px 4px, 20px 20px, 30px 30px, 30px 30px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
     background-attachment: fixed;
     min-height: 100vh;
     /* Ensure background covers all content */
-    background-repeat: repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-repeat: repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   }
 
   /* Ensure all sections have proper background coverage */
