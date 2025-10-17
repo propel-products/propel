@@ -1,0 +1,15 @@
+{
+  "name": "oco-accounting-website",
+  "version": "1.0.0",
+  "description": "OCO Accounting & Advisory website",
+  "private": true,
+  "scripts": {
+    "build": "cd WebApp && npm run build",
+    "dev": "cd WebApp && npm run dev",
+    "start": "cd WebApp && npm run start",
+    "install-deps": "cd WebApp && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
