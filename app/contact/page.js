@@ -13,21 +13,15 @@ export default function Contact() {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      detail: "hello@oco.com",
-      link: "mailto:hello@oco.com"
+      detail: "hello@ocoiom.com",
+      link: "mailto:hello@ocoiom.com"
     },
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      detail: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      detail: "+44162400000",
+      link: "tel:+44162400000"
     },
-    {
-      icon: <MapPin size={24} />,
-      title: "Office",
-      detail: "123 Financial District, New York, NY 10004",
-      link: "#"
-    }
   ];
 
   return (

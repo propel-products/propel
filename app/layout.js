@@ -1,14 +1,18 @@
 import './globals.css'
+import Chatbot from '@/components/Chatbot'
 
 export const metadata = {
-  title: 'OCO Accounting & Advisory | Financial Clarity for Modern Businesses',
+  title: 'OCOIOM Limited | Financial Clarity for Modern Businesses',
   description: 'Expert accounting and advisory services for businesses. Bookkeeping, tax preparation, CFO services, and strategic financial guidance.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Chatbot />
+      </body>
     </html>
   )
 }
