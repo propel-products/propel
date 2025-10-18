@@ -31,46 +31,60 @@ export default function About() {
 
   const teamMembers = [
     {
-      name: "Gary O'Connor",
-      role: "Managing Director",
-      summary: "Leading OCO with over 15 years of experience in financial strategy and business advisory. Gary specialises in helping growing businesses achieve their financial goals.",
-      email: "gary@ocoiom.com",
-      phone: "+44162400001"
-    },
-    {
-      name: "Sarah Mitchell",
+      name: "Lieutenant Frank Drebin",
       role: "Senior Accountant",
-      summary: "Chartered accountant with expertise in tax planning and compliance. Sarah ensures our clients stay ahead of regulatory changes and optimise their tax position.",
-      email: "sarah@ocoiom.com",
-      phone: "+44162400002"
+      summary: "A true maverick in the world of numbers, Frank ensures every decimal is in its right place, leaving no stone unturned. Chartered accountant with expertise in tax planning and compliance, Frank helps clients navigate complex financial landscapes and achieve absolute clarity. And when it comes to serious financial matters, he means business: \"I am serious, and don't call me Shirley.\"",
+      email: "frank@ocoiom.com",
+      phone: "+44162400002",
+      imageSrc: "/Frank-drebin.png"
     },
     {
-      name: "David Thompson",
-      role: "CFO Services Director",
-      summary: "Former finance director with extensive experience in scaling businesses. David provides strategic financial leadership to help companies make informed decisions.",
-      email: "david@ocoiom.com",
-      phone: "+44162400003"
+      name: "Colt Seavers",
+      role: "Chief Coordinator for Special Projects",
+      summary: "With a knack for pulling off the impossible, Colt tackles our most challenging client initiatives. He specializes in high-stakes problem-solving and ensuring seamless execution, always ready to take a leap of faith to deliver extraordinary results. Colt makes sure our clients look like a million bucks even when facing the toughest scenarios.",
+      email: "colt@ocoiom.com",
+      phone: "+44162400007",
+      imageSrc: "/Lee-Majors.png"
     },
     {
-      name: "Emma Richardson",
-      role: "Advisory Consultant",
-      summary: "Specialist in business transformation and process improvement. Emma helps clients streamline operations and implement best practices for sustainable growth.",
-      email: "emma@ocoiom.com",
-      phone: "+44162400004"
+      name: "Sammy Jo Carrington",
+      role: "Head of Strategic Alliances",
+      summary: "Sammy Jo commands attention and builds powerful partnerships with an undeniable presence. She excels at forging strong, mutually beneficial relationships and expanding our global reach, always with an eye for the grand strategy and a flair that would make any Denver darling proud.",
+      email: "sammyjo@ocoiom.com",
+      phone: "+44162400008",
+      imageSrc: "/Sammy Jo Carrington.png"
     },
     {
-      name: "James Wilson",
-      role: "Tax Specialist",
-      summary: "Expert in corporate tax strategy and international compliance. James works with multinational businesses to optimise their tax structure and ensure compliance.",
-      email: "james@ocoiom.com",
-      phone: "+44162400005"
+      name: "Corey Mahoney",
+      role: "Director of Training & Development",
+      summary: "Corey is the master of transformation, turning raw talent into polished professionals. With a knack for unconventional yet highly effective methods, he develops our team's skills, ensuring everyone is ready for any challenge and capable of navigating even the trickiest situations with composure and wit.",
+      email: "corey@ocoiom.com",
+      phone: "+44162400009",
+      imageSrc: "/Corey Mahoney.png"
     },
     {
-      name: "Lisa Chen",
-      role: "Client Relations Manager",
-      summary: "Dedicated to ensuring exceptional client experience and building lasting partnerships. Lisa coordinates our advisory services and maintains strong client relationships.",
-      email: "lisa@ocoiom.com",
-      phone: "+44162400006"
+      name: "Patrick O'Conner",
+      role: "Managing Director of Ireland",
+      summary: "A formidable leader with deep roots and a keen understanding of the local landscape, Patrick steers our Irish operations with strategic vision. He fosters strong client relationships and drives regional growth, ensuring our presence is as solid and enduring as the Emerald Isle itself.",
+      email: "patrick@ocoiom.com",
+      phone: "+44162400010",
+      imageSrc: "/Patrick-oco.png"
+    },
+    {
+      name: "Buddy O'Conner",
+      role: "Intern",
+      summary: "Eager, resourceful, and always ready to lend a hand, Buddy is quickly learning the ropes. He supports various teams, tackling tasks with enthusiasm and a fresh perspective, proving that even the smallest adventurer can make a big impact. Buddy is our future in the making.",
+      email: "buddy@ocoiom.com",
+      phone: "+44162400011",
+      imageSrc: "/Buddy-oco.png"
+    },
+    {
+      name: "Chad O'Conner",
+      role: "Head of North America and Canada",
+      summary: "Chad is a dynamic force, leading our expansion across vast and diverse markets. With a bold strategy and a focus on significant growth, he connects with clients and partners across the continent, building an empire that's as impressive and expansive as the Rockies themselves.",
+      email: "chad@ocoiom.com",
+      phone: "+44162400012",
+      imageSrc: "/Chad-oco.png"
     }
   ];
 
@@ -143,7 +157,7 @@ export default function About() {
                   summary={member.summary}
                   email={member.email}
                   phone={member.phone}
-                  imageSrc="/gary-oconnor.jpg"
+                  imageSrc={member.imageSrc}
                 />
               ))}
             </div>
