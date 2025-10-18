@@ -31,6 +31,14 @@ export default function About() {
 
   const teamMembers = [
     {
+      name: "Gary O'Connor",
+      role: "Founder & Managing Director",
+      summary: "Gary founded OCO with a vision to provide exceptional financial services that truly understand the needs of modern businesses. With over 15 years of experience in financial strategy and business advisory, Gary leads the company with passion and expertise, ensuring every client receives the highest level of service and strategic guidance.",
+      email: "gary@ocoiom.com",
+      phone: "+44162400001",
+      imageSrc: "/Gary-oco.png"
+    },
+    {
       name: "Lieutenant Frank Drebin",
       role: "Senior Accountant",
       summary: "A true maverick in the world of numbers, Frank ensures every decimal is in its right place, leaving no stone unturned. Chartered accountant with expertise in tax planning and compliance, Frank helps clients navigate complex financial landscapes and achieve absolute clarity. And when it comes to serious financial matters, he means business: \"I am serious, and don't call me Shirley.\"",

@@ -16,7 +16,7 @@ export default function TeamMember({
           src={imageSrc}
           alt={name}
           fill
-          className="rounded-full object-cover border-4 border-[#FF5007]"
+          className="rounded-lg object-cover border-4 border-[#FF5007]"
         />
       </div>
       
