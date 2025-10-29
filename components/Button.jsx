@@ -8,7 +8,7 @@ export default function Button({
   icon = false,
   className = '' 
 }) {
-  const baseStyles = "px-8 py-4 rounded-full text-lg font-semibold transition-all inline-flex items-center justify-center gap-2";
+  const baseStyles = "px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all inline-flex items-center justify-center gap-2 w-full sm:w-auto";
   
   const variants = {
     primary: "bg-[#FF5007] text-white hover:bg-[#ff6a2e] hover:scale-105",

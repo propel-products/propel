@@ -5,12 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
     @apply antialiased;
     background-color: #0a0a0a;
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   /* Ensure all sections have proper background coverage */
@@ -25,5 +27,16 @@
 
   .bg-gray-50 {
     background-color: #f9fafb !important;
+  }
+
+  /* Prevent horizontal overflow */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Ensure text wraps properly */
+  p, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }

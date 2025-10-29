@@ -39,8 +39,8 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-50 p-12 rounded-3xl">
-      <div className="grid md:grid-cols-2 gap-6 mb-6">
+    <form onSubmit={handleSubmit} className="bg-gray-50 p-6 sm:p-8 lg:p-12 rounded-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6">
         <input 
           type="text" 
           name="name"
@@ -48,7 +48,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="px-6 py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none"
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none text-sm sm:text-base"
         />
         <input 
           type="email" 
@@ -57,7 +57,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="px-6 py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none"
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none text-sm sm:text-base"
         />
       </div>
       <input 
@@ -66,7 +66,7 @@ export default function ContactForm() {
         placeholder="Company Name" 
         value={formData.company}
         onChange={handleChange}
-        className="w-full px-6 py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6 text-sm sm:text-base"
       />
       <textarea 
         name="message"
@@ -75,13 +75,13 @@ export default function ContactForm() {
         value={formData.message}
         onChange={handleChange}
         required
-        className="w-full px-6 py-4 rounded-3xl border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-3xl border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6 text-sm sm:text-base resize-none"
       ></textarea>
       
       <button 
         type="submit"
         disabled={status === 'sending'}
-        className="w-full bg-[#FF5007] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105 disabled:opacity-50"
+        className="w-full bg-[#FF5007] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105 disabled:opacity-50"
       >
         {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>

@@ -164,9 +164,9 @@ export default function Resources() {
             {resources.map((category, categoryIndex) => (
               <div key={categoryIndex}>
                 <h3 className="text-2xl font-bold mb-8 text-gray-900">{category.category}</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                   {category.items.map((resource, resourceIndex) => (
-                    <div key={resourceIndex} className="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <div key={resourceIndex} className="bg-gray-50 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="text-[#FF5007]">{resource.icon}</div>
                         <span className="text-sm font-semibold text-[#FF5007] bg-[#FF5007]/10 px-3 py-1 rounded-full">
@@ -211,16 +211,16 @@ export default function Resources() {
           <p className="text-xl text-gray-300 mb-8">
             Our team of experts is ready to provide tailored financial guidance for your specific business needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <a 
               href="/contact" 
-              className="bg-[#FF5007] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105"
+              className="bg-[#FF5007] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105 text-center"
             >
               Schedule Consultation
             </a>
             <a 
               href="/services" 
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition-all"
+              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-white hover:text-black transition-all text-center"
             >
               View Our Services
             </a>

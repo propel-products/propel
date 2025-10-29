@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
           <div>
             <div className="mb-4">
               <AnimatedLogo size="small" color="white" />
@@ -89,7 +89,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           {/* Certifications and Badges */}
-          <div className="flex justify-center items-center gap-8 mb-6">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6">
             <div className="flex items-center gap-2">
               <Image 
                 src="/acca-badge.png" 
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
           
           <p className="mb-4">&copy; 2025 OCO Limited (Company No. 138078C) - Accounting & Advisory. All rights reserved.</p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 max-w-4xl mx-auto px-4">
             OCO Limited is registered as a designated business by the Isle of Man Financial Services Authority in accordance with the Designated Business (Registration and Oversight) Act 2015
           </p>
         </div>
