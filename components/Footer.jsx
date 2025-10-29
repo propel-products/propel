@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedLogo from './AnimatedLogo';
 
 export default function Footer() {
@@ -87,6 +88,30 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+          {/* Certifications and Badges */}
+          <div className="flex justify-center items-center gap-8 mb-6">
+            <div className="flex items-center gap-2">
+              <Image 
+                src="/acca-badge.png" 
+                alt="ACCA Badge" 
+                width={60} 
+                height={60}
+                className="object-contain"
+              />
+              <span className="text-sm text-gray-500">ACCA Certified</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Image 
+                src="/business-valuations-certificate.png" 
+                alt="Business Valuations Certificate" 
+                width={60} 
+                height={60}
+                className="object-contain"
+              />
+              <span className="text-sm text-gray-500">Certified Business Valuer</span>
+            </div>
+          </div>
+          
           <p className="mb-4">&copy; 2025 OCOIOM Limited - Accounting & Advisory. All rights reserved.</p>
           <p className="text-sm text-gray-500">
             OCO Limited is registered as a designated business by the Isle of Man Financial Services Authority in accordance with the Designated Business (Registration and Oversight) Act 2015
