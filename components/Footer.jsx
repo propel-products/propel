@@ -18,7 +18,7 @@ export default function Footer() {
       { label: 'Contact', href: '/contact' }
     ],
     connect: [
-      { label: 'LinkedIn', href: 'https://linkedin.com/company/oco-accounting' },
+      { label: 'LinkedIn', href: 'https://im.linkedin.com/in/gary-o-connor' },
       { label: 'Email', href: 'mailto:hello@ocoiom.com' }
     ]
   };
