@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import { FileText, Download, ExternalLink, Calendar, User } from 'lucide-react';
 
 export const metadata = {
-  title: 'Resources | OCOIOM Limited - Accounting & Advisory',
+  title: 'Resources | OCO Limited - Accounting & Advisory',
   description: 'Access our comprehensive library of financial resources, guides, and tools to help your business thrive.',
 }
 

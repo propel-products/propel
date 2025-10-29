@@ -112,7 +112,7 @@ export default function Footer() {
             </div>
           </div>
           
-          <p className="mb-4">&copy; 2025 OCOIOM Limited - Accounting & Advisory. All rights reserved.</p>
+          <p className="mb-4">&copy; 2025 OCO Limited (Company No. 138078C) - Accounting & Advisory. All rights reserved.</p>
           <p className="text-sm text-gray-500">
             OCO Limited is registered as a designated business by the Isle of Man Financial Services Authority in accordance with the Designated Business (Registration and Oversight) Act 2015
           </p>
