@@ -3,8 +3,50 @@ import Footer from '@/components/Footer';
 import { FileText, Download, ExternalLink, Calendar, User } from 'lucide-react';
 
 export const metadata = {
-  title: 'Resources | OCO Limited - Accounting & Advisory',
-  description: 'Access our comprehensive library of financial resources, guides, and tools to help your business thrive.',
+  title: 'Financial Resources | Guides, Templates & Tools',
+  description: 'Access OCO Limited\'s comprehensive library of financial resources, guides, templates, and tools to help your business thrive. Download free financial planning guides, Excel templates, and attend webinars.',
+  keywords: [
+    'financial resources',
+    'business guides',
+    'financial templates',
+    'Excel templates',
+    'financial planning guides',
+    'tax planning strategies',
+    'cash flow management',
+    'budget planning',
+    'invoice templates',
+    'financial webinars',
+    'business workshops',
+    'financial tools',
+    'accounting resources',
+    'business planning tools',
+    'financial education'
+  ],
+  openGraph: {
+    title: 'Financial Resources | Guides, Templates & Tools',
+    description: 'Access OCO Limited\'s comprehensive library of financial resources, guides, templates, and tools to help your business thrive.',
+    url: 'https://oco.com/resources',
+    siteName: 'OCO Limited',
+    images: [
+      {
+        url: '/og-resources.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'OCO Limited - Financial Resources and Business Tools',
+      },
+    ],
+    locale: 'en_IM',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Financial Resources | Guides, Templates & Tools',
+    description: 'Access OCO Limited\'s comprehensive library of financial resources and business tools.',
+    images: ['/og-resources.jpg'],
+  },
+  alternates: {
+    canonical: 'https://oco.com/resources',
+  },
 }
 
 export default function Resources() {

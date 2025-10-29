@@ -4,8 +4,46 @@ import ContactForm from '@/components/ContactForm';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Us | OCO Accounting & Advisory',
-  description: 'Get in touch with OCO for accounting and advisory services. Schedule a consultation today.',
+  title: 'Contact Us | Get Professional Financial Guidance',
+  description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow. Email hello@ocoiom.com or call +44162400000.',
+  keywords: [
+    'contact accounting services',
+    'Isle of Man accounting consultation',
+    'Gary O\'Connor contact',
+    'financial advisory consultation',
+    'business valuation consultation',
+    'CFO services consultation',
+    'accounting services Isle of Man',
+    'hello@ocoiom.com',
+    '+44162400000',
+    'OCO Limited contact',
+    'professional financial guidance'
+  ],
+  openGraph: {
+    title: 'Contact OCO Limited | Professional Financial Guidance',
+    description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow.',
+    url: 'https://oco.com/contact',
+    siteName: 'OCO Limited',
+    images: [
+      {
+        url: '/og-contact.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact OCO Limited - Professional Accounting & Advisory Services',
+      },
+    ],
+    locale: 'en_IM',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact OCO Limited | Professional Financial Guidance',
+    description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man.',
+    images: ['/og-contact.jpg'],
+  },
+  alternates: {
+    canonical: 'https://oco.com/contact',
+  },
 }
 
 export default function Contact() {

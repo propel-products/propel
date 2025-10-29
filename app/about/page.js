@@ -3,8 +3,49 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About Us | OCO Accounting & Advisory',
-  description: 'Learn about OCO\'s mission, values, and the team behind our expert financial services.',
+  title: 'About Us | Gary O\'Connor & OCO Limited',
+  description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man, specializing in financial reporting, business valuation, and strategic guidance.',
+  keywords: [
+    'Gary O\'Connor',
+    'ACCA Fellow',
+    'Isle of Man accounting',
+    'business valuation expert',
+    'financial reporting specialist',
+    'PwC experience',
+    'Director of the Year',
+    'business advisor',
+    'fiduciary services',
+    'board governance',
+    'OCO Limited founder',
+    'certified business valuer',
+    'CSOEC certified',
+    'IoD award winner'
+  ],
+  openGraph: {
+    title: 'About Gary O\'Connor | OCO Limited - Accounting & Advisory',
+    description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man.',
+    url: 'https://oco.com/about',
+    siteName: 'OCO Limited',
+    images: [
+      {
+        url: '/gary-about.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Gary O\'Connor - Director and Founder of OCO Limited',
+      },
+    ],
+    locale: 'en_IM',
+    type: 'profile',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Gary O\'Connor | OCO Limited',
+    description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience.',
+    images: ['/gary-about.jpg'],
+  },
+  alternates: {
+    canonical: 'https://oco.com/about',
+  },
 }
 
 export default function About() {

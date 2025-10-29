@@ -5,8 +5,51 @@ import Button from '@/components/Button';
 import FadeInText from '@/components/FadeInText';
 
 export const metadata = {
-  title: 'Expertise | OCO Accounting & Advisory',
-  description: 'Comprehensive accounting, advisory, and CFO services for growing businesses.',
+  title: 'Our Expertise | Accounting, Advisory & CFO Services',
+  description: 'Comprehensive accounting, advisory, and fractional CFO services for growing businesses in the Isle of Man. Financial reporting, tax compliance, business valuation, and strategic planning by ACCA-certified professionals.',
+  keywords: [
+    'accounting services Isle of Man',
+    'advisory services',
+    'fractional CFO services',
+    'financial reporting',
+    'tax compliance',
+    'business valuation',
+    'management accounts',
+    'audit liaison',
+    'business strategy',
+    'growth planning',
+    'performance analytics',
+    'cash flow management',
+    'board reporting',
+    'corporate governance',
+    'M&A support',
+    'exit planning'
+  ],
+  openGraph: {
+    title: 'Our Expertise | Accounting, Advisory & CFO Services',
+    description: 'Comprehensive accounting, advisory, and fractional CFO services for growing businesses in the Isle of Man.',
+    url: 'https://oco.com/services',
+    siteName: 'OCO Limited',
+    images: [
+      {
+        url: '/og-services.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'OCO Limited - Professional Accounting & Advisory Services',
+      },
+    ],
+    locale: 'en_IM',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Expertise | Accounting, Advisory & CFO Services',
+    description: 'Comprehensive accounting, advisory, and fractional CFO services for growing businesses.',
+    images: ['/og-services.jpg'],
+  },
+  alternates: {
+    canonical: 'https://oco.com/services',
+  },
 }
 
 export default function Services() {
