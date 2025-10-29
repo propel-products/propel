@@ -15,9 +15,9 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { href: '/services', label: 'Services' },
+    { href: '/services', label: 'Expertise' },
     { href: '/about', label: 'About' },
-    { href: '/resources', label: 'Resources', icon: <Lock size={14} /> },
+    { href: '/about', label: 'Company' },
     { href: '/contact', label: 'Contact' }
   ];
 

@@ -1,8 +1,5 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import Button from '@/components/Button';
-import TeamMember from '@/components/TeamMember';
-import FadeInText from '@/components/FadeInText';
 
 export const metadata = {
   title: 'About Us | OCO Accounting & Advisory',
@@ -10,91 +7,6 @@ export const metadata = {
 }
 
 export default function About() {
-  const values = [
-    {
-      title: "Integrity",
-      description: "We operate with the highest ethical standards and transparency in everything we do"
-    },
-    {
-      title: "Excellence",
-      description: "We're committed to delivering exceptional quality and exceeding client expectations"
-    },
-    {
-      title: "Innovation",
-      description: "We embrace technology and modern solutions to provide better service"
-    },
-    {
-      title: "Partnership",
-      description: "We build long-term relationships based on trust and mutual success"
-    }
-  ];
-
-  const teamMembers = [
-    {
-      name: "Gary O'Connor",
-      role: "Founder & Managing Director",
-      summary: "Gary founded OCO with a vision to provide exceptional financial services that truly understand the needs of modern businesses. With over 15 years of experience in financial strategy and business advisory, Gary leads the company with passion and expertise, ensuring every client receives the highest level of service and strategic guidance.",
-      email: "gary@ocoiom.com",
-      phone: "+44162400001",
-      imageSrc: "/Gary-oco.png"
-    },
-    {
-      name: "Lieutenant Frank Drebin",
-      role: "Senior Accountant",
-      summary: "A true maverick in the world of numbers, Frank ensures every decimal is in its right place, leaving no stone unturned. Chartered accountant with expertise in tax planning and compliance, Frank helps clients navigate complex financial landscapes and achieve absolute clarity. And when it comes to serious financial matters, he means business: \"I am serious, and don't call me Shirley.\"",
-      email: "frank@ocoiom.com",
-      phone: "+44162400002",
-      imageSrc: "/Frank-drebin.png"
-    },
-    {
-      name: "Colt Seavers",
-      role: "Chief Coordinator for Special Projects",
-      summary: "With a knack for pulling off the impossible, Colt tackles our most challenging client initiatives. He specializes in high-stakes problem-solving and ensuring seamless execution, always ready to take a leap of faith to deliver extraordinary results. Colt makes sure our clients look like a million bucks even when facing the toughest scenarios.",
-      email: "colt@ocoiom.com",
-      phone: "+44162400007",
-      imageSrc: "/Lee-Majors.png"
-    },
-    {
-      name: "Sammy Jo Carrington",
-      role: "Head of Strategic Alliances",
-      summary: "Sammy Jo commands attention and builds powerful partnerships with an undeniable presence. She excels at forging strong, mutually beneficial relationships and expanding our global reach, always with an eye for the grand strategy and a flair that would make any Denver darling proud.",
-      email: "sammyjo@ocoiom.com",
-      phone: "+44162400008",
-      imageSrc: "/Sammy Jo Carrington.png"
-    },
-    {
-      name: "Corey Mahoney",
-      role: "Director of Training & Development",
-      summary: "Corey is the master of transformation, turning raw talent into polished professionals. With a knack for unconventional yet highly effective methods, he develops our team's skills, ensuring everyone is ready for any challenge and capable of navigating even the trickiest situations with composure and wit.",
-      email: "corey@ocoiom.com",
-      phone: "+44162400009",
-      imageSrc: "/Corey Mahoney.png"
-    },
-    {
-      name: "Patrick O'Conner",
-      role: "Managing Director of Ireland",
-      summary: "A formidable leader with deep roots and a keen understanding of the local landscape, Patrick steers our Irish operations with strategic vision. He fosters strong client relationships and drives regional growth, ensuring our presence is as solid and enduring as the Emerald Isle itself.",
-      email: "patrick@ocoiom.com",
-      phone: "+44162400010",
-      imageSrc: "/Patrick-oco.png"
-    },
-    {
-      name: "Buddy O'Conner",
-      role: "Intern",
-      summary: "Eager, resourceful, and always ready to lend a hand, Buddy is quickly learning the ropes. He supports various teams, tackling tasks with enthusiasm and a fresh perspective, proving that even the smallest adventurer can make a big impact. Buddy is our future in the making.",
-      email: "buddy@ocoiom.com",
-      phone: "+44162400011",
-      imageSrc: "/Buddy-oco.png"
-    },
-    {
-      name: "Chad O'Conner",
-      role: "Head of North America and Canada",
-      summary: "Chad is a dynamic force, leading our expansion across vast and diverse markets. With a bold strategy and a focus on significant growth, he connects with clients and partners across the continent, building an empire that's as impressive and expansive as the Rockies themselves.",
-      email: "chad@ocoiom.com",
-      phone: "+44162400012",
-      imageSrc: "/Chad-oco.png"
-    }
-  ];
 
   return (
     <>
@@ -107,82 +19,33 @@ export default function About() {
             About <span className="text-[#FF5007]">OCO</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Empowering businesses with clarity, strategy, and confidence since 2010
+            Empowering businesses with clarity, strategy, and confidence
           </p>
         </div>
       </section>
 
-      {/* Story */}
+      {/* About Us */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-8">Our Story</h2>
+          <h2 className="text-4xl font-bold mb-8">About Us</h2>
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p>
-              OCO was founded with a simple belief: businesses deserve financial partners who truly understand their challenges and opportunities. We saw too many companies struggling with traditional accounting firms that simply processed numbers without providing real strategic value.
+              Gary O'Connor – Director and Founder of OCO Limited in the Isle of Man.
             </p>
             <p>
-              Today, OCO serves over 500 businesses across multiple industries, from fast-growing startups to established enterprises. Our team combines deep financial expertise with modern technology to deliver services that are both comprehensive and accessible.
+              Gary has over 25 years' experience in the accountancy, funds and fiduciary industry and is a Fellow of the Association of Chartered Certified Accountants, qualifying in 2004 with PricewaterhouseCoopers, specialising in financial reporting and audit.
             </p>
             <p>
-              We're not just accountants—we're strategic partners invested in your success. Every recommendation we make, every insight we provide, is designed to help you make better decisions and achieve sustainable growth.
+              He has a wealth of experience from his previous roles in accountancy and prior to founding OCO, held numerous leadership and board governance positions. Gary was also the winner of the prestigious Isle of Man Institute of Directors (IoD) 'Director of the Year' award. With over a decade of experience in leadership and board governance, Gary is a certified business valuer, recognised by the Conseil Supérieur Ordre des Experts-Comptables (CSOEC), bringing trusted expertise in valuing and advising businesses.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Our Values</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {values.map((value, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold mb-4 text-[#FF5007]">{value.title}</h3>
-                <p className="text-gray-700">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Team */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeInText delay={0.2} className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-black mb-4">Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Meet the experienced professionals who make OCO a trusted partner for your financial success
-            </p>
-          </FadeInText>
-
-          <FadeInText delay={0.4}>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-              {teamMembers.map((member, idx) => (
-                <TeamMember
-                  key={idx}
-                  name={member.name}
-                  role={member.role}
-                  summary={member.summary}
-                  email={member.email}
-                  phone={member.phone}
-                  imageSrc={member.imageSrc}
-                />
-              ))}
-            </div>
-          </FadeInText>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-24 bg-black text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">Join Trusted Businesses</h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Experience the OCO difference
-          </p>
-          <Button href="/contact" variant="primary" icon>
-            Get Started Today
-          </Button>
+          <h2 className="text-5xl font-bold mb-6">OCO – experience the difference</h2>
         </div>
       </section>
 

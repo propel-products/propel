@@ -12,26 +12,25 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 py-32 relative z-10">
         <div className="max-w-4xl">
           <SequentialText delay={0.5} className="mb-6">
-            <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight">
+            <h1 className="text-7xl md:text-9xl font-bold text-white leading-tight">
               <SequentialWords 
-                text="Financial Clarity." 
+                text="Financial Clarity" 
                 delay={0.5} 
                 wordDelay={0.15}
-                className="text-white"
+                className="text-white text-5xl md:text-6xl"
               />
-              <br />
               <SequentialWords 
-                text="Strategic Growth." 
+                text="Strategic Growth" 
                 delay={1.2} 
                 wordDelay={0.15}
-                className="text-[#FF5007]"
+                className="text-[#FF5007] text-5xl md:text-6xl"
               />
             </h1>
           </SequentialText>
           
           <SequentialText delay={1.8} className="mb-12">
             <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
-              Expert accounting and advisory services that empower businesses to make confident financial decisions and achieve sustainable growth.
+              OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.
             </p>
           </SequentialText>
           

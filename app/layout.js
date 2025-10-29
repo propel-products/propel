@@ -1,5 +1,4 @@
 import './globals.css'
-import Chatbot from '@/components/Chatbot'
 
 export const metadata = {
   title: 'OCOIOM Limited | Financial Clarity for Modern Businesses',
@@ -11,7 +10,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
-        <Chatbot />
       </body>
     </html>
   )

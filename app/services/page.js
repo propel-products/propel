@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 import FadeInText from '@/components/FadeInText';
 
 export const metadata = {
-  title: 'Our Services | OCO Accounting & Advisory',
+  title: 'Expertise | OCO Accounting & Advisory',
   description: 'Comprehensive accounting, advisory, and CFO services for growing businesses.',
 }
 
@@ -16,19 +16,19 @@ export default function Services() {
       tagline: "Keep your books perfect, stay compliant",
       services: [
         {
-          title: "Monthly Bookkeeping",
-          description: "Accurate, timely recording of all financial transactions",
-          features: ["Transaction Recording", "Account Reconciliation", "Expense Tracking", "Financial Reports"]
+          title: "Financial statement preparation",
+          description: "Financial reporting, built on technical experience",
+          features: ["Preparation of annual statutory and non-statutory financial statements", "Preparation of management accounts and management information", "Preparation of budgets and cash flow forecasts", "Transaction Recording"]
         },
         {
-          title: "Tax Preparation & Planning",
-          description: "Minimise tax liability whilst ensuring full compliance",
-          features: ["Tax Return Preparation", "Tax Planning Strategy", "IRS Correspondence", "Audit Support"]
+          title: "Tax Compliance",
+          description: "Delivering accurate, timely, and fully compliant tax reporting",
+          features: ["Personal Tax Return Preparation", "Company Tax Return Preparation", "VAT returns"]
         },
         {
-          title: "Payroll Management",
-          description: "End-to-end payroll processing and compliance",
-          features: ["Payroll Processing", "Tax Filings", "Benefits Administration", "Compliance Management"]
+          title: "Audit liaison services",
+          description: "Coordinating seamlessly between you and your auditors",
+          features: ["Audit pack preparation", "Acting as the conduit for audit queries", "Technical guidance and dispute resolution"]
         }
       ]
     },
@@ -37,40 +37,40 @@ export default function Services() {
       tagline: "Strategic guidance for sustainable growth",
       services: [
         {
-          title: "Business Strategy",
-          description: "Develop and execute strategies for growth and profitability",
-          features: ["Strategic Planning", "Market Analysis", "Competitive Positioning", "Growth Modeling"]
+          title: "Business Strategy and growth planning",
+          description: "Develop and execute strategies for your business growth and profitability",
+          features: ["Strategic Planning and Business advice", "Market and Pricing analysis", "Growth Modelling", "Risk management and due diligence assistance"]
         },
         {
           title: "Performance Analytics",
-          description: "Data-driven insights to improve business performance",
-          features: ["KPI Development", "Financial Modeling", "Benchmarking", "Dashboard Creation"]
+          description: "Adding value at every stage of your business journey",
+          features: ["KPI Development", "Financial Modelling", "Benchmarking", "Tailored frameworks to build resilience for long-term success"]
         },
         {
-          title: "Risk Management",
-          description: "Identify and mitigate financial and operational risks",
-          features: ["Risk Assessment", "Internal Controls", "Compliance Review", "Crisis Planning"]
+          title: "Independent Business Valuation Services",
+          description: "Valuations that guide strategic decisions and uncover opportunities",
+          features: ["Independent business valuations to establish a value for your company", "Complex dispute valuations", "Transaction valuations", "Expert Witness"]
         }
       ]
     },
     {
-      category: "CFO Services",
+      category: "Fractional CFO Services",
       tagline: "Executive financial leadership, fractional cost",
       services: [
         {
           title: "Financial Strategy & Planning",
           description: "Long-term financial vision and strategic execution",
-          features: ["Strategic Financial Planning", "Capital Structure", "Investment Strategy", "Exit Planning"]
+          features: ["Strategic level financial support and Financial Planning", "Transaction and M&A support", "Exit Planning", "Bridging the gap between operational and financial strategy"]
+        },
+        {
+          title: "Board and stakeholder Relations",
+          description: "Manage relationships with investors, the board and key stakeholders",
+          features: ["Board Reporting and financial updates", "Corporate Governance services", "Maintain Investor and Banking Relations"]
         },
         {
           title: "Cash Flow Management",
           description: "Optimise working capital and ensure liquidity",
-          features: ["Cash Flow Forecasting", "Working Capital Optimisation", "Credit Management", "Banking Relations"]
-        },
-        {
-          title: "Investor & Stakeholder Relations",
-          description: "Manage relationships with investors and key stakeholders",
-          features: ["Board Reporting", "Investor Communications", "Due Diligence", "Fundraising Support"]
+          features: ["Cash Flow Forecasting and liquidity monitoring", "Working Capital Optimisation", "Credit Management", "Scenario Planning"]
         }
       ]
     }
@@ -88,7 +88,7 @@ export default function Services() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
-            Our <span className="text-[#FF5007]">Services</span>
+            <span className="text-[#FF5007]">Expertise</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Financial solutions for every stage of business growth.
@@ -114,18 +114,6 @@ export default function Services() {
         </section>
       ))}
 
-      {/* CTA */}
-      <section className="py-24 bg-black text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Let's discuss which services are right for your business
-          </p>
-          <Button href="/contact" variant="primary" icon>
-            Schedule Consultation
-          </Button>
-        </div>
-      </section>
 
       <Footer />
     </>
