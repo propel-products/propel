@@ -26,11 +26,13 @@ export default function Navigation() {
       scrolled ? 'bg-black/95 backdrop-blur-lg py-4' : 'bg-transparent py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <AnimatedLogo size="default" />
+        <Link href="/" className="flex items-center">
+          <div className="scale-150">
+            <AnimatedLogo size="default" />
+          </div>
         </Link>
         
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 ml-auto">
           {navLinks.map(link => (
             <Link 
               key={link.href} 
