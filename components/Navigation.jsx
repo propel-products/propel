@@ -25,7 +25,7 @@ export default function Navigation() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       scrolled ? 'bg-black/95 backdrop-blur-lg py-4' : 'bg-transparent py-6'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="w-full px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <div className="scale-150">
             <AnimatedLogo size="default" />
