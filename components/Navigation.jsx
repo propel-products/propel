@@ -25,7 +25,7 @@ export default function Navigation() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       scrolled ? 'bg-black/95 backdrop-blur-lg py-4' : 'bg-transparent py-6'
     }`}>
-      <div className="w-full px-6 flex items-center justify-between">
+      <div className="w-full px-8 lg:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <div className="scale-150">
             <AnimatedLogo size="default" />
@@ -60,7 +60,7 @@ export default function Navigation() {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-lg py-6 px-6">
+        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-lg py-6 px-8">
           <div className="flex flex-col gap-4">
             {navLinks.map(link => (
               <Link 

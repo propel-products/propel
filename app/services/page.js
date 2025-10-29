@@ -124,16 +124,16 @@ export default function Services() {
       <Navigation />
       
       {/* Hero */}
-      <section className="relative min-h-[40vh] bg-black flex items-center overflow-hidden pt-32">
+      <section className="relative min-h-[50vh] md:min-h-[40vh] bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-96 h-96 bg-[#FF5007] rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
             <span className="text-[#FF5007]">Expertise</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             Financial solutions for every stage of business growth.
           </p>
         </div>
