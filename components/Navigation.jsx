@@ -23,16 +23,16 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-black/95 backdrop-blur-lg py-4' : 'bg-transparent py-6'
+      scrolled ? 'bg-black/95 backdrop-blur-lg py-4' : 'bg-transparent py-8'
     }`}>
-      <div className="w-full px-8 lg:px-12 flex items-center justify-between">
+      <div className="w-full px-6 sm:px-8 lg:px-16 xl:px-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <div className="scale-150">
+          <div className="scale-125 sm:scale-150 lg:scale-150">
             <AnimatedLogo size="default" />
           </div>
         </Link>
         
-        <div className="hidden md:flex items-center gap-8 ml-auto">
+        <div className="hidden sm:flex items-center gap-4 md:gap-6 lg:gap-8 ml-auto">
           {navLinks.map(link => (
             <Link 
               key={link.href} 
@@ -45,7 +45,7 @@ export default function Navigation() {
           ))}
           <Link 
             href="/contact"
-            className="bg-[#FF5007] text-white px-6 py-2.5 rounded-full hover:bg-[#ff6a2e] transition-all hover:scale-105"
+            className="bg-[#FF5007] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-[#ff6a2e] transition-all hover:scale-105 text-sm sm:text-base font-semibold"
           >
             Get Started
           </Link>
@@ -53,32 +53,34 @@ export default function Navigation() {
 
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-white"
+          className="sm:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-lg py-6 px-8">
-          <div className="flex flex-col gap-4">
+        <div className="sm:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-lg py-8 px-6">
+          <div className="flex flex-col gap-6">
             {navLinks.map(link => (
               <Link 
                 key={link.href}
                 href={link.href}
-                className="text-white hover:text-[#FF5007] transition-colors py-2 flex items-center gap-2"
+                className="text-white hover:text-[#FF5007] transition-colors py-3 px-2 flex items-center gap-2 text-lg font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
                 {link.icon}
               </Link>
             ))}
-            <Link 
-              href="/contact"
-              className="bg-[#FF5007] text-white px-6 py-3 rounded-full text-center hover:bg-[#ff6a2e] transition-all"
-            >
-              Get Started
-            </Link>
+            <div className="pt-4 border-t border-gray-700">
+              <Link 
+                href="/contact"
+                className="bg-[#FF5007] text-white px-8 py-4 rounded-full text-center hover:bg-[#ff6a2e] transition-all text-lg font-semibold block"
+              >
+                Get Started
+              </Link>
+            </div>
           </div>
         </div>
       )}
