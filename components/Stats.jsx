@@ -7,15 +7,17 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-24 bg-black text-white">
+    <section className="py-16 sm:py-20 lg:py-24 bg-black text-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {stats.map((stat, idx) => (
-            <div key={idx} className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#FF5007] mb-2">
+            <div key={idx} className="text-center px-4 py-6 sm:py-8">
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FF5007] mb-3 sm:mb-4 leading-tight">
                 {stat.number}
               </div>
-              <div className="text-gray-400">{stat.label}</div>
+              <div className="text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed max-w-xs mx-auto">
+                {stat.label}
+              </div>
             </div>
           ))}
         </div>
