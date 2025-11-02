@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'About Us | Gary O\'Connor & OCO Limited',
-  description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man, specializing in financial reporting, business valuation, and strategic guidance.',
+  description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man, specialising in financial reporting, business valuation, and strategic guidance.',
   keywords: [
     'Gary O\'Connor',
     'ACCA Fellow',

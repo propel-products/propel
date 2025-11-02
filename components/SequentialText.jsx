@@ -51,7 +51,7 @@ export function SequentialText({
   );
 }
 
-// Specialized component for text that appears word by word
+// Specialised component for text that appears word by word
 export function SequentialWords({ 
   text, 
   delay = 0, 

@@ -157,7 +157,7 @@ export default function BrandPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#FF5007]">•</span>
-                    <span>Use white version on colored or dark backgrounds when needed</span>
+                    <span>Use white version on coloured or dark backgrounds when needed</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#FF5007]">•</span>
@@ -172,7 +172,7 @@ export default function BrandPage() {
           <section id="logo-downloads" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Logo Downloads</h2>
             <p className="text-gray-300 mb-8">
-              Download high-quality OCO Limited logo files in multiple formats and color variants.
+              Download high-quality OCO Limited logo files in multiple formats and colour variants.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
@@ -300,7 +300,7 @@ export default function BrandPage() {
           <section id="linkedin-banners" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">LinkedIn Banners</h2>
             <p className="text-gray-300 mb-8">
-              Professional banner images optimized for LinkedIn personal profiles and business pages. Click any image to view in full size.
+              Professional banner images optimised for LinkedIn personal profiles and business pages. Click any image to view in full size.
             </p>
             
             <BrandPageClient 
