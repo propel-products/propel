@@ -20,142 +20,171 @@ export default function PrivacyPolicy() {
             </p>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">1. Introduction</h2>
-              <p>
-                OCO Limited ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.ocoiom.com or engage our services.
+              <p className="mb-4">
+                OCO Limited ("OCO") is committed to the principles of lawful, fair and transparent processing of personal data, and will only use your personal data in order to administer the product or services you are asking us to provide to you.
               </p>
               <p>
-                We are registered with the Isle of Man Information Commissioner in accordance with the Data Protection Act 2018 and are committed to complying with all applicable data protection laws.
+                OCO is a 'Data Controller' as recognised by the current Data Protection legislation and is registered with the Information Commissioner in the Isle of Man. Information on our processing activities and the rights that are provided to you under Data Protection legislation are noted below.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">2. Information We Collect</h2>
-              <p>We may collect and process the following types of personal information:</p>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Processing Information Fairly and Lawfully</h2>
+              <p className="mb-4">OCO processes your personal data only where:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Contact Information:</strong> Name, email address, postal address, telephone number</li>
-                <li><strong>Business Information:</strong> Company name, business details, financial information</li>
-                <li><strong>Website Usage:</strong> IP address, browser type, pages visited, time and date of visits</li>
-                <li><strong>Communication Data:</strong> Information you provide when contacting us or using our services</li>
+                <li>We have a legitimate interest to do so; or</li>
+                <li>A contract has been entered into that allows us to; or</li>
+                <li>It is in the vital interests of you as the data subject; or</li>
+                <li>You have given your explicit consent; or</li>
+                <li>We are required to by our Regulators; or</li>
+                <li>We have received a court order.</li>
+              </ul>
+              <p className="mt-4">
+                We will not process personal data unless one of the above conditions apply.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">What Data Do We Collect?</h2>
+              <p className="mb-4">
+                OCO will only collect personal data that is essential to administer the product or services that you have asked us to provide and to comply with regulatory and statutory requirements. We believe in providing transparency regarding the data we are collecting and why we are collecting it so that you, as a data subject, can make informed decisions as to whether you want your data to be processed or not.
+              </p>
+              <p className="mb-4">
+                The data that we collect will be dependent on the product or service that you wish us to provide. This data may include:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li>Full name, date of birth, age, national insurance number and/or other governmental identification numbers;</li>
+                <li>Personal and/or business contact details, including address, telephone numbers and email addresses;</li>
+                <li>Full name, relationship to and contact details of your dependants;</li>
+                <li>Financial information (including bank account details and/or pension entitlement/prospective pension entitlement);</li>
+                <li>Marital status/relationship data (including details of your spouse or partner), as well as the full name, address and date of birth in respect of any person identified in an Expression of Wishes Form or Trust Deed;</li>
+                <li>Your employment/retirement status, including employment start date and leave date.</li>
+              </ul>
+              <p className="mb-4 font-semibold">Please note that certain categories of data are classed as sensitive personal data. They include:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Details of racial or ethnic origin;</li>
+                <li>Political opinions;</li>
+                <li>Religious or philosophical beliefs;</li>
+                <li>Trade Union membership;</li>
+                <li>Health and medical information;</li>
+                <li>Sex life or orientation;</li>
+                <li>Criminal records (including alleged offences, spent convictions or court orders).</li>
+              </ul>
+              <p className="mt-4">
+                In the unlikely event that we may need to obtain information from you that may fall within any of the above special categories of data, we will always obtain your explicit consent before acquiring or processing such information.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Why Is Your Data Processed?</h2>
+              <p className="mb-4">We collect the above personal data for the purpose of:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Creation and ongoing administration of the product or structure relevant to your requirements;</li>
+                <li>Investment management or administration on behalf of your relevant structure;</li>
+                <li>Fund receipt and distribution purposes, including payment of benefits;</li>
+                <li>Dealing with any queries and/or complaints;</li>
+                <li>Compliance with legal, regulatory and good governance obligations.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">3. How We Use Your Information</h2>
-              <p>We use your personal information for the following purposes:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>To provide accounting, advisory, and CFO services</li>
-                <li>To respond to your inquiries and communicate with you</li>
-                <li>To comply with legal and regulatory obligations</li>
-                <li>To improve our website and services</li>
-                <li>To send you relevant information about our services (with your consent)</li>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Where We Process and Store Your Data</h2>
+              <p className="mb-4">
+                Your data will be processed and held securely in physical or electronic format within the offices of OCO in the Isle of Man. OCO also uses cloud-based systems for data storage and back up. Your data may be stored in territories outside the Isle of Man or European Economic Area ("EEA").
+              </p>
+              <p>
+                We may also make your personal data available to other parties (individuals or group companies) who are providing relevant services for one of the above data processing purposes, such as professional or legal advisors, investment administrators or managers, banking institutions or for the preparation of accounts or other financial information, etc.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Data Sharing</h2>
+              <p className="mb-4">
+                We are located in the Isle of Man; however you should be aware that we may, on occasion, be required to share your data with external providers outside of the Isle of Man or EEA. In territories outside the Isle of Man or EEA, laws and practices relating to the protection of personal data may be weaker than those within the Isle of Man or EEA. We will take all reasonable steps to ensure that your personal data receives the same level of protection as it would had it stayed in the Isle of Man or EEA.
+              </p>
+              <p>
+                Your personal data may also be released to other external parties if authorised by you, or as required or permitted by law, or to comply with a judicial proceeding, court order, request from a regulator or any other legal process served on OCO.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Our Basis for Processing Your Data</h2>
+              <p className="mb-4">
+                The processing of your personal data is necessary in order for us to provide the services that we have been asked to do.
+              </p>
+              <p>
+                We will proceed on the basis that, for the purposes set out above, you expressly consent to the processing (including the disclosures and transfers described above) of your personal data by the Client.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Retaining Information</h2>
+              <p className="mb-4">
+                We will only retain your personal information during the lifetime of our business relationship with you plus any statutory retention period required.
+              </p>
+              <p>
+                OCO has in place a formal retention policy for the personal data information that we hold. All personal data held past these specified retention periods will be destroyed in accordance with this policy.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Your Rights</h2>
+              <p className="mb-4">
+                As detailed within Data Protection Legislation, each Data Subject is afforded a number of rights. In accordance with these rights OCO will, upon request:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Provide you with all of the data we hold about you, in a machine-readable format;</li>
+                <li>Provide you with access to any or all the data that we hold about you, and provide you with details about why we have the data;</li>
+                <li>Correct any information about you that you notify us is incorrect;</li>
+                <li>Unless we are required to continue doing so by legislation, stop, or where applicable, restrict the processing of data about you;</li>
+                <li>Remove all records about you from our systems, providing that there is not a legal reason to retain it. If there is a legal reason we will inform you of it and provide you with details about how much longer we are required to retain your data for.</li>
               </ul>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">4. Legal Basis for Processing</h2>
-              <p>We process your personal data on the following legal bases:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Contractual Necessity:</strong> To fulfill our contractual obligations to you</li>
-                <li><strong>Legal Obligation:</strong> To comply with accounting, tax, and regulatory requirements</li>
-                <li><strong>Legitimate Interests:</strong> To operate and improve our business</li>
-                <li><strong>Consent:</strong> Where you have provided explicit consent</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">5. Data Sharing and Disclosure</h2>
-              <p>We may share your information with:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Professional advisors (e.g., solicitors, tax advisors) where necessary</li>
-                <li>Regulatory authorities when required by law</li>
-                <li>Service providers who assist us in operating our business (under strict confidentiality agreements)</li>
-                <li>Third parties only with your explicit consent or as required by law</li>
-              </ul>
-              <p className="mt-4">We do not sell or rent your personal information to third parties.</p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">6. Data Security</h2>
+              <p className="mb-4">
+                You can exercise these rights by contacting the Data Protection Officer at:{' '}
+                <a href="mailto:enquiries@ocoiom.com" className="text-[#FF5007] hover:underline">enquiries@ocoiom.com</a>
+              </p>
               <p>
-                We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.
+                Please notify us as soon as possible if there has been a change in your details (e.g. if your personal circumstances, home address, nominated beneficiaries etc. change).
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">7. Data Retention</h2>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Marketing</h2>
+              <p className="mb-4">
+                OCO will only contact individuals who have consented to receiving marketing information, or requested direct communication for marketing purposes, and only in relation to our products and/or services. Should you no longer wish to receive marketing communications from us you can reply to the individual who has contacted you requesting that no further marketing contact is made to you from OCO.
+              </p>
               <p>
-                We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce our agreements. Accounting and tax records are typically retained for at least seven years as required by Isle of Man law.
+                OCO will not directly contact you in this regard again unless you provide a subsequent request to start receiving marketing material from us.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">8. Your Rights</h2>
-              <p>Under the Data Protection Act 2018, you have the following rights:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Right of Access:</strong> Request copies of your personal data</li>
-                <li><strong>Right to Rectification:</strong> Request correction of inaccurate data</li>
-                <li><strong>Right to Erasure:</strong> Request deletion of your data (subject to legal requirements)</li>
-                <li><strong>Right to Restrict Processing:</strong> Request limitation of how we use your data</li>
-                <li><strong>Right to Data Portability:</strong> Request transfer of your data to another service provider</li>
-                <li><strong>Right to Object:</strong> Object to processing based on legitimate interests</li>
-                <li><strong>Rights Relating to Automated Decision Making:</strong> Not applicable to our services</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">9. Cookies</h2>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Cookies</h2>
               <p>
-                Our website uses cookies to enhance your browsing experience. For detailed information about cookies, please see our <a href="/cookies" className="text-[#FF5007] hover:underline">Cookie Policy</a>.
+                Our website uses cookies to enhance your browsing experience. For detailed information about cookies, please see our{' '}
+                <a href="/cookies" className="text-[#FF5007] hover:underline">Cookie Policy</a>.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">10. Third-Party Links</h2>
-              <p>
-                Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">11. International Data Transfers</h2>
-              <p>
-                Your information may be transferred to and stored in countries outside the European Economic Area (EEA). We ensure appropriate safeguards are in place to protect your data in accordance with applicable data protection laws.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">12. Children's Privacy</h2>
-              <p>
-                Our services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">13. Changes to This Privacy Policy</h2>
-              <p>
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">14. Contact Us</h2>
-              <p>If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Contact Us</h2>
+              <p className="mb-4">If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
               <div className="mt-4 p-6 bg-gray-900 rounded-lg">
                 <p className="mb-2"><strong>OCO Limited</strong></p>
-                <p className="mb-2">Email: <a href="mailto:enquiries@ocoiom.com" className="text-[#FF5007] hover:underline">enquiries@ocoiom.com</a></p>
+                <p className="mb-2">
+                  Data Protection Officer: <a href="mailto:enquiries@ocoiom.com" className="text-[#FF5007] hover:underline">enquiries@ocoiom.com</a>
+                </p>
                 <p className="mb-2">Website: <a href="https://www.ocoiom.com" className="text-[#FF5007] hover:underline">www.ocoiom.com</a></p>
                 <p className="mt-4">
-                  <strong>Data Protection Officer:</strong><br />
-                  OCO Limited<br />
+                  <strong>Registered Office:</strong><br />
                   Isle of Man
                 </p>
               </div>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">15. Complaints</h2>
-              <p>
+              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Complaints</h2>
+              <p className="mb-4">
                 If you are not satisfied with how we have handled your personal information, you have the right to lodge a complaint with the Isle of Man Information Commissioner:
               </p>
               <div className="mt-4 p-6 bg-gray-900 rounded-lg">
@@ -174,4 +203,3 @@ export default function PrivacyPolicy() {
     </>
   );
 }
-
