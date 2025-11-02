@@ -182,7 +182,7 @@
 
 ### Email Links
 - [ ] **Email Link**
-  - `mailto:hello@ocoiom.com` opens email client
+  - `mailto:enquiries@ocoiom.com` opens email client
   - Email address correct
 
 ### Phone Links

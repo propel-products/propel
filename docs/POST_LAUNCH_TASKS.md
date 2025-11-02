@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
    - Check spam folder if not received
 
 2. **Verify Email Address**
-   - Test: `mailto:hello@ocoiom.com`
+   - Test: `mailto:enquiries@ocoiom.com`
    - Ensure opens email client correctly
 
 ### Step 3.2: Email Service Setup (If Using API Route)
@@ -133,7 +133,7 @@ If using SendGrid/Resend/etc.:
 1. **Add Environment Variables in Vercel**
    - Dashboard → Settings → Environment Variables
    - Add: `SENDGRID_API_KEY` (or equivalent)
-   - Add: `EMAIL_TO=hello@ocoiom.com`
+   - Add: `EMAIL_TO=enquiries@ocoiom.com`
 
 2. **Test Email Sending**
    - Submit form

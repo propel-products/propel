@@ -19,7 +19,7 @@ export default function Footer() {
     ],
     connect: [
       { label: 'LinkedIn', href: 'https://im.linkedin.com/in/gary-o-connor' },
-      { label: 'Email', href: 'mailto:hello@ocoiom.com' }
+      { label: 'Email', href: 'mailto:enquiries@ocoiom.com' }
     ]
   };
 

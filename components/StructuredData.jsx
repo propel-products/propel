@@ -9,7 +9,7 @@ export default function StructuredData() {
     "logo": "https://www.ocoiom.com/logo.svg",
     "image": "https://www.ocoiom.com/og-image.jpg",
     "telephone": "+44162400000",
-    "email": "hello@ocoiom.com",
+    "email": "enquiries@ocoiom.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IM",

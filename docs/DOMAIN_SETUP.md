@@ -4,7 +4,7 @@
 
 **Current Domain References:**
 - Codebase references: `https://oco.com` (placeholder)
-- Email domain: `hello@ocoiom.com` ✅ (correct)
+- Email domain: `enquiries@ocoiom.com` ✅ (correct)
 - Target domain: `www.ocoiom.com`
 
 **Deployment Platform:**
@@ -188,7 +188,7 @@ nslookup www.ocoiom.com
 - Update any tracking codes if domain-specific
 
 #### Step 5.3: Email Links Verification
-- Verify all email links (`hello@ocoiom.com`) work correctly
+- Verify all email links (`enquiries@ocoiom.com`) work correctly
 - Test contact forms send to correct email address
 
 ---
