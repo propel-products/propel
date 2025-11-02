@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: 'About Gary O\'Connor | OCO Limited - Accounting & Advisory',
     description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man.',
-    url: 'https://oco.com/about',
+    url: 'https://www.ocoiom.com/about',
     siteName: 'OCO Limited',
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata = {
     images: ['/gary-about.jpg'],
   },
   alternates: {
-    canonical: 'https://oco.com/about',
+    canonical: 'https://www.ocoiom.com/about',
   },
 }
 

@@ -5,9 +5,9 @@ export default function StructuredData() {
     "name": "OCO Limited",
     "alternateName": "OCO Accounting & Advisory",
     "description": "Expert accounting and advisory services for businesses in the Isle of Man. Gary O'Connor, ACCA Fellow, provides comprehensive financial solutions including bookkeeping, tax preparation, CFO services, and business valuation.",
-    "url": "https://oco.com",
-    "logo": "https://oco.com/logo.svg",
-    "image": "https://oco.com/og-image.jpg",
+    "url": "https://www.ocoiom.com",
+    "logo": "https://www.ocoiom.com/logo.svg",
+    "image": "https://www.ocoiom.com/og-image.jpg",
     "telephone": "+44162400000",
     "email": "hello@ocoiom.com",
     "address": {
@@ -82,31 +82,31 @@ export default function StructuredData() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://oco.com"
+        "item": "https://www.ocoiom.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://oco.com/services"
+        "item": "https://www.ocoiom.com/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "About",
-        "item": "https://oco.com/about"
+        "item": "https://www.ocoiom.com/about"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Contact",
-        "item": "https://oco.com/contact"
+        "item": "https://www.ocoiom.com/contact"
       },
       {
         "@type": "ListItem",
         "position": 5,
         "name": "Resources",
-        "item": "https://oco.com/resources"
+        "item": "https://www.ocoiom.com/resources"
       }
     ]
   };

@@ -29,14 +29,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://oco.com'),
+  metadataBase: new URL('https://www.ocoiom.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_IM',
-    url: 'https://oco.com',
+    url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
     title: 'OCO Limited | Financial Clarity for Modern Businesses',
     description: 'Expert accounting and advisory services for businesses in the Isle of Man. Bookkeeping, tax preparation, CFO services, and strategic financial guidance.',

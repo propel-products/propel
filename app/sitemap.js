@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://oco.com';
+  const baseUrl = 'https://www.ocoiom.com';
   
   return [
     {

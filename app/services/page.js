@@ -28,7 +28,7 @@ export const metadata = {
   openGraph: {
     title: 'Our Expertise | Accounting, Advisory & CFO Services',
     description: 'Comprehensive accounting, advisory, and fractional CFO services for growing businesses in the Isle of Man.',
-    url: 'https://oco.com/services',
+    url: 'https://www.ocoiom.com/services',
     siteName: 'OCO Limited',
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata = {
     images: ['/og-services.jpg'],
   },
   alternates: {
-    canonical: 'https://oco.com/services',
+    canonical: 'https://www.ocoiom.com/services',
   },
 }
 

@@ -33,7 +33,7 @@ export const metadata = {
   openGraph: {
     title: 'OCO Limited | Financial Clarity for Modern Businesses',
     description: 'Expert accounting and advisory services for businesses in the Isle of Man. Gary O\'Connor, ACCA Fellow, provides comprehensive financial solutions.',
-    url: 'https://oco.com',
+    url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata = {
     images: ['/og-home.jpg'],
   },
   alternates: {
-    canonical: 'https://oco.com',
+    canonical: 'https://www.ocoiom.com',
   },
 };
 

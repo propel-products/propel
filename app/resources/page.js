@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: 'Financial Resources | Guides, Templates & Tools',
     description: 'Access OCO Limited\'s comprehensive library of financial resources, guides, templates, and tools to help your business thrive.',
-    url: 'https://oco.com/resources',
+    url: 'https://www.ocoiom.com/resources',
     siteName: 'OCO Limited',
     images: [
       {
@@ -45,7 +45,7 @@ export const metadata = {
     images: ['/og-resources.jpg'],
   },
   alternates: {
-    canonical: 'https://oco.com/resources',
+    canonical: 'https://www.ocoiom.com/resources',
   },
 }
 

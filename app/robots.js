@@ -12,6 +12,6 @@ export default function robots() {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://oco.com/sitemap.xml',
+    sitemap: 'https://www.ocoiom.com/sitemap.xml',
   };
 }
