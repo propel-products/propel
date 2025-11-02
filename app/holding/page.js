@@ -27,12 +27,11 @@ export default function HoldingPage() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-            We're putting the finishing touches on our new website.
+            Website update will be completed shortly.
           </p>
           
           <p className="text-lg text-gray-400 max-w-xl mx-auto">
-            OCO Limited provides expert accounting and advisory services for businesses in the Isle of Man. 
-            Our new site will be launching shortly.
+            OCO Limited provides expert accounting and advisory services for businesses in the Isle of Man.
           </p>
 
           {/* Contact Information */}
