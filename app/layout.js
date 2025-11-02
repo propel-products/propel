@@ -1,5 +1,6 @@
 import './globals.css'
 import StructuredData from '@/components/StructuredData'
+import CookieBanner from '@/components/CookieBanner'
 
 export const metadata = {
   title: {
@@ -87,6 +88,7 @@ export default function RootLayout({ children }) {
       <body>
         <StructuredData />
         {children}
+        <CookieBanner />
       </body>
     </html>
   )
