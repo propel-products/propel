@@ -1,6 +1,7 @@
 import './globals.css'
 import StructuredData from '@/components/StructuredData'
 import CookieBanner from '@/components/CookieBanner'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         <StructuredData />
         {children}
         <CookieBanner />
+        <Analytics />
       </body>
     </html>
   )
