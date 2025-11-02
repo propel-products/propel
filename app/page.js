@@ -2,6 +2,10 @@ import { redirect } from 'next/navigation';
 
 // Temporarily redirect to holding page
 // To restore main page, restore from app/page.backup.js
+
+// Force dynamic rendering to ensure redirect works
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   redirect('/holding');
 }
