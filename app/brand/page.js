@@ -14,20 +14,20 @@ export const metadata = {
 
 export default function BrandPage() {
   const linkedInBanners = [
-    { name: 'Personal Profile v1', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v1.png', dimensions: '1128 × 191' },
-    { name: 'Personal Profile v2', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v2.png', dimensions: '1128 × 191' },
-    { name: 'Personal Profile v3', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v3.png', dimensions: '1128 × 191' },
-    { name: 'Business Page v1', src: '/brand-assets/linkedin-banners/1584x396-LinkedIn-Business-v1.png', dimensions: '1584 × 396' },
-    { name: 'Business Page v2', src: '/brand-assets/linkedin-banners/1584x396-LinkedIn-Business-v2.png', dimensions: '1584 × 396' },
-    { name: 'Business Page v3', src: '/brand-assets/linkedin-banners/1584x396-LinkedIn-Business-v3.png', dimensions: '1584 × 396' },
+    { name: 'Personal Profile v1', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v1.webp', dimensions: '1128 × 191' },
+    { name: 'Personal Profile v2', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v2.webp', dimensions: '1128 × 191' },
+    { name: 'Personal Profile v3', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v3.webp', dimensions: '1128 × 191' },
+    { name: 'Business Page v1', src: '/brand-assets/linkedin-banners/1584x396-LinkedIn-Business-v1.webp', dimensions: '1584 × 396' },
+    { name: 'Business Page v2', src: '/brand-assets/linkedin-banners/1584x396-LinkedIn-Business-v2.webp', dimensions: '1584 × 396' },
+    { name: 'Business Page v3', src: '/brand-assets/linkedin-banners/1584x396-LinkedIn-Business-v3.webp', dimensions: '1584 × 396' },
   ];
 
   const marketingExamples = [
-    { name: 'Marketing Example 1', src: '/brand-assets/marketing-examples/OCO-1A.png' },
-    { name: 'Marketing Example 2', src: '/brand-assets/marketing-examples/OCO-2A.png' },
-    { name: 'Marketing Example 3', src: '/brand-assets/marketing-examples/OCO-3A.png' },
-    { name: 'Marketing Example 4', src: '/brand-assets/marketing-examples/OCO-4A.png' },
-    { name: 'Marketing Example 5', src: '/brand-assets/marketing-examples/OCO-5A.png' },
+    { name: 'Marketing Example 1', src: '/brand-assets/marketing-examples/OCO-1A.webp' },
+    { name: 'Marketing Example 2', src: '/brand-assets/marketing-examples/OCO-2A.webp' },
+    { name: 'Marketing Example 3', src: '/brand-assets/marketing-examples/OCO-3A.webp' },
+    { name: 'Marketing Example 4', src: '/brand-assets/marketing-examples/OCO-4A.webp' },
+    { name: 'Marketing Example 5', src: '/brand-assets/marketing-examples/OCO-5A.webp' },
   ];
 
   const brandColors = [
