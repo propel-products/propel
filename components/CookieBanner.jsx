@@ -106,8 +106,7 @@ export default function CookieBanner() {
                     We Value Your Privacy
                   </h3>
                   <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                    We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. 
-                    By clicking "Accept All", you consent to our use of cookies. You can manage your preferences or learn more in our{' '}
+                    We use cookies to improve your experience. Accept or manage preferences in our{' '}
                     <Link href="/cookies" className="text-[#FF5007] hover:underline">
                       Cookie Policy
                     </Link>
