@@ -16,7 +16,7 @@ export default function CookiePolicy() {
           
           <div className="prose prose-invert max-w-none text-gray-300 space-y-6 leading-relaxed">
             <p className="text-lg text-gray-400 mb-8">
-              <strong>Last Updated:</strong> January 2025
+              <strong>Last Updated:</strong> November 2025
             </p>
 
             <section>
