@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimatedLogo from '@/components/AnimatedLogo';
 import BrandPageNav from '@/components/BrandPageNav';
+import BrandPageClient from '@/components/BrandPageClient';
 import Image from 'next/image';
 import { Download } from 'lucide-react';
 
@@ -177,14 +178,13 @@ export default function BrandPage() {
             <div className="grid md:grid-cols-3 gap-6">
               {logoVariants.map((variant, idx) => (
                 <div key={idx} className="bg-gray-900 p-8 rounded-lg border border-gray-800">
-                  <div className={`${variant.bg} p-8 rounded-lg mb-6 flex items-center justify-center`}>
+                  <div className={`${variant.bg} p-8 rounded-lg mb-6 flex items-center justify-center min-h-[120px]`}>
                     <Image
                       src={variant.svg}
                       alt={`OCO Logo ${variant.name}`}
                       width={300}
                       height={100}
-                      className="w-full h-auto"
-                      style={{ filter: variant.name === 'White' ? 'none' : 'none' }}
+                      className="w-full h-auto max-w-[250px]"
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-4 text-center">{variant.name} Logo</h3>
@@ -300,53 +300,28 @@ export default function BrandPage() {
           <section id="linkedin-banners" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">LinkedIn Banners</h2>
             <p className="text-gray-300 mb-8">
-              Professional banner images optimized for LinkedIn personal profiles and business pages.
+              Professional banner images optimized for LinkedIn personal profiles and business pages. Click any image to view in full size.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              {linkedInBanners.map((banner, idx) => (
-                <div key={idx} className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-                  <div className="bg-white rounded-lg p-4 mb-4 overflow-hidden">
-                    <Image
-                      src={banner.src}
-                      alt={banner.name}
-                      width={banner.dimensions.includes('1128') ? 1128 : 1584}
-                      height={banner.dimensions.includes('191') ? 191 : 396}
-                      className="w-full h-auto"
-                      unoptimized
-                    />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">{banner.name}</h3>
-                  <p className="text-sm text-gray-400">{banner.dimensions} pixels</p>
-                </div>
-              ))}
-            </div>
+            <BrandPageClient 
+              linkedInBanners={linkedInBanners}
+              marketingExamples={[]}
+              type="linkedin"
+            />
           </section>
 
           {/* Marketing Examples Section */}
           <section id="marketing-examples" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Marketing Examples</h2>
             <p className="text-gray-300 mb-8">
-              Examples of marketing materials showcasing the OCO Limited brand in action.
+              Examples of marketing materials showcasing the OCO Limited brand in action. Click any image to view in full size.
             </p>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {marketingExamples.map((example, idx) => (
-                <div key={idx} className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-                  <div className="bg-white rounded-lg p-4 mb-4 overflow-hidden">
-                    <Image
-                      src={example.src}
-                      alt={example.name}
-                      width={800}
-                      height={800}
-                      className="w-full h-auto"
-                      unoptimized
-                    />
-                  </div>
-                  <h3 className="text-lg font-semibold">{example.name}</h3>
-                </div>
-              ))}
-            </div>
+            <BrandPageClient 
+              linkedInBanners={[]}
+              marketingExamples={marketingExamples}
+              type="marketing"
+            />
           </section>
         </div>
       </div>
