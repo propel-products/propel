@@ -1,7 +1,9 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimatedLogo from '@/components/AnimatedLogo';
+import BrandPageNav from '@/components/BrandPageNav';
 import Image from 'next/image';
+import { Download } from 'lucide-react';
 
 export const metadata = {
   title: 'Brand Guidelines | OCO Limited',
@@ -13,6 +15,14 @@ export const metadata = {
 };
 
 export default function BrandPage() {
+  const navSections = [
+    { id: 'logo-usage', label: 'Logo Usage' },
+    { id: 'logo-downloads', label: 'Logo Downloads' },
+    { id: 'typography', label: 'Typography' },
+    { id: 'color-palette', label: 'Color Palette' },
+    { id: 'linkedin-banners', label: 'LinkedIn Banners' },
+    { id: 'marketing-examples', label: 'Marketing Examples' },
+  ];
   const linkedInBanners = [
     { name: 'Personal Profile v1', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v1.webp', dimensions: '1128 × 191' },
     { name: 'Personal Profile v2', src: '/brand-assets/linkedin-banners/1128x191-LinkedIn-personal-v2.webp', dimensions: '1128 × 191' },
@@ -40,12 +50,19 @@ export default function BrandPage() {
     { name: 'Light Gray', hex: '#f3f4f6', usage: 'Card backgrounds, subtle sections' },
   ];
 
+  const logoVariants = [
+    { name: 'Orange', color: '#FF5007', bg: 'bg-black', svg: '/logo-assets/OCO-logo-orange.svg', png: '/logo-assets/OCO-logo-orange.png' },
+    { name: 'White', color: '#FFFFFF', bg: 'bg-black', svg: '/logo-assets/OCO-logo-white.svg', png: '/logo-assets/OCO-logo-white.png' },
+    { name: 'Black', color: '#000000', bg: 'bg-white', svg: '/logo-assets/OCO-logo-black.svg', png: '/logo-assets/OCO-logo-black.png' },
+  ];
+
   return (
     <>
       <Navigation />
+      <BrandPageNav sections={navSections} />
       
       <div className="min-h-screen bg-black text-white pt-32 pb-20">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6 lg:pl-72">
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
@@ -57,7 +74,7 @@ export default function BrandPage() {
           </div>
 
           {/* Logo Usage Section */}
-          <section className="mb-24">
+          <section id="logo-usage" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Logo Usage</h2>
             
             <div className="space-y-12">
@@ -150,8 +167,57 @@ export default function BrandPage() {
             </div>
           </section>
 
+          {/* Logo Downloads Section */}
+          <section id="logo-downloads" className="mb-24 scroll-mt-32">
+            <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Logo Downloads</h2>
+            <p className="text-gray-300 mb-8">
+              Download high-quality OCO Limited logo files in multiple formats and color variants.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {logoVariants.map((variant, idx) => (
+                <div key={idx} className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+                  <div className={`${variant.bg} p-8 rounded-lg mb-6 flex items-center justify-center`}>
+                    <Image
+                      src={variant.svg}
+                      alt={`OCO Logo ${variant.name}`}
+                      width={300}
+                      height={100}
+                      className="w-full h-auto"
+                      style={{ filter: variant.name === 'White' ? 'none' : 'none' }}
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4 text-center">{variant.name} Logo</h3>
+                  <div className="space-y-3">
+                    <a
+                      href={variant.svg}
+                      download
+                      className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-[#FF5007] hover:bg-[#ff6a2e] text-white rounded-lg transition-colors font-medium"
+                    >
+                      <Download size={18} />
+                      Download SVG
+                    </a>
+                    <a
+                      href={variant.png}
+                      download
+                      className="flex items-center justify-center gap-2 w-full px-4 py-3 border border-gray-700 hover:border-[#FF5007] text-gray-300 hover:text-[#FF5007] rounded-lg transition-colors font-medium"
+                    >
+                      <Download size={18} />
+                      Download PNG
+                    </a>
+                  </div>
+                  <p className="text-xs text-gray-500 text-center mt-4">
+                    SVG: Vector format (scalable)
+                    <br />
+                    PNG: 3000px width (high quality)
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* Typography Section */}
-          <section className="mb-24">
+          <section id="typography" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Typography</h2>
             
             <div className="space-y-8">
@@ -212,7 +278,7 @@ export default function BrandPage() {
           </section>
 
           {/* Color Palette Section */}
-          <section className="mb-24">
+          <section id="color-palette" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Color Palette</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -231,7 +297,7 @@ export default function BrandPage() {
           </section>
 
           {/* LinkedIn Banners Section */}
-          <section className="mb-24">
+          <section id="linkedin-banners" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">LinkedIn Banners</h2>
             <p className="text-gray-300 mb-8">
               Professional banner images optimized for LinkedIn personal profiles and business pages.
@@ -258,7 +324,7 @@ export default function BrandPage() {
           </section>
 
           {/* Marketing Examples Section */}
-          <section className="mb-24">
+          <section id="marketing-examples" className="mb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-8 border-b border-gray-800 pb-4">Marketing Examples</h2>
             <p className="text-gray-300 mb-8">
               Examples of marketing materials showcasing the OCO Limited brand in action.
