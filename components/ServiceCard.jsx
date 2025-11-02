@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 export default function ServiceCard({ title, description, features }) {
   return (
     <div className="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-shadow border-2 border-transparent hover:border-[#FF5007] group">
-      <h3 className="text-2xl font-bold text-black mb-4 group-hover:text-[#FF5007] transition-colors">
+      <h3 className="text-2xl font-bold text-black mb-4 group-hover:text-[#FF5007] transition-colors text-center">
         {title}
       </h3>
       <p className="text-gray-600 mb-6">{description}</p>

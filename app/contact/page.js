@@ -1,11 +1,11 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export const metadata = {
   title: 'Contact Us | Get Professional Financial Guidance',
-  description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow. Email hello@ocoiom.com or call +44162400000.',
+  description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow. Email enquiries@ocoiom.com',
   keywords: [
     'contact accounting services',
     'Isle of Man accounting consultation',
@@ -14,8 +14,7 @@ export const metadata = {
     'business valuation consultation',
     'CFO services consultation',
     'accounting services Isle of Man',
-    'hello@ocoiom.com',
-    '+44162400000',
+    'enquiries@ocoiom.com',
     'OCO Limited contact',
     'professional financial guidance'
   ],
@@ -51,14 +50,8 @@ export default function Contact() {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      detail: "hello@ocoiom.com",
-      link: "mailto:hello@ocoiom.com"
-    },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone",
-      detail: "+44162400000",
-      link: "tel:+44162400000"
+      detail: "enquiries@ocoiom.com",
+      link: "mailto:enquiries@ocoiom.com"
     },
   ];
 
@@ -103,12 +96,6 @@ export default function Contact() {
                     </div>
                   </a>
                 ))}
-              </div>
-
-              <div className="mt-12 p-6 bg-gray-50 rounded-2xl">
-                <h3 className="font-bold text-xl mb-2">Business Hours</h3>
-                <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-                <p className="text-gray-600">Saturday - Sunday: Closed</p>
               </div>
             </div>
 

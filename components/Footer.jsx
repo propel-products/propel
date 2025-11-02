@@ -50,26 +50,22 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">About</h4>
             <ul className="space-y-2 text-gray-400">
-              {footerLinks.about.map(link => (
-                <li key={link.href}>
-                  <Link href={link.href} className="hover:text-[#FF5007] transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/about" className="hover:text-[#FF5007] transition-colors">
+                  About Us
+                </Link>
+              </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              {footerLinks.company.map(link => (
-                <li key={link.href}>
-                  <Link href={link.href} className="hover:text-[#FF5007] transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/contact" className="hover:text-[#FF5007] transition-colors">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -90,7 +86,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           {/* Certifications and Badges */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <Image 
                 src="/acca-badge.png" 
                 alt="ACCA Badge" 
@@ -98,9 +94,13 @@ export default function Footer() {
                 height={60}
                 className="object-contain"
               />
-              <span className="text-sm text-gray-500">ACCA Certified</span>
+              <div className="text-sm text-gray-500 leading-tight">
+                <div>Chartered</div>
+                <div>Certified</div>
+                <div>Accountants</div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <Image 
                 src="/business-valuations-certificate.png" 
                 alt="Business Valuations Certificate" 
@@ -108,8 +108,23 @@ export default function Footer() {
                 height={60}
                 className="object-contain"
               />
-              <span className="text-sm text-gray-500">Certified Business Valuer</span>
+              <div className="text-sm text-gray-500 leading-tight">
+                <div>Certified</div>
+                <div>Business</div>
+                <div>Valuer</div>
+              </div>
             </div>
+          </div>
+          
+          {/* Privacy and Cookie Policy Links */}
+          <div className="flex justify-center gap-6 mb-4 text-sm">
+            <Link href="/privacy" className="text-gray-400 hover:text-[#FF5007] transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-gray-600">|</span>
+            <Link href="/cookies" className="text-gray-400 hover:text-[#FF5007] transition-colors">
+              Cookie Policy
+            </Link>
           </div>
           
           <p className="mb-4">&copy; 2025 OCO Limited (Company No. 138078C) - Accounting & Advisory. All rights reserved.</p>

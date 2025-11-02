@@ -82,7 +82,7 @@ export default function About() {
                       alt="Gary O'Connor - Director and Founder of OCO Limited"
                       width={256}
                       height={256}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover grayscale"
                     />
                   </div>
                 </div>

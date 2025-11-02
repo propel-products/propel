@@ -17,7 +17,6 @@ export default function Navigation() {
   const navLinks = [
     { href: '/services', label: 'Expertise' },
     { href: '/about', label: 'About' },
-    { href: '/about', label: 'Company' },
     { href: '/contact', label: 'Contact' }
   ];
 
@@ -43,12 +42,6 @@ export default function Navigation() {
               {link.icon}
             </Link>
           ))}
-          <Link 
-            href="/contact"
-            className="bg-[#FF5007] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-[#ff6a2e] transition-all hover:scale-105 text-sm sm:text-base font-semibold"
-          >
-            Get Started
-          </Link>
         </div>
 
         <button 
@@ -73,14 +66,6 @@ export default function Navigation() {
                 {link.icon}
               </Link>
             ))}
-            <div className="pt-4 border-t border-gray-700">
-              <Link 
-                href="/contact"
-                className="bg-[#FF5007] text-white px-8 py-4 rounded-full text-center hover:bg-[#ff6a2e] transition-all text-lg font-semibold block"
-              >
-                Get Started
-              </Link>
-            </div>
           </div>
         </div>
       )}
