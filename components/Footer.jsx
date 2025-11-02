@@ -9,14 +9,6 @@ export default function Footer() {
       { label: 'Advisory', href: '/services#advisory' },
       { label: 'CFO Services', href: '/services#cfo' }
     ],
-    about: [
-      { label: 'About Us', href: '/about' },
-      { label: 'Our Story', href: '/about' }
-    ],
-    company: [
-      { label: 'Company', href: '/about' },
-      { label: 'Contact', href: '/contact' }
-    ],
     connect: [
       { label: 'LinkedIn', href: 'https://im.linkedin.com/in/gary-o-connor' },
       { label: 'Email', href: 'mailto:enquiries@ocoiom.com' }
