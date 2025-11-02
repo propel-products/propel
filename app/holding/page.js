@@ -37,7 +37,7 @@ export default function HoldingPage() {
 
           {/* Contact Information */}
           <div className="pt-8 border-t border-gray-800 space-y-4">
-            <p className="text-gray-400 mb-4">In the meantime, you can reach us:</p>
+            <p className="text-gray-400 mb-4">In the meantime, you can email:</p>
             
             <div className="flex justify-center items-center text-gray-300">
               <a 
