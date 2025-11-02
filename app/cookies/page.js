@@ -63,21 +63,13 @@ export default function CookiePolicy() {
 
             <section>
               <h2 className="text-3xl font-bold text-white mb-4 mt-8">3. Third-Party Cookies</h2>
-              <p>We may use third-party services that set cookies on our website:</p>
+              <p className="mb-4">We may use third-party services that set cookies on our website such as:</p>
               
-              <h3 className="text-2xl font-semibold text-white mb-3 mt-6">Vercel Analytics</h3>
-              <p>
-                Our website is hosted on Vercel, which may use cookies for analytics and performance monitoring. These cookies help us understand website performance and user interactions.
-              </p>
-              <p className="mt-2">
-                For more information, visit: <a href="https://vercel.com/legal/privacy-policy" className="text-[#FF5007] hover:underline" target="_blank" rel="noopener noreferrer">Vercel Privacy Policy</a>
-              </p>
-
               <h3 className="text-2xl font-semibold text-white mb-3 mt-6">Google Analytics (if enabled)</h3>
-              <p>
+              <p className="mb-2">
                 If Google Analytics is enabled, it uses cookies to collect information about how visitors use our website. This data is processed anonymously and helps us improve our website.
               </p>
-              <p className="mt-2">
+              <p>
                 For more information, visit: <a href="https://policies.google.com/privacy" className="text-[#FF5007] hover:underline" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
               </p>
             </section>
