@@ -30,7 +30,7 @@ export default function Hero() {
           
           <SequentialText delay={1.8} className="mb-12">
             <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl">
-              OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.
+              <strong className="text-white">OCO Limited</strong> is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.
             </p>
           </SequentialText>
           

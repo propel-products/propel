@@ -4,18 +4,22 @@ import ContactForm from '@/components/ContactForm';
 import { Mail } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Us | Get Professional Financial Guidance',
-  description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow. Email enquiries@ocoiom.com',
+  title: 'Contact OCO Limited | Accounting & Advisory | Isle of Man',
+  description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow. Call or email OCO accounting today at enquiries@ocoiom.com',
   keywords: [
-    'contact accounting services',
+    'contact OCO Limited',
+    'OCO Limited contact',
+    'OCO accounting contact',
+    'contact accounting services Isle of Man',
     'Isle of Man accounting consultation',
     'Gary O\'Connor contact',
+    'OCO advisory consultation',
     'financial advisory consultation',
     'business valuation consultation',
     'CFO services consultation',
     'accounting services Isle of Man',
     'enquiries@ocoiom.com',
-    'OCO Limited contact',
+    'OCO Limited enquiries',
     'professional financial guidance'
   ],
   openGraph: {

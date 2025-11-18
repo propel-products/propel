@@ -5,19 +5,27 @@ import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
-    default: 'OCO | Accounting / Advisory',
+    default: 'OCO Limited | Accounting & Advisory | Isle of Man',
     template: '%s | OCO Limited - Accounting & Advisory'
   },
-  description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
+  description: 'OCO Limited is a leading accounting and advisory practice based in the Isle of Man. Expert accounting services, business valuation, and fractional CFO services by ACCA Fellow Gary O\'Connor.',
   keywords: [
+    'OCO Limited',
+    'OCO accounting',
+    'OCO Isle of Man',
+    'OCO Limited Isle of Man',
+    'OCO accounting Isle of Man',
+    'OCO advisory',
+    'OCO Limited accounting',
     'accounting services Isle of Man',
-    'advisory services',
-    'CFO services',
-    'business valuation',
-    'tax preparation',
-    'financial planning',
+    'advisory services Isle of Man',
+    'CFO services Isle of Man',
+    'business valuation Isle of Man',
+    'tax preparation Isle of Man',
+    'financial planning Isle of Man',
     'Gary O\'Connor',
-    'ACCA certified',
+    'Gary O\'Connor OCO',
+    'ACCA certified Isle of Man',
     'Isle of Man accounting',
     'fractional CFO',
     'business strategy',
@@ -40,8 +48,8 @@ export const metadata = {
     locale: 'en_IM',
     url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
-    title: 'OCO | Accounting / Advisory',
-    description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
+    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
+    description: 'OCO Limited is a leading accounting and advisory practice based in the Isle of Man. Expert accounting services, business valuation, and fractional CFO services.',
     images: [
       {
         url: '/og-image.jpg',
@@ -53,9 +61,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OCO | Accounting / Advisory',
-    description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
+    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
+    description: 'OCO Limited is a leading accounting and advisory practice based in the Isle of Man. Expert accounting services, business valuation, and fractional CFO services.',
     images: ['/og-image.jpg'],
+    site: '@OCOLimited',
   },
   robots: {
     index: true,
@@ -69,8 +78,13 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
+    // Add your Google Search Console verification code here
+    // Get it from: https://search.google.com/search-console
+    // It will look like: 'abc123def456ghi789'
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
+  },
+  other: {
+    'msvalidate.01': 'your-bing-verification-code',
   },
 }
 

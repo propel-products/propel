@@ -5,6 +5,15 @@ import { FileText, Download, ExternalLink, Calendar, User } from 'lucide-react';
 export const metadata = {
   title: 'Financial Resources | Guides, Templates & Tools',
   description: 'Access OCO Limited\'s comprehensive library of financial resources, guides, templates, and tools to help your business thrive. Download free financial planning guides, Excel templates, and attend webinars.',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   keywords: [
     'financial resources',
     'business guides',

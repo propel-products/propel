@@ -3,23 +3,27 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About Us | Gary O\'Connor & OCO Limited',
-  description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man, specialising in financial reporting, business valuation, and strategic guidance.',
+  title: 'About OCO Limited | Gary O\'Connor ACCA Fellow | Isle of Man',
+  description: 'Meet Gary O\'Connor, ACCA Fellow and Founder of OCO Limited. Over 25 years of accounting and advisory experience in the Isle of Man. OCO Limited specialises in financial reporting, business valuation, and strategic guidance.',
   keywords: [
+    'OCO Limited',
+    'OCO Limited founder',
+    'Gary O\'Connor OCO',
     'Gary O\'Connor',
-    'ACCA Fellow',
+    'Gary O\'Connor ACCA',
+    'ACCA Fellow Isle of Man',
     'Isle of Man accounting',
     'business valuation expert',
     'financial reporting specialist',
     'PwC experience',
     'Director of the Year',
-    'business advisor',
+    'business advisor Isle of Man',
     'fiduciary services',
     'board governance',
-    'OCO Limited founder',
     'certified business valuer',
     'CSOEC certified',
-    'IoD award winner'
+    'IoD award winner',
+    'OCO accounting'
   ],
   openGraph: {
     title: 'About Gary O\'Connor | OCO Limited - Accounting & Advisory',
@@ -96,10 +100,15 @@ export default function About() {
                   Gary O'Connor – Director and Founder of OCO Limited in the Isle of Man.
                 </p>
                 <p>
-                  Gary has over 25 years' experience in the accountancy, funds and fiduciary industry and is a Fellow of the Association of Chartered Certified Accountants, qualifying in 2004 with PricewaterhouseCoopers, specialising in financial reporting and audit.
+                  Gary has over 25 years' experience in the accountancy, funds and fiduciary industry and is a Fellow of the Association of Chartered Certified Accountants, qualifying in 2004 with PricewaterhouseCoopers, specialising in <a href="/services" className="text-[#FF5007] hover:underline">financial reporting</a> and audit.
                 </p>
                 <p>
-                  He has a wealth of experience from his previous roles in accountancy and prior to founding OCO, held numerous leadership and board governance positions. Gary was also the winner of the prestigious Isle of Man Institute of Directors (IoD) 'Director of the Year' award. With over a decade of experience in leadership and board governance, Gary is a certified business valuer, recognised by the Conseil Supérieur Ordre des Experts-Comptables (CSOEC), bringing trusted expertise in valuing and advising businesses.
+                  He has a wealth of experience from his previous roles in accountancy and prior to founding OCO, held numerous leadership and board governance positions. Gary was also the winner of the prestigious Isle of Man Institute of Directors (IoD) 'Director of the Year' award. With over a decade of experience in leadership and board governance, Gary is a <a href="/services" className="text-[#FF5007] hover:underline">certified business valuer</a>, recognised by the Conseil Supérieur Ordre des Experts-Comptables (CSOEC), bringing trusted expertise in valuing and advising businesses.
+                </p>
+                <p className="pt-4">
+                  <a href="/contact" className="inline-block bg-[#FF5007] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#ff6a2e] transition-all">
+                    Schedule a Consultation
+                  </a>
                 </p>
               </div>
             </div>
@@ -111,6 +120,23 @@ export default function About() {
       <section className="py-24 bg-black text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl font-bold mb-6">OCO – experience the difference</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Ready to transform your financial operations with expert guidance?
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
+            <a 
+              href="/services" 
+              className="bg-[#FF5007] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105 text-center"
+            >
+              Explore Our Services
+            </a>
+            <a 
+              href="/contact" 
+              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-white hover:text-black transition-all text-center"
+            >
+              Get In Touch
+            </a>
+          </div>
         </div>
       </section>
 

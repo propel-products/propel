@@ -4,6 +4,7 @@ import ServiceCard from '@/components/ServiceCard';
 import Stats from '@/components/Stats';
 import Footer from '@/components/Footer';
 import { SequentialText, SequentialSection } from '@/components/SequentialText';
+import Link from 'next/link';
 
 export default function Home() {
   const services = [
@@ -67,6 +68,14 @@ export default function Home() {
               ))}
             </div>
           </SequentialText>
+
+          <SequentialText delay={5.0}>
+            <div className="text-center mt-12">
+              <Link href="/services" className="inline-block bg-[#FF5007] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105">
+                View All Services
+              </Link>
+            </div>
+          </SequentialText>
         </div>
       </SequentialSection>
 
@@ -111,29 +120,37 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: 'OCO | Accounting / Advisory',
-  description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
+  title: 'OCO Limited | Accounting & Advisory | Isle of Man',
+  description: 'OCO Limited - Expert accounting and advisory services in the Isle of Man. ACCA Fellow Gary O\'Connor provides accounting, business valuation, and fractional CFO services. Contact OCO for professional financial guidance.',
   keywords: [
+    'OCO Limited',
+    'OCO accounting',
+    'OCO Isle of Man',
+    'OCO Limited Isle of Man',
+    'OCO accounting Isle of Man',
+    'OCO advisory',
+    'OCO Limited accounting services',
     'accounting services Isle of Man',
-    'advisory services',
-    'CFO services',
-    'business valuation',
-    'tax preparation',
-    'financial planning',
-    'Gary O\'Connor',
-    'ACCA certified',
+    'advisory services Isle of Man',
+    'CFO services Isle of Man',
+    'business valuation Isle of Man',
+    'tax preparation Isle of Man',
+    'financial planning Isle of Man',
+    'Gary O\'Connor OCO',
+    'Gary O\'Connor accountant',
+    'ACCA certified Isle of Man',
     'Isle of Man accounting',
-    'fractional CFO',
-    'business strategy',
-    'financial reporting',
-    'bookkeeping services',
-    'management accounts',
-    'audit liaison',
-    'business growth planning'
+    'fractional CFO Isle of Man',
+    'business strategy Isle of Man',
+    'financial reporting Isle of Man',
+    'bookkeeping services Isle of Man',
+    'management accounts Isle of Man',
+    'audit liaison Isle of Man',
+    'business growth planning Isle of Man'
   ],
   openGraph: {
-    title: 'OCO | Accounting / Advisory',
-    description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
+    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
+    description: 'OCO Limited - Expert accounting and advisory services in the Isle of Man. ACCA Fellow Gary O\'Connor provides accounting, business valuation, and fractional CFO services.',
     url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
     images: [
@@ -141,7 +158,7 @@ export const metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'OCO Limited - Professional Accounting & Advisory Services',
+        alt: 'OCO Limited - Professional Accounting & Advisory Services in Isle of Man',
       },
     ],
     locale: 'en_IM',
@@ -149,8 +166,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OCO | Accounting / Advisory',
-    description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
+    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
+    description: 'OCO Limited - Expert accounting and advisory services in the Isle of Man by ACCA Fellow Gary O\'Connor.',
     images: ['/og-image.jpg'],
   },
   alternates: {

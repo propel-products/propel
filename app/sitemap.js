@@ -27,10 +27,10 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/resources`,
+      url: `${baseUrl}/brand`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ];
 }
