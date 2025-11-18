@@ -15,13 +15,28 @@ export async function POST(request) {
     }
 
     const data = await request.json();
-    const { name, email, company, message } = data;
+    let { name, email, company, message } = data;
 
     // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json({ 
         success: false, 
         message: 'Please fill in all required fields.' 
+      }, { status: 400 });
+    }
+
+    // Sanitize and trim inputs
+    name = name.trim();
+    email = email.trim();
+    company = company ? company.trim() : '';
+    message = message.trim();
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json({ 
+        success: false, 
+        message: 'Please enter a valid email address.' 
       }, { status: 400 });
     }
 
@@ -57,10 +72,29 @@ ${message}
     });
 
     if (emailResult.error) {
-      console.error('Resend error:', emailResult.error);
+      console.error('Resend error:', JSON.stringify(emailResult.error, null, 2));
+      
+      // Provide more specific error messages
+      let errorMessage = 'Failed to send email. Please try again later.';
+      
+      if (emailResult.error.message) {
+        // If it's an API key issue
+        if (emailResult.error.message.includes('API key') || emailResult.error.message.includes('Unauthorized')) {
+          errorMessage = 'Email service configuration error. Please contact support.';
+        }
+        // If it's a domain/from address issue
+        else if (emailResult.error.message.includes('domain') || emailResult.error.message.includes('from')) {
+          errorMessage = 'Email configuration issue. Please contact support.';
+        }
+        // Rate limiting
+        else if (emailResult.error.message.includes('rate') || emailResult.error.message.includes('limit')) {
+          errorMessage = 'Email service temporarily unavailable. Please try again in a few minutes.';
+        }
+      }
+      
       return NextResponse.json({ 
         success: false, 
-        message: 'Failed to send email. Please try again later.' 
+        message: errorMessage 
       }, { status: 500 });
     }
 
