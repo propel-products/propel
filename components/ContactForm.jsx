@@ -21,20 +21,33 @@ export default function ContactForm() {
     setErrorMessage('');
     
     try {
-      const response = await fetch('/api/contact', {
+      // Formspree endpoint
+      const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/mvglzwzd';
+      
+      const response = await fetch(formspreeEndpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || '',
+          message: formData.message,
+          _replyto: formData.email, // Sets reply-to field
+          _subject: `New Contact Form Submission from ${formData.name}${formData.company ? ` - ${formData.company}` : ''}`
+        })
       });
       
       const result = await response.json();
       
-      if (result.success) {
+      if (response.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', company: '', message: '' });
       } else {
         setStatus('error');
-        setErrorMessage(result.message || 'Something went wrong. Please try again.');
+        setErrorMessage(result.error || 'Something went wrong. Please try again.');
       }
     } catch (error) {
       setStatus('error');

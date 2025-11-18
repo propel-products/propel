@@ -1,35 +1,57 @@
 # Formspree Setup Guide
 
-The contact form is now configured to use Formspree, which doesn't require domain verification and can send emails to any address.
+The contact form is now configured to use Formspree, which doesn't require domain verification and can send emails directly to `enquiries@ocoiom.com`.
 
-## Setup Instructions
+## ✅ Why Formspree?
 
-### 1. Create a Formspree Account
+- ✅ **No domain verification required** - Works immediately
+- ✅ **Send to any email address** - Including `enquiries@ocoiom.com`
+- ✅ **No DNS configuration** - Zero setup hassle
+- ✅ **Built-in spam protection** - Automatic filtering
+- ✅ **Free tier available** - 50 submissions/month
+
+## Setup Instructions (5 Minutes)
+
+### Step 1: Create a Formspree Account
 1. Go to [https://formspree.io](https://formspree.io)
-2. Sign up for a free account (or sign in if you already have one)
+2. Click "Sign Up" (or "Sign In" if you have an account)
+3. Verify your email address
 
-### 2. Create a New Form
-1. Go to [https://formspree.io/forms](https://formspree.io/forms)
-2. Click "New Form"
-3. Give it a name (e.g., "OCO Contact Form")
-4. Set the email where you want to receive submissions: `enquiries@ocoiom.com`
-5. Click "Create Form"
+### Step 2: Create a New Form
+1. After signing in, you'll be taken to your dashboard
+2. Click **"New Form"** button
+3. Fill in the form details:
+   - **Form Name:** "OCO Contact Form"
+   - **Email to receive submissions:** `enquiries@ocoiom.com`
+   - **Form Type:** Standard Form
+4. Click **"Create Form"**
 
-### 3. Get Your Form Endpoint
-1. After creating the form, you'll see a form endpoint URL like:
-   `https://formspree.io/f/xpzqkqpn`
-2. Copy this endpoint
+### Step 3: Get Your Form Endpoint
+1. After creating the form, you'll see your form endpoint URL:
+   ```
+   https://formspree.io/f/xxxxxxxxxx
+   ```
+2. Copy the entire URL (the `xxxxxxxxxx` part is your form ID)
 
-### 4. Update the Contact Form
-1. Open `components/ContactForm.jsx`
-2. Find the line with `https://formspree.io/f/xpzqkqpn`
-3. Replace `xpzqkqpn` with your actual Formspree form ID
+### Step 4: Add Form Endpoint to Environment Variables
 
-### 5. Configure Email Settings (Optional)
-1. In Formspree dashboard, go to your form settings
-2. Set "Reply-To" to use the submitter's email (already configured in code)
-3. Customize the email subject if desired
-4. Enable email notifications
+#### Option A: Environment Variable (Recommended)
+Add to Vercel Dashboard → Settings → Environment Variables:
+- **Name:** `NEXT_PUBLIC_FORMSPREE_ENDPOINT`
+- **Value:** `https://formspree.io/f/YOUR_FORM_ID`
+- **Environment:** Production, Preview, Development
+
+#### Option B: Direct Update (Quick Test)
+Or temporarily update `components/ContactForm.jsx`:
+```javascript
+const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID';
+```
+
+### Step 5: Test the Form
+1. Go to your website's contact page
+2. Fill out and submit the form
+3. Check `enquiries@ocoiom.com` for the email
+4. Check Formspree dashboard for submission logs
 
 ## Current Configuration
 
