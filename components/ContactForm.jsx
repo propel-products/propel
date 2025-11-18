@@ -9,6 +9,7 @@ export default function ContactForm() {
     message: ''
   });
   const [status, setStatus] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,6 +18,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
+    setErrorMessage('');
     
     try {
       const response = await fetch('/api/contact', {
@@ -32,9 +34,11 @@ export default function ContactForm() {
         setFormData({ name: '', email: '', company: '', message: '' });
       } else {
         setStatus('error');
+        setErrorMessage(result.message || 'Something went wrong. Please try again.');
       }
     } catch (error) {
       setStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
     }
   };
 
@@ -90,7 +94,7 @@ export default function ContactForm() {
         <p className="mt-4 text-green-600 text-center">Message sent successfully!</p>
       )}
       {status === 'error' && (
-        <p className="mt-4 text-red-600 text-center">Something went wrong. Please try again.</p>
+        <p className="mt-4 text-red-600 text-center">{errorMessage || 'Something went wrong. Please try again.'}</p>
       )}
     </form>
   );
