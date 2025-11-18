@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
-    default: 'OCO Limited | Financial Clarity for Modern Businesses',
+    default: 'OCO | Accounting / Advisor',
     template: '%s | OCO Limited - Accounting & Advisory'
   },
   description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
@@ -40,7 +40,7 @@ export const metadata = {
     locale: 'en_IM',
     url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
-    title: 'OCO Limited | Financial Clarity for Modern Businesses',
+    title: 'OCO | Accounting / Advisor',
     description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OCO Limited | Financial Clarity for Modern Businesses',
+    title: 'OCO | Accounting / Advisor',
     description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
     images: ['/og-image.jpg'],
   },
