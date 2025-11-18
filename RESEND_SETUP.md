@@ -32,18 +32,23 @@ RESEND_API_KEY=re_your_api_key_here
    - **Environment:** Production, Preview, Development (select all)
 4. Click "Save"
 
-### 4. Verify Your Domain (Optional but Recommended)
+### 4. Verify Your Domain (REQUIRED for Production)
 
-For production, you should verify your domain to use a custom "from" address:
+**Important:** Resend's free/testing mode only allows sending emails to your verified email address. To send to `enquiries@ocoiom.com`, you MUST verify your domain.
 
 1. Go to [https://resend.com/domains](https://resend.com/domains)
 2. Click "Add Domain"
 3. Add `ocoiom.com`
-4. Follow the DNS setup instructions
+4. Follow the DNS setup instructions:
+   - Add the provided DNS records to your domain's DNS settings
+   - Wait for DNS propagation (can take a few minutes to 24 hours)
+   - Resend will verify automatically once DNS records are correct
 5. Once verified, update the `from` field in `app/api/contact/route.js`:
    ```javascript
    from: 'OCO Website <noreply@ocoiom.com>',
    ```
+
+**Note:** Until your domain is verified, emails can only be sent to your verified email address (the one you used to sign up for Resend).
 
 ### 5. Test the Form
 

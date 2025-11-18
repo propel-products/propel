@@ -78,8 +78,12 @@ ${message}
       let errorMessage = 'Failed to send email. Please try again later.';
       
       if (emailResult.error.message) {
+        // If it's a testing mode restriction (403)
+        if (emailResult.error.message.includes('testing emails') || emailResult.error.message.includes('only send')) {
+          errorMessage = 'Email service is in testing mode. Please verify your domain in Resend or contact support.';
+        }
         // If it's an API key issue
-        if (emailResult.error.message.includes('API key') || emailResult.error.message.includes('Unauthorized')) {
+        else if (emailResult.error.message.includes('API key') || emailResult.error.message.includes('Unauthorized')) {
           errorMessage = 'Email service configuration error. Please contact support.';
         }
         // If it's a domain/from address issue
