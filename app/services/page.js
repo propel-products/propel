@@ -61,12 +61,12 @@ export default function Services() {
         {
           title: "Financial statement preparation",
           description: "Financial reporting, built on technical experience",
-          features: ["Preparation of annual statutory and non-statutory financial statements", "Preparation of management accounts and management information", "Preparation of budgets and cash flow forecasts", "Transaction Recording"]
+          features: ["Production of annual statutory or non-statutory financial statements", "Production of management accounts and management information", "Preparation of budgets and cash flow forecasts", "Transaction recording"]
         },
         {
           title: "Tax Compliance",
           description: "Delivering accurate, timely, and fully compliant tax reporting",
-          features: ["Personal Tax Return Preparation", "Company Tax Return Preparation", "VAT returns"]
+          features: ["Personal tax return preparation", "Company tax return preparation", "VAT returns"]
         },
         {
           title: "Audit liaison services",
@@ -82,17 +82,17 @@ export default function Services() {
         {
           title: "Business Strategy and growth planning",
           description: "Develop and execute strategies for your business growth and profitability",
-          features: ["Strategic Planning and Business advice", "Market and Pricing analysis", "Growth Modelling", "Risk management and due diligence assistance"]
+          features: ["Strategic planning and business advice", "Market and pricing analysis", "Growth modelling", "Risk management and due diligence assistance"]
         },
         {
           title: "Performance Analytics",
           description: "Adding value at every stage of your business journey",
-          features: ["KPI Development", "Financial Modelling", "Benchmarking", "Tailored frameworks to build resilience for long-term success"]
+          features: ["KPI development", "Financial modelling", "Benchmarking", "Tailored frameworks to build resilience for long-term success"]
         },
         {
           title: "Independent Business Valuation Services",
           description: "Valuations that guide strategic decisions and uncover opportunities",
-          features: ["Independent business valuations to establish a value for your company", "Complex dispute valuations", "Transaction valuations", "Expert Witness"]
+          features: ["Independent business valuations to establish a value for your company", "Complex dispute valuations", "Transaction valuations", "Expert witness"]
         }
       ]
     },
@@ -103,17 +103,17 @@ export default function Services() {
         {
           title: "Financial Strategy & Planning",
           description: "Long-term financial vision and strategic execution",
-          features: ["Strategic level financial support and Financial Planning", "Transaction and M&A support", "Exit Planning", "Bridging the gap between operational and financial strategy"]
+          features: ["Strategic level financial support and financial planning", "Transaction and M&A support", "Exit planning", "Bridging the gap between operational and financial strategy"]
         },
         {
           title: "Board and stakeholder Relations",
           description: "Manage relationships with investors, the board and key stakeholders",
-          features: ["Board Reporting and financial updates", "Corporate Governance services", "Maintain Investor and Banking Relations"]
+          features: ["Board reporting and financial updates", "Corporate governance services", "Maintain investor and banking relations"]
         },
         {
           title: "Cash Flow Management",
           description: "Optimise working capital and ensure liquidity",
-          features: ["Cash Flow Forecasting and liquidity monitoring", "Working Capital Optimisation", "Credit Management", "Scenario Planning"]
+          features: ["Cash flow forecasting and liquidity monitoring", "Working capital optimisation", "Credit management", "Scenario planning"]
         }
       ]
     }

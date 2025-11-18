@@ -20,17 +20,17 @@ export default function Home({ searchParams }) {
     {
       title: "Accounting Services",
       description: "Complete financial reporting to keep your business running smoothly and compliant.",
-      features: ["Financial Statements preparation", "Production of Management accounts and management information", "Tax compliance", "Audit liaison services"]
+      features: ["Production of annual statutory or non-statutory financial statements", "Production of management accounts and management information", "Tax compliance", "Audit liaison services"]
     },
     {
       title: "Advisory Services",
       description: "Strategic guidance to optimise your business performance and achieve your long-term financial goals.",
-      features: ["Business strategy and growth planning", "Performance analytics", "Independent Business Valuation Services", "Non-Executive Director services"]
+      features: ["Business strategy and growth planning", "Performance analytics", "Independent business valuation services", "Non-Executive Director services"]
     },
     {
       title: "CFO Services",
       description: "Fractional CFO support providing executive-level financial leadership without the full-time cost.",
-      features: ["Financial Strategy and planning", "Board and stakeholder relations", "Advising on cash flow management and additional sources to finance"]
+      features: ["Financial strategy and planning", "Board and stakeholder relations", "Advising on cash flow management and additional sources to finance"]
     }
   ];
 

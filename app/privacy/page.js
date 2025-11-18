@@ -177,7 +177,7 @@ export default function PrivacyPolicy() {
                 <p className="mb-2">Website: <a href="https://www.ocoiom.com" className="text-[#FF5007] hover:underline">www.ocoiom.com</a></p>
                 <p className="mt-4">
                   <strong>Registered Office:</strong><br />
-                  Isle of Man
+                  Rose Cottage, Ballafreer Lane, Union Mills, Isle of Man IM4 4AS
                 </p>
               </div>
             </section>
