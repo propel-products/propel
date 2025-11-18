@@ -21,30 +21,20 @@ export default function ContactForm() {
     setErrorMessage('');
     
     try {
-      // Use Formspree - no domain verification needed
-      const response = await fetch('https://formspree.io/f/xpzqkqpn', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          company: formData.company || '',
-          message: formData.message,
-          _replyto: formData.email, // Set reply-to address
-        })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
       });
       
       const result = await response.json();
       
-      if (response.ok) {
+      if (result.success) {
         setStatus('success');
         setFormData({ name: '', email: '', company: '', message: '' });
       } else {
         setStatus('error');
-        setErrorMessage(result.error || 'Something went wrong. Please try again.');
+        setErrorMessage(result.message || 'Something went wrong. Please try again.');
       }
     } catch (error) {
       setStatus('error');
