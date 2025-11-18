@@ -132,7 +132,7 @@ export const metadata = {
     'business growth planning'
   ],
   openGraph: {
-    title: 'OCO | Accounting / Advisor',
+    title: 'OCO | Accounting / Advisory',
     description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
     url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
@@ -149,7 +149,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OCO | Accounting / Advisor',
+    title: 'OCO | Accounting / Advisory',
     description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
     images: ['/og-image.jpg'],
   },

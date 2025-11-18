@@ -71,7 +71,7 @@ export default function StructuredData() {
     ],
     "foundingDate": "2010",
     "numberOfEmployees": "1-10",
-    "slogan": "Accounting / Advisor"
+    "slogan": "Accounting / Advisory"
   };
 
   const breadcrumbSchema = {
