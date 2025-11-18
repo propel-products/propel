@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "AccountingService",
     "name": "OCO Limited",
     "alternateName": "OCO Accounting & Advisory",
-    "description": "Expert accounting and advisory services for businesses in the Isle of Man. Gary O'Connor, ACCA Fellow, provides comprehensive financial solutions including bookkeeping, tax preparation, CFO services, and business valuation.",
+    "description": "OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.",
     "url": "https://www.ocoiom.com",
     "logo": "https://www.ocoiom.com/logo.svg",
     "image": "https://www.ocoiom.com/og-image.jpg",

@@ -138,7 +138,7 @@ export const metadata = {
     siteName: 'OCO Limited',
     images: [
       {
-        url: '/og-home.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'OCO Limited - Professional Accounting & Advisory Services',
@@ -151,7 +151,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'OCO Limited | Financial Clarity for Modern Businesses',
     description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
-    images: ['/og-home.jpg'],
+    images: ['/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://www.ocoiom.com',

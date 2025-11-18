@@ -8,7 +8,7 @@ export const metadata = {
     default: 'OCO Limited | Financial Clarity for Modern Businesses',
     template: '%s | OCO Limited - Accounting & Advisory'
   },
-  description: 'Expert accounting and advisory services for businesses in the Isle of Man. Bookkeeping, tax preparation, CFO services, and strategic financial guidance by Gary O\'Connor, ACCA Fellow.',
+  description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
   keywords: [
     'accounting services Isle of Man',
     'advisory services',
@@ -41,7 +41,7 @@ export const metadata = {
     url: 'https://www.ocoiom.com',
     siteName: 'OCO Limited',
     title: 'OCO Limited | Financial Clarity for Modern Businesses',
-    description: 'Expert accounting and advisory services for businesses in the Isle of Man. Bookkeeping, tax preparation, CFO services, and strategic financial guidance.',
+    description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
     images: [
       {
         url: '/og-image.jpg',
@@ -54,7 +54,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'OCO Limited | Financial Clarity for Modern Businesses',
-    description: 'Expert accounting and advisory services for businesses in the Isle of Man.',
+    description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
     images: ['/og-image.jpg'],
   },
   robots: {
