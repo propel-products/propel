@@ -111,7 +111,7 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: 'OCO | Accounting / Advisor',
+  title: 'OCO | Accounting / Advisory',
   description: 'OCO is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.',
   keywords: [
     'accounting services Isle of Man',
