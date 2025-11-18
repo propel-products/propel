@@ -1,4 +1,3 @@
-import { redirect } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
@@ -6,16 +5,7 @@ import Stats from '@/components/Stats';
 import Footer from '@/components/Footer';
 import { SequentialText, SequentialSection } from '@/components/SequentialText';
 
-// Force dynamic rendering to ensure redirect works
-export const dynamic = 'force-dynamic';
-
-export default function Home({ searchParams }) {
-  // Allow bypassing redirect with ?preview=true query parameter
-  if (!searchParams?.preview) {
-    redirect('/holding');
-  }
-
-  // If preview parameter is present, show the actual home page
+export default function Home() {
   const services = [
     {
       title: "Accounting Services",
