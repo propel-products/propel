@@ -87,6 +87,7 @@ export default function About() {
                       width={256}
                       height={256}
                       className="w-full h-full object-cover grayscale"
+                      loading="lazy"
                     />
                   </div>
                 </div>

@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="mb-4">
               <AnimatedLogo size="small" color="white" />
             </div>
-            <p className="text-xs text-gray-500 font-light tracking-wide uppercase">Accounting / Advisory</p>
+            <p className="text-xs text-gray-400 font-light tracking-wide uppercase">Accounting / Advisory</p>
           </div>
           
           <div>
@@ -95,8 +95,9 @@ export default function Footer() {
                 width={60} 
                 height={60}
                 className="object-contain"
+                loading="lazy"
               />
-              <div className="text-sm text-gray-500 leading-tight">
+              <div className="text-sm text-gray-400 leading-tight">
                 <div>Chartered</div>
                 <div>Certified</div>
                 <div>Accountants</div>
@@ -109,8 +110,9 @@ export default function Footer() {
                 width={60} 
                 height={60}
                 className="object-contain"
+                loading="lazy"
               />
-              <div className="text-sm text-gray-500 leading-tight">
+              <div className="text-sm text-gray-400 leading-tight">
                 <div>Certified</div>
                 <div>Business</div>
                 <div>Valuer</div>

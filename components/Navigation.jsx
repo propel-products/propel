@@ -25,7 +25,7 @@ export default function Navigation() {
       scrolled ? 'bg-black/95 backdrop-blur-lg py-4' : 'bg-transparent py-8'
     }`}>
       <div className="w-full px-6 sm:px-8 lg:px-16 xl:px-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" aria-label="OCO Limited Home">
           <div className="scale-125 sm:scale-150 lg:scale-150">
             <AnimatedLogo size="default" />
           </div>
@@ -47,6 +47,8 @@ export default function Navigation() {
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="sm:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

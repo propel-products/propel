@@ -99,6 +99,8 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#FF5007" />
         <meta name="msapplication-TileColor" content="#FF5007" />
+        {/* Preload critical resources */}
+        <link rel="preload" href="/og-image.jpg" as="image" />
       </head>
       <body>
         <StructuredData />

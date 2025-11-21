@@ -68,6 +68,10 @@ Oco/
 └── README.md                 # This file
 ```
 
+## 📚 Documentation
+
+- Operational handbook: [`docs/README.md`](docs/README.md) covers deployment, domains, SEO, and launch processes in one place.
+
 ## 🚀 Getting Started
 
 ### Prerequisites

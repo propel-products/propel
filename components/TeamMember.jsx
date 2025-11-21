@@ -17,6 +17,7 @@ export default function TeamMember({
           alt={name}
           fill
           className="rounded-lg object-cover border-4 border-[#FF5007]"
+          loading="lazy"
         />
       </div>
       
