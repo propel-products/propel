@@ -64,6 +64,7 @@ export default function ContactForm() {
           placeholder="Your Name" 
           value={formData.name}
           onChange={handleChange}
+          autoComplete="name"
           required
           className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none text-sm sm:text-base"
         />
@@ -73,6 +74,7 @@ export default function ContactForm() {
           placeholder="Your Email" 
           value={formData.email}
           onChange={handleChange}
+          autoComplete="email"
           required
           className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none text-sm sm:text-base"
         />
@@ -83,6 +85,7 @@ export default function ContactForm() {
         placeholder="Company Name" 
         value={formData.company}
         onChange={handleChange}
+        autoComplete="organization"
         className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6 text-sm sm:text-base"
       />
       <textarea 
@@ -91,6 +94,7 @@ export default function ContactForm() {
         rows="4"
         value={formData.message}
         onChange={handleChange}
+        autoComplete="off"
         required
         className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-3xl border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6 text-sm sm:text-base resize-none"
       ></textarea>
