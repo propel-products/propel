@@ -173,4 +173,15 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.ocoiom.com',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
