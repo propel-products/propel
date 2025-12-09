@@ -79,7 +79,7 @@ export default function About() {
       {/* Mission */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-8 text-center">Our Mission</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center text-black">Our Mission</h2>
           <p className="text-xl text-gray-700 text-center max-w-3xl mx-auto">
             To empower teams with tools that make their work faster, smarter and more enjoyable. Everything we build is rooted in clarity, efficiency and modern technology.
           </p>
@@ -89,7 +89,7 @@ export default function About() {
       {/* Our Approach */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center">Our Approach</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-black">Our Approach</h2>
           <div className="space-y-8">
             {approach.map((item, idx) => (
               <div key={idx} className="flex gap-6 items-start">
@@ -97,7 +97,7 @@ export default function About() {
                   {idx + 1}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function About() {
       {/* Principles */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center">The Propel Principles</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-black">The Propel Principles</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {principles.map((principle, idx) => (
               <div key={idx} className="flex gap-4 items-center p-4 bg-gray-50 rounded-xl">

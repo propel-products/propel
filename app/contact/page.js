@@ -75,7 +75,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-16">
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+              <h2 className="text-3xl font-bold mb-8 text-black">Get In Touch</h2>
               <p className="text-gray-600 mb-8">
                 Every project begins with discovery and definition. Outline your idea, goals and timeline. We respond with a clear, structured plan and proposal.
               </p>
@@ -97,7 +97,7 @@ export default function Contact() {
               </div>
 
               <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="font-semibold text-lg mb-4">What to include:</h3>
+                <h3 className="font-semibold text-lg mb-4 text-gray-900">What to include:</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li>• What you want to build</li>
                   <li>• Any problems you're trying to solve</li>
@@ -110,7 +110,7 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Send Us a Message</h2>
+              <h2 className="text-3xl font-bold mb-8 text-black">Send Us a Message</h2>
               <ContactForm />
             </div>
           </div>
