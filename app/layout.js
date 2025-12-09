@@ -2,6 +2,7 @@ import './globals.css'
 import StructuredData from '@/components/StructuredData'
 import CookieBanner from '@/components/CookieBanner'
 import { Analytics } from '@vercel/analytics/next'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata = {
   title: {
@@ -85,20 +86,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon-arrow.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.svg" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#FF5007" />
-        <meta name="msapplication-TileColor" content="#FF5007" />
+        <meta name="theme-color" content="#00D4FF" />
+        <meta name="msapplication-TileColor" content="#00D4FF" />
       </head>
       <body>
-        <StructuredData />
-        {children}
-        <CookieBanner />
+        <ThemeProvider>
+          <StructuredData />
+          {children}
+          <CookieBanner />
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

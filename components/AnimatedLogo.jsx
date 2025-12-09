@@ -2,17 +2,25 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-export default function AnimatedLogo({ className = "", size = "default", color = "#FF5007" }) {
+export default function AnimatedLogo({ className = "", size = "default", color = "var(--color-primary)" }) {
   const [isVisible, setIsVisible] = useState(false);
   const [animationTrigger, setAnimationTrigger] = useState(0);
+  const [themeColor, setThemeColor] = useState('#00D4FF');
 
   useEffect(() => {
     // Trigger animation on mount
     setIsVisible(true);
     
+    // Get the CSS variable value for glow effects
+    const computedColor = getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim();
+    if (computedColor) setThemeColor(computedColor);
+    
     // Randomly trigger glow animation every 10-15 seconds
     const interval = setInterval(() => {
       setAnimationTrigger(prev => prev + 1);
+      // Update color in case theme changed
+      const newColor = getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim();
+      if (newColor) setThemeColor(newColor);
     }, Math.random() * 5000 + 10000);
 
     return () => clearInterval(interval);
@@ -37,13 +45,15 @@ export default function AnimatedLogo({ className = "", size = "default", color =
     })
   };
 
+  const glowColor = color === "white" ? "#FFFFFF" : themeColor;
+  
   const glowVariants = {
     initial: { 
-      filter: `drop-shadow(0 0 0px ${color})`,
+      filter: `drop-shadow(0 0 0px ${glowColor})`,
       scale: 1
     },
     glow: {
-      filter: `drop-shadow(0 0 20px ${color}) drop-shadow(0 0 40px ${color})`,
+      filter: `drop-shadow(0 0 20px ${glowColor}) drop-shadow(0 0 40px ${glowColor})`,
       scale: 1.05,
       transition: {
         duration: 2,
@@ -54,8 +64,8 @@ export default function AnimatedLogo({ className = "", size = "default", color =
     }
   };
 
-  // Use white for footer, orange for main nav
-  const fillColor = color === "white" ? "#FFFFFF" : color;
+  // Use white for footer, theme color for main nav
+  const fillColor = color === "white" ? "#FFFFFF" : themeColor;
 
   return (
     <motion.div

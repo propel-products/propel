@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Lock } from 'lucide-react';
 import Link from 'next/link';
 import AnimatedLogo from './AnimatedLogo';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: '/services', label: 'Expertise' },
+    { href: '/playground', label: 'Playground' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' }
   ];
@@ -36,12 +38,13 @@ export default function Navigation() {
             <Link 
               key={link.href} 
               href={link.href}
-              className="text-white hover:text-[#FF5007] transition-colors flex items-center gap-1"
+              className="text-white hover:text-primary transition-colors flex items-center gap-1"
             >
               {link.label}
               {link.icon}
             </Link>
           ))}
+          <ThemeSwitcher />
         </div>
 
         <button 
@@ -61,13 +64,16 @@ export default function Navigation() {
               <Link 
                 key={link.href}
                 href={link.href}
-                className="text-white hover:text-[#FF5007] transition-colors py-3 px-2 flex items-center gap-2 text-lg font-medium"
+                className="text-white hover:text-primary transition-colors py-3 px-2 flex items-center gap-2 text-lg font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
                 {link.icon}
               </Link>
             ))}
+            <div className="pt-4 border-t border-gray-700">
+              <ThemeSwitcher />
+            </div>
           </div>
         </div>
       )}

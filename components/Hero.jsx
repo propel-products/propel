@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen bg-black flex items-center overflow-hidden">
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-[#FF5007] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#FF5007] rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32 pb-20 md:pb-32 relative z-10">
@@ -23,7 +23,7 @@ export default function Hero() {
                 text="Products" 
                 delay={1.2} 
                 wordDelay={0.15}
-                className="text-[#FF5007] text-4xl md:text-5xl lg:text-6xl"
+                className="text-primary text-4xl md:text-5xl lg:text-6xl"
               />
             </h1>
           </SequentialText>

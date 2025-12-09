@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Custom Properties for theming */
+:root {
+  --color-primary: #00D4FF;
+  --color-primary-hover: #00B8E6;
+  --color-accent: #0EA5E9;
+  --color-primary-rgb: 0, 212, 255;
+  
+  /* Light mode defaults */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+}
+
+.dark {
+  --color-bg: #0a0a0a;
+  --color-bg-secondary: #111111;
+  --color-text: #ffffff;
+  --color-text-secondary: #9ca3af;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -10,9 +31,11 @@
   
   body {
     @apply antialiased;
-    background-color: #0a0a0a;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     min-height: 100vh;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   /* Ensure all sections have proper background coverage */
@@ -38,5 +61,38 @@
   p, span, div {
     word-wrap: break-word;
     overflow-wrap: break-word;
+  }
+}
+
+/* Primary color utilities using CSS variables */
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .bg-primary-hover:hover {
+    background-color: var(--color-primary-hover);
+  }
+  
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  
+  .ring-primary {
+    --tw-ring-color: var(--color-primary);
+  }
+  
+  .focus-primary:focus {
+    border-color: var(--color-primary);
+    outline-color: var(--color-primary);
+  }
+  
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.3),
+                0 0 40px rgba(var(--color-primary-rgb), 0.2);
   }
 }
