@@ -167,16 +167,16 @@ export default function Services() {
       <Navigation />
       
       {/* Hero */}
-      <section className="relative min-h-[50vh] md:min-h-[40vh] bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative min-h-[50vh] md:min-h-[40vh] bg-white dark:bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
+        <div className="absolute inset-0 opacity-5 dark:opacity-10">
           <div className="absolute top-20 left-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
             <span className="text-primary">Services</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             From UX design and web development to AI agents and automated workflows, we combine design and engineering into one streamlined process.
           </p>
         </div>
@@ -184,11 +184,11 @@ export default function Services() {
 
       {/* Services Details */}
       {detailedServices.map((category, idx) => (
-        <section key={idx} id={category.id} className={`py-24 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+        <section key={idx} id={category.id} className={`py-24 ${idx % 2 === 0 ? 'bg-gray-50 dark:bg-gray-900' : 'bg-white dark:bg-black'}`}>
           <div className="max-w-7xl mx-auto px-6">
             <FadeInText delay={0.2} className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-black mb-4">{category.category}</h2>
-              <p className="text-xl text-gray-600">{category.tagline}</p>
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{category.category}</h2>
+              <p className="text-xl text-gray-600 dark:text-gray-400">{category.tagline}</p>
             </FadeInText>
 
             <div className="grid md:grid-cols-3 gap-8">

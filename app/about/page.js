@@ -65,31 +65,31 @@ export default function About() {
       <Navigation />
       
       {/* Hero */}
-      <section className="relative min-h-[50vh] md:min-h-[40vh] bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
+      <section className="relative min-h-[50vh] md:min-h-[40vh] bg-white dark:bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
             About <span className="text-primary">Propel</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             A next generation digital studio specialising in clean design, advanced automation and intelligent systems.
           </p>
         </div>
       </section>
 
       {/* Mission */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-8 text-center text-black">Our Mission</h2>
-          <p className="text-xl text-gray-700 text-center max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">Our Mission</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 text-center max-w-3xl mx-auto">
             To empower teams with tools that make their work faster, smarter and more enjoyable. Everything we build is rooted in clarity, efficiency and modern technology.
           </p>
         </div>
       </section>
 
       {/* Our Approach */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-white dark:bg-black">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center text-black">Our Approach</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">Our Approach</h2>
           <div className="space-y-8">
             {approach.map((item, idx) => (
               <div key={idx} className="flex gap-6 items-start">
@@ -97,8 +97,8 @@ export default function About() {
                   {idx + 1}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{item.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -107,14 +107,14 @@ export default function About() {
       </section>
 
       {/* Principles */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center text-black">The Propel Principles</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">The Propel Principles</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {principles.map((principle, idx) => (
-              <div key={idx} className="flex gap-4 items-center p-4 bg-gray-50 rounded-xl">
+              <div key={idx} className="flex gap-4 items-center p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
                 <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                <p className="font-medium text-gray-800">{principle}</p>
+                <p className="font-medium text-gray-800 dark:text-gray-200">{principle}</p>
               </div>
             ))}
           </div>
@@ -122,7 +122,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-black text-white text-center">
+      <section className="py-24 bg-gray-900 dark:bg-gray-950 text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl font-bold mb-6">Ready to build something great?</h2>
           <p className="text-xl text-gray-300 mb-8">

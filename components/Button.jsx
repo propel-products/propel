@@ -12,7 +12,7 @@ export default function Button({
   
   const variants = {
     primary: "bg-primary text-white hover:bg-primary-hover hover:scale-105 focus:outline-2 focus:outline-white focus:outline-offset-2",
-    secondary: "border-2 border-white text-white hover:bg-white hover:text-black focus:outline-2 focus:outline-white focus:outline-offset-2",
+    secondary: "border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black focus:outline-2 focus:outline-offset-2",
     outline: "border-2 border-primary text-primary hover:bg-primary hover:text-white focus:outline-2 focus:outline-offset-2"
   };
 

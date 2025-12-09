@@ -26,7 +26,7 @@ export default function Chatbot() {
 
       {/* Chatbot Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 z-50 flex flex-col">
+        <div className="fixed bottom-24 right-6 w-80 h-96 bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 flex flex-col">
           {/* Header */}
           <div className="bg-primary text-white p-4 rounded-t-2xl">
             <div className="flex items-center gap-3">
@@ -43,17 +43,17 @@ export default function Chatbot() {
           {/* Messages Area */}
           <div className="flex-1 p-4 overflow-y-auto">
             <div className="space-y-4">
-              <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
-                <p className="text-sm text-gray-700">
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-3 max-w-[80%]">
+                <p className="text-sm text-gray-700 dark:text-gray-300">
                   Hello! I'm your Propel assistant. How can I help you today?
                 </p>
               </div>
               
-              <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
-                <p className="text-sm text-gray-700">
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-3 max-w-[80%]">
+                <p className="text-sm text-gray-700 dark:text-gray-300">
                   I can help you with:
                 </p>
-                <ul className="text-xs text-gray-600 mt-2 space-y-1">
+                <ul className="text-xs text-gray-600 dark:text-gray-400 mt-2 space-y-1">
                   <li>• Service information</li>
                   <li>• Pricing inquiries</li>
                   <li>• Booking consultations</li>
@@ -64,14 +64,14 @@ export default function Chatbot() {
           </div>
 
           {/* Input Area */}
-          <div className="p-4 border-t border-gray-200">
+          <div className="p-4 border-t border-gray-200 dark:border-gray-700">
             <form onSubmit={handleSubmit} className="flex gap-2">
               <input
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message..."
-                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary"
+                className="flex-1 px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg text-sm focus:outline-none focus:border-primary"
               />
               <button
                 type="submit"
@@ -81,7 +81,7 @@ export default function Chatbot() {
                 <Send size={16} />
               </button>
             </form>
-            <p className="text-xs text-gray-500 mt-2 text-center">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
               This is a demo chatbot. Real functionality coming soon!
             </p>
           </div>

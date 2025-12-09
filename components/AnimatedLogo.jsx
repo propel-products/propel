@@ -1,13 +1,17 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
-export default function AnimatedLogo({ className = "", size = "default", color = "var(--color-primary)" }) {
+export default function AnimatedLogo({ className = "", size = "default", color = "auto" }) {
   const [isVisible, setIsVisible] = useState(false);
   const [animationTrigger, setAnimationTrigger] = useState(0);
   const [themeColor, setThemeColor] = useState('#00D4FF');
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // Trigger animation on mount
     setIsVisible(true);
     
@@ -45,7 +49,7 @@ export default function AnimatedLogo({ className = "", size = "default", color =
     })
   };
 
-  const glowColor = color === "white" ? "#FFFFFF" : themeColor;
+  const glowColor = color === "white" ? "#FFFFFF" : color === "black" ? "#111827" : themeColor;
   
   const glowVariants = {
     initial: { 
@@ -64,8 +68,21 @@ export default function AnimatedLogo({ className = "", size = "default", color =
     }
   };
 
-  // Use white for footer, theme color for main nav
-  const fillColor = color === "white" ? "#FFFFFF" : themeColor;
+  // Determine fill color based on color prop and theme
+  // "auto" = responds to light/dark mode (black on light, white on dark)
+  // "white" = always white (for dark backgrounds)
+  // "black" = always black (for light backgrounds)  
+  // "primary" = always uses brand accent color
+  const getFillColor = () => {
+    if (color === "white") return "#FFFFFF";
+    if (color === "black") return "#111827";
+    if (color === "primary") return themeColor;
+    // "auto" - respond to theme
+    if (!mounted) return themeColor; // SSR fallback
+    return resolvedTheme === "dark" ? "#FFFFFF" : "#111827";
+  };
+
+  const fillColor = getFillColor();
 
   return (
     <motion.div

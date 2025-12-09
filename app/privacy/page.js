@@ -10,12 +10,12 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-black text-white pt-32 pb-20">
+      <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-center">Privacy Policy</h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-center text-gray-900 dark:text-white">Privacy Policy</h1>
           
-          <div className="prose prose-invert max-w-none text-gray-300 space-y-6 leading-relaxed">
-            <p className="text-lg text-gray-400 mb-8">
+          <div className="prose prose-gray dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 space-y-6 leading-relaxed">
+            <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
               <strong>Last Updated:</strong> December 2025
             </p>
 
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">What Data Do We Collect?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">What Data Do We Collect?</h2>
               <p className="mb-4">
                 We only collect personal data that is essential to provide the services you have requested and to comply with regulatory requirements. The data we collect may include:
               </p>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Why Is Your Data Processed?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Why Is Your Data Processed?</h2>
               <p className="mb-4">We collect the above personal data for the purpose of:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Responding to enquiries and project requests;</li>
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Processing Information Fairly and Lawfully</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Processing Information Fairly and Lawfully</h2>
               <p className="mb-4">Propel processes your personal data only where:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>We have a legitimate interest to do so; or</li>
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Data Storage and Security</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Data Storage and Security</h2>
               <p className="mb-4">
                 Your data is stored securely using industry-standard security measures. We use cloud-based systems for data storage with appropriate security controls in place.
               </p>
@@ -76,14 +76,14 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Retaining Information</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Retaining Information</h2>
               <p>
                 We will only retain your personal information for as long as necessary to fulfil the purposes for which it was collected, or as required by law. Data will be securely deleted when no longer needed.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Your Rights</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Your Rights</h2>
               <p className="mb-4">
                 Under Data Protection legislation, you have the right to:
               </p>
@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Cookies</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Cookies</h2>
               <p>
                 Our website uses cookies to enhance your browsing experience. For detailed information, please see our{' '}
                 <a href="/cookies" className="text-primary hover:underline">Cookie Policy</a>.
@@ -109,9 +109,9 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-white mb-4 mt-8">Contact Us</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Contact Us</h2>
               <p className="mb-4">If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
-              <div className="mt-4 p-6 bg-gray-900 rounded-lg">
+              <div className="mt-4 p-6 bg-gray-100 dark:bg-gray-900 rounded-lg">
                 <p className="mb-2"><strong>Propel</strong></p>
                 <p className="mb-2">
                   Email: <a href="mailto:enquiries@propel.im" className="text-primary hover:underline">enquiries@propel.im</a>

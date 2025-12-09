@@ -65,7 +65,7 @@ function ExperimentCard({ experiment }) {
   return (
     <Link 
       href={experiment.href}
-      className={`group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-primary hover:bg-gray-900/80 ${
+      className={`group relative bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-primary hover:bg-gray-50 dark:hover:bg-gray-900/80 ${
         !isLive ? 'opacity-60 pointer-events-none' : ''
       }`}
     >
@@ -73,7 +73,7 @@ function ExperimentCard({ experiment }) {
       <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium ${
         isLive 
           ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
-          : 'bg-gray-700/50 text-gray-400 border border-gray-600/30'
+          : 'bg-gray-200 dark:bg-gray-700/50 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600/30'
       }`}>
         {isLive ? 'Live' : 'Coming Soon'}
       </div>
@@ -84,10 +84,10 @@ function ExperimentCard({ experiment }) {
       </div>
 
       {/* Content */}
-      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
         {experiment.title}
       </h3>
-      <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+      <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
         {experiment.description}
       </p>
 
@@ -96,7 +96,7 @@ function ExperimentCard({ experiment }) {
         {experiment.tags.map((tag) => (
           <span 
             key={tag}
-            className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded-md"
+            className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs rounded-md"
           >
             {tag}
           </span>
@@ -123,10 +123,10 @@ export default function PlaygroundPage() {
           <Sparkles className="w-4 h-4" />
           AI Experiments & Tools
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
           Playground
         </h1>
-        <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
           Explore interactive AI experiments, demos, and tools. Test the latest in AI technology and see what&apos;s possible.
         </p>
       </div>
@@ -140,8 +140,8 @@ export default function PlaygroundPage() {
 
       {/* Coming Soon Section */}
       <div className="mt-20 text-center">
-        <h2 className="text-2xl font-bold text-white mb-4">More Coming Soon</h2>
-        <p className="text-gray-400 max-w-xl mx-auto mb-8">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">More Coming Soon</h2>
+        <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-8">
           We&apos;re constantly building new experiments and tools. Check back regularly or get in touch if you have ideas for what you&apos;d like to see.
         </p>
         <Link 

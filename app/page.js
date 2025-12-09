@@ -50,11 +50,11 @@ export default function Home() {
       <Hero />
       
       {/* Services Section */}
-      <SequentialSection delay={3.5} className="py-24 bg-white">
+      <SequentialSection delay={3.5} className="py-24 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
           <SequentialText delay={3.7} className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-black mb-4">What We Do</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">What We Do</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               From UX design and web development to AI agents and automated workflows, we combine design and engineering into one streamlined process.
             </p>
           </SequentialText>
@@ -79,20 +79,20 @@ export default function Home() {
         </div>
       </SequentialSection>
 
-      <SequentialSection delay={5.5} className="py-12 sm:py-16 bg-black text-white">
+      <SequentialSection delay={5.5} className="py-12 sm:py-16">
         <Stats />
       </SequentialSection>
 
       {/* Why Choose Us Section */}
-      <SequentialSection delay={6.5} className="py-24 bg-black text-white">
+      <SequentialSection delay={6.5} className="py-24 bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <SequentialText delay={6.7}>
               <div>
-                <h2 className="text-5xl font-bold mb-6">
+                <h2 className="text-5xl font-bold mb-6 text-gray-900 dark:text-white">
                   Why <span className="text-primary">Propel</span>
                 </h2>
-                <p className="text-xl text-gray-300 mb-8">
+                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                   We combine clean design with practical engineering to deliver exceptional digital products for our clients.
                 </p>
                 <div className="space-y-6">
@@ -101,8 +101,8 @@ export default function Home() {
                       <div className="flex gap-4">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <div>
-                          <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                          <p className="text-gray-400">{item.desc}</p>
+                          <h4 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{item.title}</h4>
+                          <p className="text-gray-500 dark:text-gray-400">{item.desc}</p>
                         </div>
                       </div>
                     </SequentialText>

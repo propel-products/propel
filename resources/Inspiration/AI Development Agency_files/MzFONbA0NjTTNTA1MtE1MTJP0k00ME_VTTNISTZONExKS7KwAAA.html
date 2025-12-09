@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!-- saved from url=(0266)https://app-3q2rsqdqa0.marketingautomation.services/prospector/form/MzYwNzQ1sTQxAwA/MzFONbA0NjTTNTA1MtE1MTJP0k00ME_VTTNISTZONExKS7KwAAA?rf__sb=https%3A%2F%2Fwww.google.com%2F&agentreferrer__sb=https%3A%2F%2Fwww.munro.agency%2Fai-development-agency%2F&instance=7lcqkg -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    
+    <meta name="referrer" content="no-referrer">
+
+    <link href="./formbasics.css" rel="stylesheet" type="text/css">
+    <link href="./jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="./base.css" rel="stylesheet" type="text/css">
+    <link href="./datetimepicker.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" async="" charset="utf-8" src="./recaptcha__en.js" crossorigin="anonymous" integrity="sha384-z6SN+4u+ZOsIgYWusRxHPQ9aBi4w1u4L9UfLCVIX0xSiSVpm3SfVdEuAXmzYtysM"></script><script type="text/javascript">
+        var isPreview = 0;
+        var baseURL = '';
+        var formDataURL = baseURL + '/prospector/getFormData/MzYwNzQ1sTQxAwA/43e09316-0524-427b-a07e-f0dc3a1bfb88' + window.location.hash;
+        var conditionGroupsRaw = {"conditionGroups":[],"formConditionalNodes":[{"deleteTimestamp":"0000-00-00 00:00:00","id":2000000044837890,"companyProfileID":307154946,"isRootNode":0,"companyFormFieldID":400000459053058,"label":"First Name","children":[],"value":"First Name"},{"deleteTimestamp":"0000-00-00 00:00:00","id":2000000044838914,"companyProfileID":307154946,"isRootNode":0,"companyFormFieldID":400000459054082,"label":"Your Business Email","children":[],"value":"Your Business Email"},{"deleteTimestamp":"0000-00-00 00:00:00","id":2000000044839938,"companyProfileID":307154946,"isRootNode":0,"companyFormFieldID":400000459055106,"label":"What can we help with?","children":[],"value":"What can we help with?"},{"deleteTimestamp":"0000-00-00 00:00:00","id":2000000044840962,"companyProfileID":307154946,"isRootNode":0,"companyFormFieldID":400000459056130,"label":"I consent to you processing my data in order to get in touch with me","children":[],"value":"I consent to you processing my data in order to get in touch with me"}]};
+        var hiddenFields = [];
+
+        var commaSepStringContains = function commaSepStringContains(needle, haystack) {
+            var safeNeedle = needle.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+            var r = new RegExp('(^|, ?)' + safeNeedle + '(,|$)');
+            return typeof haystack == 'string' ? haystack.match(r) !== null : false;
+        };
+
+        var getCookie = function getCookie(cookie_name) {
+            if (cookie_name) {
+                var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+                if (results) {
+                    return (unescape(results[2]));
+                }
+                return null;
+            }
+
+            return document.cookie;
+        }
+
+        var getParams = function () {
+            var vars = {};
+            var currentLocation = window.location.href;
+            currentLocation.replace(location.hash, '').replace(
+                /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+                function (m, key, value) { // callback
+                    vars[key] = value !== undefined ? value : '';
+                }
+            );
+            vars.rf__doc = document.referrer;
+            return vars;
+        }();
+
+        var parseFormData = function (apiData) {
+            if (!apiData || !apiData.data) {
+                return;
+            }
+            var jsonData = apiData.data;
+            jsonData = typeof jsonData === 'object' && jsonData ? jsonData : {};
+
+            if (jsonData.campaignID) {
+                $('input[name="defaultCampaignID"]').val(jsonData.campaignID);
+            } else {
+                $('input[name="defaultCampaignID"]').remove();
+            }
+
+            if (getParams['redirectUrl']) {
+                getParams['redirectUrl'] = decodeURIComponent(getParams['redirectUrl']);
+                redirectURL = getParams['redirectUrl'];
+            }
+            if (jsonData.redirectUrl) {
+                jsonData.redirectUrl = decodeURIComponent(jsonData.redirectUrl);
+                // relative links needs to append base path
+                if (jsonData.redirectUrl.match(/^\/[^\/].*$/)) {
+                    var parser = document.createElement('a');
+                    parser.href = document.referrer;
+                    redirectURL = parser.protocol + '//' + parser.host + jsonData.redirectUrl;
+                } else {
+                    redirectURL = jsonData.redirectUrl;
+                }
+            }
+
+            var redirectHandlesPost = 1;
+
+            if (redirectURL) {
+                if (redirectHandlesPost) {
+                    $(formID).attr('action', redirectURL);
+                    $(formID).attr('target', '_top');
+                } else {
+                    $(formID).ajaxComplete(function (event, xhr, settings) {
+                        // the default form action has a redirect from .../save/... to .../thanks/...
+                        var ajaxUrl = settings.url.toLowerCase().replace('/save/', '/_/');
+                        var formUrl = $(formID).prop('action').toLowerCase().replace('/thanks/', '/_/');
+
+                        // Urls may have different formats in local vs prod, so just grab the part we care about
+                        ajaxUrl = ajaxUrl.substring(ajaxUrl.indexOf('prospector/_/'));
+                        formUrl = formUrl.substring(formUrl.indexOf('prospector/_/'));
+
+                        if (ajaxUrl === formUrl) {
+                            window.top.location = redirectURL;
+                        }
+                    });
+                }
+            }
+
+            if (jsonData.referrer) {
+                // pass the `true referrer` for campaign attribution
+                getParams['rf__doc'] = jsonData.referrer;
+            }
+
+            if (jsonData.agentReferrer) {
+                $('input[name="agentreferrer__sb"]').val(jsonData.agentReferrer);
+            } else {
+                $('input[name="agentreferrer__sb"]').remove();
+            }
+
+            // Get the first party tracking cookie
+            var tk = getCookie('__ss_tk');
+            if ((!tk || tk == '_') && jsonData.trackingID && jsonData.trackingID != '_') {
+                // The first party cookie was not set, use the third party cookie if available
+                tk = jsonData.trackingID;
+            }
+            if (tk && tk !== '_') {
+                $('input[name="trackingid__sb"]').val(tk);
+            } else {
+                $('input[name="trackingid__sb"]').remove();
+            }
+
+            if (jsonData.accountID) {
+                $('input[name="accountid__sb"]').val(jsonData.accountID);
+            } else {
+                $('input[name="accountid__sb"]').remove();
+            }
+
+            // inject styles
+            if (jsonData.cssURL) {
+                jsonData.cssURL = decodeURIComponent(jsonData.cssURL);
+                if (document.createStyleSheet) {
+                    document.createStyleSheet(jsonData.cssURL);
+                } else {
+                    $('<link rel="stylesheet" type="text/css" href="' + jsonData.cssURL + '">').appendTo('head');
+                }
+            }
+
+            if (getParams['css_url']) {
+                getParams['css_url'] = decodeURIComponent(getParams['css_url']);
+            }
+
+            if (jsonData.stylesheet) {
+                $('<style>' + jsonData.stylesheet + '</style>').appendTo('head');
+            }
+
+            var $input = null;
+            var fieldID = 0;
+
+            var movedGDPRToEnd = true;
+
+            var setupLeadFields = function setupLeadFields(leadCache) {
+                // Move GDPR to the last item in the list.
+                if (!movedGDPRToEnd) {
+                    var $gdprConsentField = $('input[name^=\'gdprConsentField\']');
+                    if ($gdprConsentField) {
+                        var $gdpr = $('#' + $gdprConsentField.val());
+                        var $lastSibling = $gdpr.siblings(':last');
+                        $gdpr.remove();
+                        $gdpr.insertBefore($lastSibling);
+                    }
+                    movedGDPRToEnd = true;
+                }
+                var progressiveCount = 0;
+                $('input.auto-filled, select.auto-filled, textarea.auto-filled').each(function() {
+                    var fieldName = $(this).attr('name').replace('[]', '');
+                    fieldName = typeof fieldName === 'string' ? fieldName.trim() : fieldName;
+                    if (!leadCache[fieldName] || leadCache[fieldName] === 'undefined') {
+                        return;
+                    }
+                    var el = this;
+                    var vals;
+                    var $progressive = $('li.progressive').first();
+                    var $list = $(this).closest('li');
+                    var canReplace = !$(this).is('.progressive, .always-shown') && !$list.is('.hide');
+
+                    // Progressive profiling queue
+                    if ($progressive.length && canReplace) {
+                        progressiveCount += 1;
+                        $list.addClass('hide');
+                        $progressive
+                            .removeClass('progressive hide')
+                            .find('input').removeClass('progressive');
+                    }
+
+                    if (el.type == 'select-one') {
+                        vals = leadCache[fieldName];
+                        for (var o in el.options) {
+                            if (!el.options.hasOwnProperty(o)) {
+                                continue;
+                            }
+                            var option = el.options[o];
+                            if (option.value && commaSepStringContains(option.value, vals)) {
+                                option.selected = true;
+                            }
+                        }
+                    } else if (el.type == 'checkbox' || el.type == 'radio') {
+                        vals = leadCache[fieldName];
+                        if (el.value && commaSepStringContains(el.value, vals)) {
+                            el.checked = true;
+                        }
+                    } else if (!el.value || el.type === 'hidden') {
+                        el.value = leadCache[fieldName];
+                    }
+                    // trigger change event so conditional-form-fields can process rules.
+                    $(el).change();
+                });
+                return progressiveCount;
+            };
+
+            if (jsonData.leadCache) {
+                var leadCache = jsonData.leadCache;
+                var count = 0;
+
+                $('input, select, textarea').each(function() {
+                    // remove any progressive fields that already have values
+                    var $el = $(this);
+                    var fieldName = $el.attr('name').replace('[]', '');
+                    fieldName = typeof fieldName === 'string' ? fieldName.trim() : fieldName;
+                    var hasValue = Boolean(leadCache[fieldName]);
+
+                    if ($el.is('.progressive') && hasValue) {
+                        $el.closest('li').remove();
+                    }
+                });
+
+                do {
+                    count = setupLeadFields(leadCache);
+                } while (count > 0);
+            }
+
+            $('li.hide .progressive').prop('disabled', true);
+
+            $('.campaign_question').remove();
+
+            for (var f in formFields) {
+                if (!formFields.hasOwnProperty(f)) {
+                    continue;
+                }
+                var field = formFields[f];
+                fieldName = 'field_' + field.fieldID;
+                if (getParams[field.systemName] || getParams[fieldName]) {
+                    fieldID = '#' + fieldName;
+                    $(fieldID).remove();
+                }
+
+                fieldName = 'ref_' + field.fieldID;
+                if (getParams[fieldName]) {
+                    $('#' + fieldName).remove();
+                }
+            }
+
+            for (var p in getParams) {
+                if (!getParams.hasOwnProperty(p)) {
+                    continue;
+                }
+
+                if (p.indexOf('_') !== 0 && !hiddenFields.includes(p)) {
+                    $input = $('<input>').attr({
+                        type: 'hidden',
+                        name: p,
+                        value: getParams[p],
+                    });
+                    $('.get_input_values').append($input);
+                    hiddenFields.push(p);
+                }
+            }
+
+            if (jsonData.csrfToken) {
+                $input = $('<input>').attr({
+                    type: 'hidden',
+                    name: 'csrfToken',
+                    value: jsonData.csrfToken
+                });
+                $('.get_input_values').append($input);
+            }
+
+            // Set up default values from the jsonData
+            if (jsonData.formFields) {
+                $.each(jsonData.formFields, function(f) {
+                    var field = jsonData.formFields[f];
+                    fieldname = (field.isReferred === '1' ? 'ref_' : 'field_') + field.fieldID;
+                    if (field.defaultValue) {
+                        $('[name="' + fieldname + '"]').each(function () {
+                            if (!this.value) {
+                                this.value = field.defaultValue;
+                                // Trigger change event for conditional-form-fields
+                                $(this).change();
+                            }
+                        });
+                    }
+                    if (field.defaultPlaceholder && (getParams._usePlaceholders || isPreview)) {
+                        $('[name="' + fieldname + '"]').each(function () {
+                            this.placeholder = field.defaultPlaceholder;
+                        });
+                    }
+                });
+            }
+        };
+
+        // If tracking ID comes in after form rendering,
+        // add it to the form.
+        function trackingIDBackup() {
+            // attachEvent and detachEvent are for IE versions <=8
+            var eventMethod = window.addEventListener
+                ? 'addEventListener'
+                : 'attachEvent';
+            var removeEventMethod = window.removeEventListener
+                ? 'removeEventListener'
+                : 'detachEvent';
+
+            var eventer = window[eventMethod];
+
+            var removeEventer = window[removeEventMethod];
+            var messageEvent = (eventMethod === "attachEvent")
+                ? "onmessage"
+                : "message";
+
+            function onTrackingIDBackupMessageReceived(e) {
+                var bodyNodeList = document.getElementsByClassName('sharpspring_form');
+                if (bodyNodeList.length === 0) {
+                    return;
+                }
+
+                var formNodeList = bodyNodeList[0].getElementsByTagName('form');
+                if (formNodeList.length === 0) {
+                    return;
+                }
+
+                var trackingInputNodeList = formNodeList[0].querySelectorAll('input[name="trackingid__sb"]');
+                var trackingInput;
+
+                // find tracking input or create one if it doesn't exist
+                if (trackingInputNodeList.length !== 0) {
+                    trackingInput = trackingInputNodeList[0];
+                } else {
+                    trackingInput = document.createElement('input');
+                    trackingInput.type = 'hidden';
+                    trackingInput.name = 'trackingid__sb';
+                    formNodeList[0].appendChild(trackingInput);
+                }
+
+                // add tracking id to tracking input if it's not there
+                if (trackingInput.value === '') {
+                    if (e && e.data && e.data.trackingID) {
+                        trackingInput.value = e.data.trackingID;
+                    }
+                }
+
+                $.getJSON(
+                    formDataURL,
+                    getParams,
+                    parseFormData
+                );
+
+                // remove event listener as this should only execute once
+                removeEventer(messageEvent, onTrackingIDBackupMessageReceived);
+            }
+
+            eventer(messageEvent, onTrackingIDBackupMessageReceived);
+
+            // Let the SS tracking script know we are ready to receive the tracking ID
+            window.parent.postMessage({'trackingID': "?"}, '*');
+        }
+
+        trackingIDBackup();
+
+        var free_email_providers;
+        const url = "/includes/js/app/freeemailproviderlist.json";
+        fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {free_email_providers = data;})
+    </script>
+
+                <style id="vfs-stylesheet" type="text/css">
+      fieldset {
+        padding: 0;
+      }
+      form {
+        padding: 0;
+        
+        padding-left: 0px;
+        padding-right: 0px;
+      
+        
+        padding-top: 0px;
+        padding-bottom: 0px;
+      
+        background-color: ;
+      }
+      .form-container > ul.form_fields > *:not(.clear):not(:nth-last-child(2)) {
+        margin-bottom: 10px;
+      }
+        @media only screen and (min-width: 450px) {
+          .row .col-2:not(:last-child), .row .col-3:not(:last-child) {
+            margin-right: 10px;
+          }
+          .row .col-2 {
+            width: calc(50% - 5px);
+          }
+          .row .col-3 {
+            width: calc(33.3% - 6.666666666666667px);
+          }
+        }
+      
+    
+    form #submit_button {
+      background-image: none;
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+      
+        background-color: #228652;
+        border-color: #228652;
+        border-radius: 6px;
+        border-width: 1px;
+        border-style: solid;
+        color: #ffffff;
+        
+      
+        height: 43px;
+        width: 100%;
+      
+      
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0em;
+        line-height: 1;
+        text-transform: uppercase;
+      
+      
+          margin-bottom: 10px;
+          margin-top: 10px;
+          
+          padding-left: 5px !important;
+          padding-right: 5px !important;
+      
+          
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+      
+        
+    }
+  
+        form #submit_button:hover {
+          color: #ffffff;
+          background-color: #1c7434;
+          border-color: #1c7434;
+        }
+      p.clear {text-align: center;}
+        form .checkbox .field_value .checkbox-option {
+          display: inline-block;
+        }
+        form .checkbox .field_value label, form .gdprConsent .field_value label, form .boolean .field_value label, form .bit .field_value label {
+          color: #000000;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px !important;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 1;
+          padding-left: 2px !important;
+          padding-right: 2px !important;
+        }
+      
+        form ul > li select, form ul .row > li select  {
+          width: 100%;
+          background-color: #FFFFFF;
+          border-color: #CCCCCC;
+          border-radius: 1px;
+          border-width: 2px;
+          border-style: solid;
+          color: #243544;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 1;
+        }
+        form ul > li select option, form ul .row > li select option  {
+          color: #243544;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 1;
+        }
+        
+        form h1, form h2, form h3 {
+          color: #484849;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 1;
+          padding-bottom: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+        }
+        
+        form h1 {
+          font-size: 20px;
+        }
+        form h2 {
+          font-size: 16px;
+        }
+        form h3 {
+          font-size: 12px;
+        }
+      
+      
+        form ul > li > label, form ul .row > li > label:not(.error) {
+          font-size: 15px !important;
+          font-weight: normal;
+          color: #1d1d1d;
+          display: block;
+          font-family: Verdana, Geneva, sans-serif;
+          letter-spacing: 0em;
+          line-height: 1.3;
+          padding-bottom: 0px !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          padding-top: 0px !important;
+        }
+        label.error {
+          line-height: 1;
+        }
+      
+        form p:not(.clear) {
+          color: #243544;
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 12px;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 1;
+          padding-bottom: 0px !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          padding-top: 0px !important;
+        }
+      
+        form .radio .field_value .radio-option {
+          display: inline-block;
+        }
+        form .radio .field_value .radio-option label {
+          color: #243544;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px !important;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 1;
+          padding-left: 2px !important;
+          padding-right: 2px !important;
+        }
+      
+        form ul > li input[type=text],
+        form ul .row > li input[type=text],
+        form ul > li textarea,
+        form ul .row > li textarea,
+        form ul > li textarea:focus,
+        form ul .row > li textarea:focus {
+          background-color: #FFFFFF;
+          border-color: #aeaeae;
+          border-radius: 6px;
+          border-width: 1px;
+          border-style: solid;
+          color: #3c3c3c;
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 14px !important;
+          font-weight: normal;
+          letter-spacing: 0em;
+          line-height: 0.8;
+          text-align: left;
+          padding-bottom: 10px !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+          padding-top: 10px !important;
+        }
+        form ul > li input[type=text]::placeholder,
+        form ul > li textarea::placeholder,
+        form ul .row > li input[type=text]::placeholder,
+        form ul .row > li textarea::placeholder {
+          color: #3c3c3c80;
+        }
+      </style>
+            <!-- If LP Editor is injecting LP Theme Styles, disable VFS styles -->
+            <script>if (getParams['css_url']) {document.getElementById('vfs-stylesheet').disabled=true;}</script>
+    
+    
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./additional-methods.min.js"></script>
+    <script type="text/javascript" src="./jquery.form.js"></script>
+    <script type="text/javascript" src="./jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./datetimepicker.js"></script>
+    <script type="text/javascript" src="./jquery.placeholder.js"></script>
+            <script src="./api.js"></script>
+    
+    
+    <script type="text/javascript" src="./conditional-form-fields.js"></script>
+
+    <script type="text/javascript">
+        window.translations = {"forms_prospectorview_spacesarenotallowedinthelabelfield":"Spaces are not allowed in the {x} field","forms_prospectorview_aproblemoccuredsubmittingtheform":"A problem occured submitting the form.","forms_prospectorview_gdpr_accept":"Accept","forms_prospectorview_gdpr_deny":"Deny","forms_prospectorview_validator_blockfreeemail2":"Enter a valid business email address.","forms_prospectorview_validator_recaptcha":"Please complete the reCAPTCHA."};
+
+        $(document).ready(function(){
+            if (typeof(ssRecaptchaText) !== 'undefined' && typeof(ssRecaptchaLinks) !== 'undefined') {
+                $(".ss-anchor-invisible-text span:first-child").html(ssRecaptchaText);
+                $(".ss-anchor-pt").html(ssRecaptchaLinks);
+            }
+        });
+
+        if (jQuery && jQuery.validator) {
+            // The emailRegEx allows for all standard emails as per RFC 5322, source: emailregex.com
+            var blockFreeEmailProviders = 1;
+            if (blockFreeEmailProviders) {
+                jQuery.validator.addMethod("emailAddress", function validateBusinessEmailAddress(value, element) {
+                    address =  value.toLowerCase().split('@').pop();
+                    return this.optional(element) || (!window.free_email_providers.includes(address));
+                }, window.translations['forms_prospectorview_validator_blockfreeemail2']);
+            }
+
+            jQuery.validator.addMethod("email", function validateEmailAddress(value, element) {
+                return this.optional(element) || /^[^\s",@]+@[^@\s",]+\.[^\s",]{2,}$/.test(value);
+            }, jQuery.validator.messages.email);
+
+            jQuery.validator.addMethod("date", function (value, element) {
+                return this.optional(element) || /^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$/.test(value);
+            }, jQuery.validator.messages.date);
+
+            jQuery.validator.addMethod("datetime", function (value, element) {
+                var splitTime = String(value).split(" ");
+                if (splitTime.length !== 2) {
+                    return this.optional(element) || false;
+                }
+                var validDate = /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/.test(splitTime[0]);
+                var validTime = /^(([0-1]?[0-9])|([2][0-3])):([0-5]?[0-9])(:([0-5]?[0-9]))?$/i.test(splitTime[1]);
+                return this.optional(element) || (validDate && validTime);
+            }, "Please specify a valid date and time.");
+
+            
+            $(function () {
+                $('input.date').datepicker({ dateFormat: 'yy-mm-dd', changeYear: true, yearRange: "c-100:c+100" });
+            });
+        }
+
+    </script>
+
+</head>
+
+<body class="sharpspring_form">
+
+            <form method="post" action="https://www.munro.agency/thank-you-page/" id="form_43e09316-0524-427b-a07e-f0dc3a1bfb88" target="_top" enctype="multipart/form-data" novalidate="novalidate">
+    
+        <fieldset>
+            <div class="form-container">
+                <ul class="form_fields">
+
+                    <li id="field_311348226" class="field text firstName  col-1"><label for="field_311348226">First Name</label><div class="field_value"><input type="text" name="field_311348226" value="" id="field_311348226_input" maxlength="50" class=" text auto-filled" autocomplete="given-name" default-placeholder="First Name">
+ <span class="field_info"></span></div></li><li id="field_311350274" class="field email emailAddress  col-1"><label for="field_311350274">Your Business Email</label><div class="field_value"><input type="text" name="field_311350274" value="" id="field_311350274_input" maxlength="1024" class=" email auto-filled emailAddress" autocomplete="email" default-placeholder="Your Business Email">
+ <span class="field_info"></span></div></li><li id="field_311367682" class="field textarea description  col-1"><label for="field_311367682">What can we help with?</label><div class="field_value"><textarea name="field_311367682" cols="40" rows="10" id="field_311367682_input" class=" textarea auto-filled" default-placeholder="What can we help with?"></textarea>
+ <span class="field_info"></span></div></li><li id="field_2816759810" class="field input gdprConsent always-shown col-1"><div class="field_value"><span class="checkbox-option"><input type="checkbox" name="field_2816759810" value="1" id="2816759810" class=" input always-shown">
+ <label for="2816759810" class="checkbox-label">I consent to you processing my data in order to get in touch with me</label></span> <span class="field_info"></span></div></li>
+                    <li class="clear"></li>
+                </ul>
+
+                                <input type="hidden" name="gdprConsentField" value="field_2816759810">
+                                                <input type="hidden" name="agentreferrer__sb" value="https%3A%2F%2Fwww.munro.agency%2Fai-development-agency%2F">
+                <input type="hidden" name="trackingid__sb" value="202512_6938540aeb12257f5351ca2a">
+                <input type="hidden" name="accountid__sb" value="KOI-3Q2Y64UJ48">
+                
+                <input type="hidden" name="formid__sb" value="43e09316-0524-427b-a07e-f0dc3a1bfb88">
+                <input type="hidden" name="companyprofileid__sb" value="MzYwNzQ1sTQxAwA">
+                                <p class="clear">
+                    <button id="submit_button" type="submit" name="submit__sb" class="button- button">
+                        Next                    </button>
+                </p>
+                <div id="form_errors" class="error hide"></div>
+                                    <p class="clear"></p>
+                    <div class="ss-recaptcha">
+                        <div class="ss-recaptcha-logo"></div>
+                        <div class="ss-anchor-invisible-text">
+                            <span>protected by <strong>reCAPTCHA</strong></span>
+                            <div class="ss-anchor-pt">
+                                <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy</a>
+                                <span aria-hidden="true" role="presentation"> - </span>
+                                <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-recaptcha hide" data-action="submit" data-badge="inline" data-sitekey="6LeWy7YqAAAAANACrEvnwIZRQzjdZ30B26080QZP" data-size="invisible" data-callback="onSubmit" style=""><div class="grecaptcha-badge" data-style="inline" style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-e7j3ezol72d7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./anchor.html"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./saved_resource.html"></iframe></div>
+                            </div>
+        </fieldset>
+
+        <div class="get_input_values">
+        <input type="hidden" name="rf__sb" value="https%3A%2F%2Fwww.google.com%2F"><input type="hidden" name="agentreferrer__sb" value="https%3A%2F%2Fwww.munro.agency%2Fai-development-agency%2F"><input type="hidden" name="instance" value="7lcqkg"><input type="hidden" name="rf__doc" value="https%3A%2F%2Fwww.google.com%2F"></div>
+
+        <div class="clear"></div>
+    </form>
+
+    
+
+    <script type="text/javascript">
+        var selects = [];
+        var redirectURL = 'https://www.munro.agency/thank-you-page/';
+        var formID = "#form_43e09316-0524-427b-a07e-f0dc3a1bfb88";
+        var formFields = {"400000459053058":{"id":400000459053058,"companyProfileID":307154946,"fieldID":311348226,"formID":400000053025794,"fieldType":"input","label":"First Name","defaultValue":null,"fieldIndex":0,"isRequired":0,"isHidden":0,"isReferred":0,"isProgressive":0,"isAlwaysShown":0,"isAutoFilled":1,"width":1,"createTimestamp":"2025-11-21 11:30:04","fpLabel":null,"fpValue":null,"fpFieldIndex":null,"fpIsSelectedByDefault":null,"fpIsActive":null,"dataType":"text","systemName":"firstName","source":"sharpspring","dataLength":50,"defaultPlaceholder":null},"400000459054082":{"id":400000459054082,"companyProfileID":307154946,"fieldID":311350274,"formID":400000053025794,"fieldType":"input","label":"Your Business Email","defaultValue":null,"fieldIndex":1,"isRequired":0,"isHidden":0,"isReferred":0,"isProgressive":0,"isAlwaysShown":0,"isAutoFilled":1,"width":1,"createTimestamp":"2025-11-21 11:30:04","fpLabel":null,"fpValue":null,"fpFieldIndex":null,"fpIsSelectedByDefault":null,"fpIsActive":null,"dataType":"email","systemName":"emailAddress","source":"sharpspring","dataLength":1024,"defaultPlaceholder":null},"400000459055106":{"id":400000459055106,"companyProfileID":307154946,"fieldID":311367682,"formID":400000053025794,"fieldType":"input","label":"What can we help with?","defaultValue":null,"fieldIndex":2,"isRequired":0,"isHidden":0,"isReferred":0,"isProgressive":0,"isAlwaysShown":0,"isAutoFilled":1,"width":1,"createTimestamp":"2025-11-21 11:30:04","fpLabel":null,"fpValue":null,"fpFieldIndex":null,"fpIsSelectedByDefault":null,"fpIsActive":null,"dataType":"textarea","systemName":"description","source":"sharpspring","dataLength":10000,"defaultPlaceholder":null},"400000459056130":{"id":400000459056130,"companyProfileID":307154946,"fieldID":2816759810,"formID":400000053025794,"fieldType":"input","label":"I consent to you processing my data in order to get in touch with me","defaultValue":null,"fieldIndex":3,"isRequired":0,"isHidden":0,"isReferred":0,"isProgressive":0,"isAlwaysShown":1,"isAutoFilled":0,"width":1,"createTimestamp":"2025-11-21 11:30:04","fpLabel":null,"fpValue":null,"fpFieldIndex":null,"fpIsSelectedByDefault":null,"fpIsActive":null,"dataType":"bit","systemName":"gdprConsent","source":"sharpspring","dataLength":255,"defaultPlaceholder":null}};
+        var instanceID;
+        (function(){
+            if (jQuery && jQuery.validator) {
+                var redirectHandlesPost = 1;
+                var stateAndCountry = [];
+                var redirectInFrame = 0;
+                var useInvisibleRecaptcha = 1;
+                var useForcedRecaptcha = 0;
+
+                $(function() {
+                    var url = '/prospector/save/MzYwNzQ1sTQxAwA/43e09316-0524-427b-a07e-f0dc3a1bfb88';
+                    var theForm;
+
+                    var setStateInput = function() {
+                        for (var item in stateAndCountry) {
+                            if (stateAndCountry.hasOwnProperty(item) && stateAndCountry[item].hasOwnProperty('stateID')) {
+                                var enabledInput = '';
+                                var disabledInput = '';
+                                // If there's no country field, or the country field is set to US, then
+                                // use a select box, otherwise use a text input field
+                                if (stateAndCountry[item].hasOwnProperty('countryID') && $('#' + stateAndCountry[item]['countryID']).val() !== 'US') {
+                                    enabledInput = '#' + stateAndCountry[item]['stateID'] + '_text';
+                                    disabledInput = '#' + stateAndCountry[item]['stateID'] + '_select';
+                                } else {
+                                    enabledInput = '#' + stateAndCountry[item]['stateID'] + '_select';
+                                    disabledInput = '#' + stateAndCountry[item]['stateID'] + '_text';
+                                }
+                                $(enabledInput).attr('name', stateAndCountry[item]['stateName']);
+                                $(disabledInput).attr('name', '');
+                                // data-hidden is used for conditional form fields
+                                $(enabledInput).removeAttr('data-hidden');
+                                $(disabledInput).attr('data-hidden', '');
+                                $(enabledInput).show();
+                                $(disabledInput).hide();
+                                // trigger change event to let condition form fields process conditional fields
+                                $(enabledInput).trigger('change');
+                            }
+                        }
+                    };
+
+                    for (var item in stateAndCountry) {
+                        if (stateAndCountry.hasOwnProperty(item) && stateAndCountry[item].hasOwnProperty('stateID') && stateAndCountry[item].hasOwnProperty('countryID')) {
+                            $('body').on('change', '#' + stateAndCountry[item]['countryID'], setStateInput);
+                        }
+                    }
+                    $(setStateInput);
+
+                    function submitForm() {
+                        if (!theForm) {
+                            showError();
+                            return;
+                        }
+
+                        if (redirectHandlesPost) {
+                            //The form's "action" has already been set to the redirect URL
+                            theForm.submit();
+                            return;
+                        }
+
+                        //redirectURL may not be specified, use the form URL instead if missing
+                        redirectURL = redirectURL || (baseURL ? url : (window.location.protocol + '//' + window.location.host + url));
+
+                        if (redirectInFrame) {
+                            window.location = redirectURL;
+                        } else if (typeof parent.postMessage !== 'function') {
+                            //Browser does not support postMessage but we don't want to redirect in frame
+                            //fall back to adding a location hash that the parent window polls for
+                            parent.location = document.referrer + '#redirectURL=' + redirectURL;
+                        } else {
+                            //Ask the parent window to perform the redirect
+                            try {
+                                parent.postMessage({action: 'redirect', url: redirectURL}, '*');
+                            } catch (err) {
+                                theForm.submit();
+                            }
+
+                            //As a fallback just submit the form after a delay
+                            var submitTimer = setTimeout(function(){ theForm.submit(); }, 2000);
+                            window.onbeforeunload = function() {
+                                clearTimeout(submitTimer);
+                            }
+                        }
+                    }
+
+                    function showError(err) {
+                        console.log(err);
+                        $('#form_errors').text(window.translations['forms_prospectorview_aproblemoccuredsubmittingtheform']).show();
+                        $('#submit_button').prop('disabled', false);
+                    }
+
+                    function getUrlVars() {
+                        var vars = {};
+                        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+                            vars[key] = value;
+                        });
+                        return vars;
+                    }
+
+                    instanceID = getUrlVars()['instance'];
+
+                    var oldHeight = 0;
+
+                    function postSize(force) {
+                        // Fix occasional off by one error in webkit
+                        var height = Math.max($('body').outerHeight() + 1, 50);
+                        var message = {
+                            action: 'resize',
+                            formID: 'MzFONbA0NjTTNTA1MtE1MTJP0k00ME_VTTNISTZONExKS7KwAAA',
+                            width: $('html').outerWidth(),
+                            height: height,
+                            force: force
+                        };
+
+                        if (instanceID != null) {
+                            message.instanceID = instanceID;
+                        }
+
+                        if ((force && height != oldHeight) || height > oldHeight) {
+                            parent.postMessage(message, '*');
+                        }
+                        oldHeight = height;
+                    }
+
+                    function onSubmit(token) {
+                                                    var options = {
+                                'url': url,
+                                'success': submitForm,
+                                'error': showError,
+                                'beforeSubmit': function (arr, $form, options) {
+                                    $('input.required', $form).each(function () {
+                                        var hidden = $(this).is(':hidden');
+                                        if (!hidden) {
+                                            var isBoolean = $(this).hasClass('boolean');
+                                            var value = isBoolean ? $(this).is(':checked') : $(this).val();
+                                            value = typeof value === 'string' ? value.trim() : value;
+                                            var fieldID = $(this).attr('id');
+                                            var fieldName = $(this).data('fieldName');
+                                            var label = fieldName ? $('label[for="' + fieldName + '"]').text() : $('label[for="field_' + fieldID + '"]').text();
+                                            if (!value) {
+                                                var message = window.translations['forms_prospectorview_spacesarenotallowedinthelabelfield'];
+                                                throw message.replace('{x}', label);
+                                            }
+                                        }
+                                    });
+                                    $('input.boolean, input.bit', $form).each(function () {
+                                        var $input = $(this);
+                                        if (!$input.is(':checked') && !$input.is(':hidden')) {
+                                            arr.push({
+                                                name: $input.attr('name'),
+                                                value: 0,
+                                                type: 'checked',
+                                                required: false
+                                            });
+                                        }
+                                    });
+                                    $('input.datetime', $form).each(function () {
+                                        var datetime = $(this).val();
+                                        datetime = typeof (datetime) === 'string' ? datetime.trim() : datetime;
+                                        var name = $(this).attr('name');
+
+                                        for (i in arr) {
+                                            if (arr.hasOwnProperty(i) && arr[i].name == name) {
+                                                arr[i].value = datetime;
+                                            }
+                                        }
+                                    });
+                                }
+                            };
+
+                            try {
+                                $("#form_43e09316-0524-427b-a07e-f0dc3a1bfb88").ajaxSubmit(options); // submitForm();
+                            } catch (err) {
+                                showError(err);
+                            }
+                                            }
+                    window.onSubmit = onSubmit;
+
+                    $("#form_43e09316-0524-427b-a07e-f0dc3a1bfb88").validate({
+                        ignore: ":hidden:not(.forcedrecaptcha__sb)",
+                        
+                        errorPlacement: function (error, element) {
+                            error.insertBefore(element.parent());
+                        },
+
+                        submitHandler: function (form) {
+                            $('#submit_button').prop('disabled', true);
+                            theForm = form;
+
+                                                                                    if (useInvisibleRecaptcha && !useForcedRecaptcha) {
+                                grecaptcha.execute();
+                            } else {
+                                onSubmit();
+                            }
+
+                            postSize(true);
+                            return false;
+                        }
+                    });
+
+                    postSize(true);
+                    if (window !== top) {
+                        //FIXME Use event listeners don't call continuously
+                        setInterval(postSize, 500);
+                    }
+
+                    
+                    function initConditionalFormFields() {
+                        var conditionalFormFields = window.ConditionalFormFields ? new window.ConditionalFormFields : null;
+                        if (conditionalFormFields) {
+                            conditionalFormFields.init(conditionGroupsRaw, formFields, postSize);
+                        } else {
+                            console.error('ConditionalFormFields not found.');
+                        }
+                    }
+                    if (
+                        conditionGroupsRaw &&
+                        conditionGroupsRaw.conditionGroups &&
+                        Array.isArray(conditionGroupsRaw.conditionGroups) &&
+                        conditionGroupsRaw.conditionGroups.length > 0 &&
+                        Array.isArray(conditionGroupsRaw.formConditionalNodes) &&
+                        conditionGroupsRaw.formConditionalNodes.length > 0
+                    ) {
+                        initConditionalFormFields();
+                    }
+                });
+            }
+        })();
+
+        $(function() {
+            try {
+                $('input.datetime').datetimepicker({
+                    defaultTime: "00:00",
+                    onSelect: function (dateText, inst) {
+                        $(this).attr("value", dateText);
+                    }
+                });
+            } catch (e) {}
+        });
+
+        $(function() {
+            // _usePlaceholders is optionally set by users when they embed the form.
+            if (getParams._usePlaceholders || isPreview) {
+                $('body.sharpspring_form').addClass('usingPlaceholders');
+                $('input,textarea').placeholder();
+                $('input,textarea').each(function() {
+                    var $el = $(this);
+                    $el.attr('placeholder', $el.attr('default-placeholder'));
+                });
+            }
+            // retrieve data from ng
+            // to populate form fields on form load
+            // see form.js for alternative
+            // method to get existing tracking id on the form
+            $.getJSON(
+                formDataURL,
+                getParams,
+                parseFormData
+            );
+        });
+    </script>
+<script>
+    // This is a fix for an iOS bug in forms in an iframe
+    if (typeof document.querySelectorAll === 'function' && typeof Array.prototype.forEach === 'function') {
+        try {
+            Array.prototype.slice.call(document.querySelectorAll('input')).forEach(function (el) {
+                el.addEventListener('touchstart', function () {
+                });
+            });
+        } catch (e) {
+            console.log(e);
+        }
+    }
+</script>
+
+
+</body></html>

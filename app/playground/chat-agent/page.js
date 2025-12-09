@@ -83,16 +83,16 @@ export default function ChatAgentPage() {
           <Bot className="w-4 h-4" />
           GPT-4 Powered
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
           AI Chat Agent
         </h1>
-        <p className="text-gray-400">
+        <p className="text-gray-600 dark:text-gray-400">
           Have a conversation with our AI assistant. Ask anything!
         </p>
       </div>
 
       {/* Chat Container */}
-      <div className="bg-gray-900/50 border border-gray-800 rounded-2xl overflow-hidden">
+      <div className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden">
         {/* Messages */}
         <div className="h-[500px] overflow-y-auto p-6 space-y-6">
           {messages.map((message, index) => (
@@ -104,7 +104,7 @@ export default function ChatAgentPage() {
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${
                 message.role === 'user' 
                   ? 'bg-primary/20 text-primary' 
-                  : 'bg-gray-800 text-gray-400'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400'
               }`}>
                 {message.role === 'user' ? <User className="w-5 h-5" /> : <Bot className="w-5 h-5" />}
               </div>
@@ -114,7 +114,7 @@ export default function ChatAgentPage() {
                 <div className={`inline-block px-4 py-3 rounded-2xl max-w-[85%] ${
                   message.role === 'user' 
                     ? 'bg-primary text-white rounded-tr-md' 
-                    : 'bg-gray-800 text-gray-200 rounded-tl-md'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-tl-md'
                 }`}>
                   <p className="whitespace-pre-wrap text-sm md:text-base">{message.content}</p>
                 </div>
@@ -124,10 +124,10 @@ export default function ChatAgentPage() {
           
           {isLoading && (
             <div className="flex gap-4">
-              <div className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center">
-                <Bot className="w-5 h-5 text-gray-400" />
+              <div className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                <Bot className="w-5 h-5 text-gray-500 dark:text-gray-400" />
               </div>
-              <div className="bg-gray-800 px-4 py-3 rounded-2xl rounded-tl-md">
+              <div className="bg-gray-100 dark:bg-gray-800 px-4 py-3 rounded-2xl rounded-tl-md">
                 <Loader2 className="w-5 h-5 animate-spin text-primary" />
               </div>
             </div>
@@ -139,13 +139,13 @@ export default function ChatAgentPage() {
         {/* Suggested Prompts */}
         {messages.length === 1 && (
           <div className="px-6 pb-4">
-            <p className="text-xs text-gray-500 mb-2">Try asking:</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Try asking:</p>
             <div className="flex flex-wrap gap-2">
               {suggestedPrompts.map((prompt, index) => (
                 <button
                   key={index}
                   onClick={() => setInput(prompt)}
-                  className="px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 text-sm rounded-lg transition-colors"
+                  className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 text-sm rounded-lg transition-colors"
                 >
                   {prompt}
                 </button>
@@ -155,12 +155,12 @@ export default function ChatAgentPage() {
         )}
 
         {/* Input */}
-        <form onSubmit={handleSubmit} className="border-t border-gray-800 p-4">
+        <form onSubmit={handleSubmit} className="border-t border-gray-200 dark:border-gray-800 p-4">
           <div className="flex gap-3">
             <button
               type="button"
               onClick={handleReset}
-              className="p-3 bg-gray-800 hover:bg-gray-700 text-gray-400 rounded-xl transition-colors"
+              className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 rounded-xl transition-colors"
               title="Reset conversation"
             >
               <RotateCcw className="w-5 h-5" />
@@ -172,7 +172,7 @@ export default function ChatAgentPage() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your message..."
               disabled={isLoading}
-              className="flex-1 bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
+              className="flex-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
             />
             <button
               type="submit"
@@ -186,7 +186,7 @@ export default function ChatAgentPage() {
       </div>
 
       {/* Info */}
-      <div className="mt-6 text-center text-gray-500 text-sm">
+      <div className="mt-6 text-center text-gray-400 dark:text-gray-500 text-sm">
         <p>Powered by Azure OpenAI GPT-4. Responses may not always be accurate.</p>
       </div>
     </div>

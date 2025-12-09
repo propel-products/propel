@@ -94,7 +94,7 @@ export default function CookieBanner() {
   return (
     <>
       {/* Cookie Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-black border-t-2 border-primary shadow-2xl">
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-black border-t-2 border-primary shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
             {/* Cookie Icon and Message */}
@@ -102,10 +102,10 @@ export default function CookieBanner() {
               <div className="flex items-start gap-3">
                 <Cookie className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2 text-lg">
+                  <h3 className="text-gray-900 dark:text-white font-semibold mb-2 text-lg">
                     We Value Your Privacy
                   </h3>
-                  <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
                     We use cookies to improve your experience. Accept or manage preferences in our{' '}
                     <Link href="/cookies" className="text-primary hover:underline">
                       Cookie Policy
@@ -120,13 +120,13 @@ export default function CookieBanner() {
             <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto lg:flex-shrink-0">
               <button
                 onClick={() => setPreferencesOpen(true)}
-                className="px-4 py-2 text-sm font-medium text-white border border-gray-600 rounded-lg hover:bg-gray-800 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               >
                 Manage Preferences
               </button>
               <button
                 onClick={handleAcceptNecessary}
-                className="px-4 py-2 text-sm font-medium text-white border border-gray-600 rounded-lg hover:bg-gray-800 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               >
                 Necessary Only
               </button>
@@ -144,17 +144,17 @@ export default function CookieBanner() {
       {/* Cookie Preferences Modal */}
       {preferencesOpen && (
         <div className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-black border-2 border-primary rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-white dark:bg-black border-2 border-primary rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
                   <Cookie className="w-6 h-6 text-primary" />
-                  <h2 className="text-2xl font-bold text-white">Cookie Preferences</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Cookie Preferences</h2>
                 </div>
                 <button
                   onClick={() => setPreferencesOpen(false)}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -163,28 +163,28 @@ export default function CookieBanner() {
               {/* Cookie Categories */}
               <div className="space-y-6 mb-6">
                 {/* Essential Cookies */}
-                <div className="border border-gray-700 rounded-lg p-4">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div>
-                      <h3 className="text-lg font-semibold text-white">Essential Cookies</h3>
-                      <p className="text-sm text-gray-400">Required for the website to function properly</p>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Essential Cookies</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Required for the website to function properly</p>
                     </div>
                     <div className="px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full">
                       Always Active
                     </div>
                   </div>
-                  <p className="text-sm text-gray-300 mt-2">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
                     These cookies are necessary for the website to function and cannot be switched off. 
                     They include security, authentication, and basic functionality features.
                   </p>
                 </div>
 
                 {/* Analytics Cookies */}
-                <div className="border border-gray-700 rounded-lg p-4">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div>
-                      <h3 className="text-lg font-semibold text-white">Analytics Cookies</h3>
-                      <p className="text-sm text-gray-400">Help us understand how visitors use our website</p>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Analytics Cookies</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Help us understand how visitors use our website</p>
                     </div>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
@@ -193,21 +193,21 @@ export default function CookieBanner() {
                         onChange={() => togglePreference('analytics')}
                         className="sr-only peer"
                       />
-                      <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                      <div className="w-11 h-6 bg-gray-300 dark:bg-gray-700 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
                     </label>
                   </div>
-                  <p className="text-sm text-gray-300 mt-2">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
                     These cookies collect anonymous information about how visitors interact with our website, 
                     helping us improve user experience and site performance.
                   </p>
                 </div>
 
                 {/* Functionality Cookies */}
-                <div className="border border-gray-700 rounded-lg p-4">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div>
-                      <h3 className="text-lg font-semibold text-white">Functionality Cookies</h3>
-                      <p className="text-sm text-gray-400">Remember your preferences and provide enhanced features</p>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Functionality Cookies</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Remember your preferences and provide enhanced features</p>
                     </div>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
@@ -216,10 +216,10 @@ export default function CookieBanner() {
                         onChange={() => togglePreference('functionality')}
                         className="sr-only peer"
                       />
-                      <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                      <div className="w-11 h-6 bg-gray-300 dark:bg-gray-700 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
                     </label>
                   </div>
-                  <p className="text-sm text-gray-300 mt-2">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
                     These cookies allow the website to remember choices you make and provide enhanced, 
                     personalised features such as language preferences.
                   </p>
@@ -227,8 +227,8 @@ export default function CookieBanner() {
               </div>
 
               {/* Links */}
-              <div className="border-t border-gray-700 pt-4 mb-6">
-                <p className="text-sm text-gray-400">
+              <div className="border-t border-gray-200 dark:border-gray-700 pt-4 mb-6">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
                   For more information, please read our{' '}
                   <Link href="/cookies" className="text-primary hover:underline">
                     Cookie Policy
@@ -245,7 +245,7 @@ export default function CookieBanner() {
               <div className="flex gap-3">
                 <button
                   onClick={() => setPreferencesOpen(false)}
-                  className="flex-1 px-4 py-3 text-sm font-medium text-white border border-gray-600 rounded-lg hover:bg-gray-800 transition-colors"
+                  className="flex-1 px-4 py-3 text-sm font-medium text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 >
                   Cancel
                 </button>

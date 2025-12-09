@@ -56,7 +56,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-50 p-6 sm:p-8 lg:p-12 rounded-3xl">
+    <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 sm:p-8 lg:p-12 rounded-3xl border border-gray-100 dark:border-gray-700">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6">
         <input 
           type="text" 
@@ -66,7 +66,7 @@ export default function ContactForm() {
           onChange={handleChange}
           autoComplete="name"
           required
-          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none text-sm sm:text-base"
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:outline-none text-sm sm:text-base"
         />
         <input 
           type="email" 
@@ -76,7 +76,7 @@ export default function ContactForm() {
           onChange={handleChange}
           autoComplete="email"
           required
-          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none text-sm sm:text-base"
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:outline-none text-sm sm:text-base"
         />
       </div>
       <input 
@@ -86,7 +86,7 @@ export default function ContactForm() {
         value={formData.company}
         onChange={handleChange}
         autoComplete="organization"
-        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none mb-6 text-sm sm:text-base"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:outline-none mb-6 text-sm sm:text-base"
       />
       <textarea 
         name="message"
@@ -96,7 +96,7 @@ export default function ContactForm() {
         onChange={handleChange}
         autoComplete="off"
         required
-        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-3xl border-2 border-gray-200 focus:border-primary focus:outline-none mb-6 text-sm sm:text-base resize-none"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-3xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:outline-none mb-6 text-sm sm:text-base resize-none"
       ></textarea>
       
       <button 
@@ -108,10 +108,10 @@ export default function ContactForm() {
       </button>
 
       {status === 'success' && (
-        <p className="mt-4 text-green-600 text-center">Message sent successfully!</p>
+        <p className="mt-4 text-green-600 dark:text-green-400 text-center">Message sent successfully!</p>
       )}
       {status === 'error' && (
-        <p className="mt-4 text-red-600 text-center">{errorMessage || 'Something went wrong. Please try again.'}</p>
+        <p className="mt-4 text-red-600 dark:text-red-400 text-center">{errorMessage || 'Something went wrong. Please try again.'}</p>
       )}
     </form>
   );

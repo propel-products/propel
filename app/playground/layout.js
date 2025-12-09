@@ -19,7 +19,7 @@ export default function PlaygroundLayout({ children }) {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-black pt-24">
+      <main className="min-h-screen bg-white dark:bg-black pt-24">
         {children}
       </main>
       <Footer />

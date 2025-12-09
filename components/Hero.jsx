@@ -3,8 +3,8 @@ import { SequentialText, SequentialWords } from './SequentialText';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-black flex items-center overflow-hidden">
-      <div className="absolute inset-0 opacity-20">
+    <section className="relative min-h-screen bg-white dark:bg-black flex items-center overflow-hidden">
+      <div className="absolute inset-0 opacity-10 dark:opacity-20">
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
       </div>
@@ -12,12 +12,12 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32 pb-20 md:pb-32 relative z-10">
         <div className="max-w-4xl">
           <SequentialText delay={0.5} className="mb-6">
-            <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-white leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-gray-900 dark:text-white leading-tight">
               <SequentialWords 
                 text="Build Intelligent" 
                 delay={0.5} 
                 wordDelay={0.15}
-                className="text-white text-4xl md:text-5xl lg:text-6xl"
+                className="text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl"
               />
               <SequentialWords 
                 text="Products" 
@@ -29,8 +29,8 @@ export default function Hero() {
           </SequentialText>
           
           <SequentialText delay={1.8} className="mb-12">
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl">
-              <strong className="text-white">Propel</strong> is a digital and AI studio that designs and builds modern web apps, automation systems and intelligent tools for teams who want to move fast without sacrificing quality.
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl">
+              <strong className="text-gray-900 dark:text-white">Propel</strong> is a digital and AI studio that designs and builds modern web apps, automation systems and intelligent tools for teams who want to move fast without sacrificing quality.
             </p>
           </SequentialText>
           
