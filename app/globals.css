@@ -64,33 +64,8 @@
   }
 }
 
-/* Primary color utilities using CSS variables */
+/* Additional primary color utilities */
 @layer utilities {
-  .text-primary {
-    color: var(--color-primary);
-  }
-  
-  .bg-primary {
-    background-color: var(--color-primary);
-  }
-  
-  .bg-primary-hover:hover {
-    background-color: var(--color-primary-hover);
-  }
-  
-  .border-primary {
-    border-color: var(--color-primary);
-  }
-  
-  .ring-primary {
-    --tw-ring-color: var(--color-primary);
-  }
-  
-  .focus-primary:focus {
-    border-color: var(--color-primary);
-    outline-color: var(--color-primary);
-  }
-  
   .glow-primary {
     box-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.3),
                 0 0 40px rgba(var(--color-primary-rgb), 0.2);

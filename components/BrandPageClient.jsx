@@ -44,7 +44,7 @@ export default function BrandPageClient({ linkedInBanners = [], marketingExample
           {linkedInBanners.map((banner, idx) => (
             <div 
               key={idx} 
-              className="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer hover:border-[#FF5007] transition-colors group"
+              className="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer hover:border-primary transition-colors group"
               onClick={() => handleLinkedInClick(banner, idx)}
             >
               <div className="bg-white rounded-lg p-4 mb-4 overflow-hidden">
@@ -62,7 +62,7 @@ export default function BrandPageClient({ linkedInBanners = [], marketingExample
                   <h3 className="text-lg font-semibold mb-2">{banner.name}</h3>
                   <p className="text-sm text-gray-400">{banner.dimensions} pixels</p>
                 </div>
-                <span className="text-xs text-gray-500 group-hover:text-[#FF5007] transition-colors">
+                <span className="text-xs text-gray-500 group-hover:text-primary transition-colors">
                   Click to enlarge
                 </span>
               </div>
@@ -77,7 +77,7 @@ export default function BrandPageClient({ linkedInBanners = [], marketingExample
           {marketingExamples.map((example, idx) => (
             <div 
               key={idx} 
-              className="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer hover:border-[#FF5007] transition-colors group"
+              className="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer hover:border-primary transition-colors group"
               onClick={() => handleMarketingClick(example, idx)}
             >
               <div className="bg-white rounded-lg p-4 mb-4 overflow-hidden">
@@ -92,7 +92,7 @@ export default function BrandPageClient({ linkedInBanners = [], marketingExample
               </div>
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-semibold">{example.name}</h3>
-                <span className="text-xs text-gray-500 group-hover:text-[#FF5007] transition-colors">
+                <span className="text-xs text-gray-500 group-hover:text-primary transition-colors">
                   Click to enlarge
                 </span>
               </div>

@@ -71,7 +71,7 @@ export default function Home() {
 
           <SequentialText delay={5.0}>
             <div className="text-center mt-12">
-              <Link href="/services" className="inline-block bg-[#FF5007] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105">
+              <Link href="/services" className="inline-block bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-hover transition-all hover:scale-105">
                 View All Services
               </Link>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
             <SequentialText delay={6.7}>
               <div>
                 <h2 className="text-5xl font-bold mb-6">
-                  Why <span className="text-[#FF5007]">Propel</span>
+                  Why <span className="text-primary">Propel</span>
                 </h2>
                 <p className="text-xl text-gray-300 mb-8">
                   We combine clean design with practical engineering to deliver exceptional digital products for our clients.
@@ -99,7 +99,7 @@ export default function Home() {
                   {whyChooseUs.map((item, idx) => (
                     <SequentialText key={idx} delay={6.9 + (idx * 0.2)}>
                       <div className="flex gap-4">
-                        <div className="w-2 h-2 bg-[#FF5007] rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
                           <p className="text-gray-400">{item.desc}</p>

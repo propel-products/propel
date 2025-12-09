@@ -96,7 +96,7 @@ export default function PrivacyPolicy() {
               </ul>
               <p>
                 To exercise these rights, please contact us at:{' '}
-                <a href="mailto:enquiries@propel.im" className="text-[#FF5007] hover:underline">enquiries@propel.im</a>
+                <a href="mailto:enquiries@propel.im" className="text-primary hover:underline">enquiries@propel.im</a>
               </p>
             </section>
 
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-3xl font-bold text-white mb-4 mt-8">Cookies</h2>
               <p>
                 Our website uses cookies to enhance your browsing experience. For detailed information, please see our{' '}
-                <a href="/cookies" className="text-[#FF5007] hover:underline">Cookie Policy</a>.
+                <a href="/cookies" className="text-primary hover:underline">Cookie Policy</a>.
               </p>
             </section>
 
@@ -114,9 +114,9 @@ export default function PrivacyPolicy() {
               <div className="mt-4 p-6 bg-gray-900 rounded-lg">
                 <p className="mb-2"><strong>Propel</strong></p>
                 <p className="mb-2">
-                  Email: <a href="mailto:enquiries@propel.im" className="text-[#FF5007] hover:underline">enquiries@propel.im</a>
+                  Email: <a href="mailto:enquiries@propel.im" className="text-primary hover:underline">enquiries@propel.im</a>
                 </p>
-                <p>Website: <a href="https://www.propel.im" className="text-[#FF5007] hover:underline">www.propel.im</a></p>
+                <p>Website: <a href="https://www.propel.im" className="text-primary hover:underline">www.propel.im</a></p>
               </div>
             </section>
           </div>

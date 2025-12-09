@@ -70,7 +70,7 @@ export default function CookiePolicy() {
                 If Google Analytics is enabled, it uses cookies to collect information about how visitors use our website. This data is processed anonymously and helps us improve our website.
               </p>
               <p>
-                For more information, visit: <a href="https://policies.google.com/privacy" className="text-[#FF5007] hover:underline" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+                For more information, visit: <a href="https://policies.google.com/privacy" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
               </p>
             </section>
 
@@ -135,7 +135,7 @@ export default function CookiePolicy() {
                 By continuing to use our website, you consent to our use of cookies in accordance with this Cookie Policy. If you do not agree to our use of cookies, please adjust your browser settings or refrain from using our website.
               </p>
               <p className="mt-4">
-                You can withdraw your consent at any time by adjusting your browser settings or contacting us at <a href="mailto:enquiries@propel.im" className="text-[#FF5007] hover:underline">enquiries@propel.im</a>.
+                You can withdraw your consent at any time by adjusting your browser settings or contacting us at <a href="mailto:enquiries@propel.im" className="text-primary hover:underline">enquiries@propel.im</a>.
               </p>
             </section>
 
@@ -151,8 +151,8 @@ export default function CookiePolicy() {
               <p>If you have questions about our use of cookies, please contact us:</p>
               <div className="mt-4 p-6 bg-gray-900 rounded-lg">
                 <p className="mb-2"><strong>Propel</strong></p>
-                <p className="mb-2">Email: <a href="mailto:enquiries@propel.im" className="text-[#FF5007] hover:underline">enquiries@propel.im</a></p>
-                <p>Website: <a href="https://propel.im" className="text-[#FF5007] hover:underline">propel.im</a></p>
+                <p className="mb-2">Email: <a href="mailto:enquiries@propel.im" className="text-primary hover:underline">enquiries@propel.im</a></p>
+                <p>Website: <a href="https://propel.im" className="text-primary hover:underline">propel.im</a></p>
               </div>
             </section>
 
@@ -160,8 +160,8 @@ export default function CookiePolicy() {
               <h2 className="text-3xl font-bold text-white mb-4 mt-8">9. More Information</h2>
               <p>For more information about cookies and how they work, you can visit:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><a href="https://www.allaboutcookies.org" className="text-[#FF5007] hover:underline" target="_blank" rel="noopener noreferrer">www.allaboutcookies.org</a></li>
-                <li><a href="https://www.youronlinechoices.com" className="text-[#FF5007] hover:underline" target="_blank" rel="noopener noreferrer">www.youronlinechoices.com</a></li>
+                <li><a href="https://www.allaboutcookies.org" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">www.allaboutcookies.org</a></li>
+                <li><a href="https://www.youronlinechoices.com" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">www.youronlinechoices.com</a></li>
               </ul>
             </section>
           </div>

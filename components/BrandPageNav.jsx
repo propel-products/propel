@@ -39,7 +39,7 @@ export default function BrandPageNav({ sections }) {
   return (
     <nav className="hidden lg:block fixed left-6 top-1/2 -translate-y-1/2 z-40">
       <div className="bg-gray-900 border border-gray-800 rounded-lg p-4 w-56">
-        <h3 className="text-sm font-semibold text-[#FF5007] mb-4 uppercase tracking-wider">
+        <h3 className="text-sm font-semibold text-primary mb-4 uppercase tracking-wider">
           Quick Navigation
         </h3>
         <ul className="space-y-2">
@@ -49,7 +49,7 @@ export default function BrandPageNav({ sections }) {
                 onClick={() => scrollToSection(section.id)}
                 className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
                   activeSection === section.id
-                    ? 'bg-[#FF5007] text-white'
+                    ? 'bg-primary text-white'
                     : 'text-gray-400 hover:text-white hover:bg-gray-800'
                 }`}
               >

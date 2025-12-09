@@ -66,7 +66,7 @@ export default function ContactForm() {
           onChange={handleChange}
           autoComplete="name"
           required
-          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none text-sm sm:text-base"
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none text-sm sm:text-base"
         />
         <input 
           type="email" 
@@ -76,7 +76,7 @@ export default function ContactForm() {
           onChange={handleChange}
           autoComplete="email"
           required
-          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none text-sm sm:text-base"
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none text-sm sm:text-base"
         />
       </div>
       <input 
@@ -86,7 +86,7 @@ export default function ContactForm() {
         value={formData.company}
         onChange={handleChange}
         autoComplete="organization"
-        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6 text-sm sm:text-base"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none mb-6 text-sm sm:text-base"
       />
       <textarea 
         name="message"
@@ -96,13 +96,13 @@ export default function ContactForm() {
         onChange={handleChange}
         autoComplete="off"
         required
-        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-3xl border-2 border-gray-200 focus:border-[#FF5007] focus:outline-none mb-6 text-sm sm:text-base resize-none"
+        className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-3xl border-2 border-gray-200 focus:border-primary focus:outline-none mb-6 text-sm sm:text-base resize-none"
       ></textarea>
       
       <button 
         type="submit"
         disabled={status === 'sending'}
-        className="w-full bg-[#FF5007] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105 disabled:opacity-50"
+        className="w-full bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:opacity-90 transition-all hover:scale-105 disabled:opacity-50"
       >
         {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>

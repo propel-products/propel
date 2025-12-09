@@ -16,13 +16,13 @@ export default function TeamMember({
           src={imageSrc}
           alt={name}
           fill
-          className="rounded-lg object-cover border-4 border-[#FF5007]"
+          className="rounded-lg object-cover border-4 border-primary"
           loading="lazy"
         />
       </div>
       
       <h3 className="text-2xl font-bold text-black mb-2">{name}</h3>
-      <p className="text-[#FF5007] font-semibold mb-4">{role}</p>
+      <p className="text-primary font-semibold mb-4">{role}</p>
       <p className="text-gray-600 mb-6 max-w-xs mx-auto leading-relaxed">
         {summary}
       </p>
@@ -30,13 +30,13 @@ export default function TeamMember({
       <div className="space-y-2">
         <div className="flex items-center justify-center gap-2 text-gray-600">
           <Mail size={16} />
-          <a href={`mailto:${email}`} className="hover:text-[#FF5007] transition-colors">
+          <a href={`mailto:${email}`} className="hover:text-primary transition-colors">
             {email}
           </a>
         </div>
         <div className="flex items-center justify-center gap-2 text-gray-600">
           <Phone size={16} />
-          <a href={`tel:${phone}`} className="hover:text-[#FF5007] transition-colors">
+          <a href={`tel:${phone}`} className="hover:text-primary transition-colors">
             {phone}
           </a>
         </div>

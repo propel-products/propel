@@ -61,7 +61,7 @@ export default function Contact() {
       <section className="relative min-h-[50vh] md:min-h-[40vh] bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            Start a <span className="text-[#FF5007]">Project</span>
+            Start a <span className="text-primary">Project</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             Ready to build something great? We're here to help turn your concept into reality.
@@ -87,7 +87,7 @@ export default function Contact() {
                     href={item.link}
                     className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors"
                   >
-                    <div className="text-[#FF5007] mt-1">{item.icon}</div>
+                    <div className="text-primary mt-1">{item.icon}</div>
                     <div>
                       <div className="font-semibold text-gray-900">{item.title}</div>
                       <div className="text-gray-600">{item.detail}</div>

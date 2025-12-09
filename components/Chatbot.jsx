@@ -18,7 +18,7 @@ export default function Chatbot() {
       {/* Chatbot Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 bg-[#FF5007] text-white p-4 rounded-full shadow-lg hover:bg-[#ff6a2e] transition-all duration-300 hover:scale-110 z-50"
+        className="fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg hover:opacity-90 transition-all duration-300 hover:scale-110 z-50"
         aria-label="Open chatbot"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
@@ -28,7 +28,7 @@ export default function Chatbot() {
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-80 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 z-50 flex flex-col">
           {/* Header */}
-          <div className="bg-[#FF5007] text-white p-4 rounded-t-2xl">
+          <div className="bg-primary text-white p-4 rounded-t-2xl">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                 <MessageCircle size={16} />
@@ -71,11 +71,11 @@ export default function Chatbot() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message..."
-                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#FF5007]"
+                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary"
               />
               <button
                 type="submit"
-                className="bg-[#FF5007] text-white p-2 rounded-lg hover:bg-[#ff6a2e] transition-colors"
+                className="bg-primary text-white p-2 rounded-lg hover:opacity-90 transition-colors"
                 aria-label="Send message"
               >
                 <Send size={16} />

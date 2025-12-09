@@ -68,7 +68,7 @@ export default function About() {
       <section className="relative min-h-[50vh] md:min-h-[40vh] bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            About <span className="text-[#FF5007]">Propel</span>
+            About <span className="text-primary">Propel</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             A next generation digital studio specialising in clean design, advanced automation and intelligent systems.
@@ -93,7 +93,7 @@ export default function About() {
           <div className="space-y-8">
             {approach.map((item, idx) => (
               <div key={idx} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-10 h-10 bg-[#FF5007] text-white rounded-full flex items-center justify-center font-bold">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">
                   {idx + 1}
                 </div>
                 <div>
@@ -113,7 +113,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {principles.map((principle, idx) => (
               <div key={idx} className="flex gap-4 items-center p-4 bg-gray-50 rounded-xl">
-                <div className="w-2 h-2 bg-[#FF5007] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                 <p className="font-medium text-gray-800">{principle}</p>
               </div>
             ))}
@@ -131,7 +131,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <a 
               href="/services" 
-              className="bg-[#FF5007] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#ff6a2e] transition-all hover:scale-105 text-center"
+              className="bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-primary-hover transition-all hover:scale-105 text-center"
             >
               Explore Our Services
             </a>
