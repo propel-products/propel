@@ -40,10 +40,12 @@ export default function Navigation() {
             <Link 
               key={link.href} 
               href={link.href}
-              className="text-gray-900 dark:text-white hover:text-primary transition-colors flex items-center gap-1"
+              className="relative text-gray-900 dark:text-white hover:text-primary transition-colors flex items-center gap-1 group"
             >
               {link.label}
               {link.icon}
+              {/* Animated underline */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
           <ThemeSwitcher />
