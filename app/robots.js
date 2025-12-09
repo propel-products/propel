@@ -12,6 +12,6 @@ export default function robots() {
         disallow: ['/api/', '/admin/', '/resources'],
       },
     ],
-    sitemap: 'https://www.ocoiom.com/sitemap.xml',
+    sitemap: 'https://www.propel.im/sitemap.xml',
   };
 }

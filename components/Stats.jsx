@@ -1,9 +1,9 @@
 export default function Stats() {
   const stats = [
-    { number: 'Expert', label: 'Financial Guidance' },
-    { number: 'Trusted', label: 'Business Partner' },
-    { number: 'Proven', label: 'Track Record' },
-    { number: 'Dedicated', label: 'Client Support' }
+    { number: 'Clean', label: 'Modern Design' },
+    { number: 'Smart', label: 'AI Integration' },
+    { number: 'Fast', label: 'Delivery Cycles' },
+    { number: 'Focused', label: 'Partnership' }
   ];
 
   return (

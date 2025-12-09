@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'oco-orange': '#FF5007',
-        'oco-orange-hover': '#ff6a2e',
+        'propel-orange': '#FF5007',
+        'propel-orange-hover': '#ff6a2e',
       },
     },
   },

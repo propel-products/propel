@@ -1,16 +1,15 @@
 export default function StructuredData() {
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": ["AccountingService", "ProfessionalService", "LocalBusiness"],
-    "name": "OCO Limited",
-    "legalName": "OCO Limited",
-    "alternateName": ["OCO Accounting & Advisory", "OCO Isle of Man", "OCO Accounting", "OCO Limited Accounting"],
-    "description": "OCO Limited is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth. Founded by ACCA Fellow Gary O'Connor, OCO provides expert accounting services, business valuation, and fractional CFO services.",
-    "url": "https://www.ocoiom.com",
-    "logo": "https://www.ocoiom.com/logo.svg",
-    "image": "https://www.ocoiom.com/og-image.jpg",
-    "telephone": "+44162400000",
-    "email": "enquiries@ocoiom.com",
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "name": "Propel",
+    "legalName": "Propel",
+    "alternateName": ["Propel Digital", "Propel AI Studio", "propel.im"],
+    "description": "Propel is a modern digital and AI studio based in the Isle of Man that designs and builds web apps, automation systems and intelligent digital products. We specialise in UX design, AI engineering, legal and financial automation, document processing and creative technology.",
+    "url": "https://www.propel.im",
+    "logo": "https://www.propel.im/Propel-logo.svg",
+    "image": "https://www.propel.im/og-image.jpg",
+    "email": "enquiries@propel.im",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IM",
@@ -22,62 +21,31 @@ export default function StructuredData() {
       "latitude": "54.2361",
       "longitude": "-4.5481"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Isle of Man"
-    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Isle of Man"
+      },
+      {
+        "@type": "Country",
+        "name": "United Kingdom"
+      }
+    ],
     "priceRange": "$$",
-    "founder": {
-      "@type": "Person",
-      "name": "Gary O'Connor",
-      "jobTitle": "Director and Founder",
-      "description": "ACCA Fellow with over 25 years' experience in accounting, funds and fiduciary industry",
-      "url": "https://im.linkedin.com/in/gary-o-connor",
-      "alumniOf": "PricewaterhouseCoopers",
-      "award": "Isle of Man Institute of Directors (IoD) 'Director of the Year' award",
-      "knowsAbout": [
-        "Financial Reporting",
-        "Business Valuation",
-        "Audit",
-        "Tax Compliance",
-        "Corporate Governance",
-        "Strategic Planning"
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional Certification",
-          "name": "ACCA Fellow",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Association of Chartered Certified Accountants"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional Certification",
-          "name": "Certified Business Valuer",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Conseil Supérieur Ordre des Experts-Comptables (CSOEC)"
-          }
-        }
-      ]
-    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Accounting and Advisory Services",
+      "name": "Digital & AI Services",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Accounting Services",
-            "description": "Complete financial reporting to keep your business running smoothly and compliant",
-            "serviceType": "Accounting",
+            "name": "Digital Product & UX",
+            "description": "We design intuitive interfaces and create modern web applications that feel fast, fluid and effortless to use",
+            "serviceType": "UX Design",
             "provider": {
               "@type": "Organization",
-              "name": "OCO Limited"
+              "name": "Propel"
             }
           }
         },
@@ -85,12 +53,12 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Advisory Services",
-            "description": "Strategic guidance to optimise your business performance and achieve your long-term financial goals",
-            "serviceType": "Business Advisory",
+            "name": "Web App Development",
+            "description": "Fast, modern and scalable web applications using current technologies and best practices",
+            "serviceType": "Web Development",
             "provider": {
               "@type": "Organization",
-              "name": "OCO Limited"
+              "name": "Propel"
             }
           }
         },
@@ -98,12 +66,12 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "CFO Services",
-            "description": "Fractional CFO support providing executive-level financial leadership without the full-time cost",
-            "serviceType": "Chief Financial Officer Services",
+            "name": "AI Systems & Agents",
+            "description": "Intelligent tools that improve speed, accuracy and decision making",
+            "serviceType": "AI Engineering",
             "provider": {
               "@type": "Organization",
-              "name": "OCO Limited"
+              "name": "Propel"
             }
           }
         },
@@ -111,44 +79,45 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Business Valuation",
-            "description": "Independent business valuations by certified business valuer",
-            "serviceType": "Business Valuation",
+            "name": "Automation",
+            "description": "Streamline and automate time-sensitive processes for professional services",
+            "serviceType": "Process Automation",
             "provider": {
               "@type": "Organization",
-              "name": "OCO Limited"
+              "name": "Propel"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brand & Creative",
+            "description": "Visual systems that support function and strengthen perception",
+            "serviceType": "Brand Design",
+            "provider": {
+              "@type": "Organization",
+              "name": "Propel"
             }
           }
         }
       ]
     },
-    "sameAs": [
-      "https://im.linkedin.com/in/gary-o-connor"
-    ],
-    "foundingDate": "2010",
-    "numberOfEmployees": "1-10",
-    "slogan": "Accounting / Advisory",
+    "slogan": "Build intelligent products with speed, clarity and purpose",
     "knowsAbout": [
-      "Accounting Services",
-      "Financial Reporting",
-      "Business Valuation",
-      "Tax Compliance",
-      "CFO Services",
-      "Fractional CFO",
-      "Business Advisory",
-      "Strategic Planning",
-      "Corporate Governance",
-      "Management Accounts",
-      "Audit Liaison",
-      "Financial Planning",
-      "Isle of Man Accounting"
+      "Digital Product Design",
+      "UX Design",
+      "Web App Development",
+      "AI Engineering",
+      "AI Agents",
+      "Process Automation",
+      "Document Automation",
+      "Legal Tech",
+      "Smart Search",
+      "Brand Identity",
+      "Creative Technology"
     ],
-    "keywords": "OCO Limited, OCO accounting, OCO Isle of Man, accounting services Isle of Man, business valuation, fractional CFO, Gary O'Connor, ACCA accountant",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "1"
-    }
+    "keywords": "Propel, propel.im, digital product design, AI engineering, automation studio, web app development, Isle of Man digital agency"
   };
 
   const breadcrumbSchema = {
@@ -159,25 +128,25 @@ export default function StructuredData() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.ocoiom.com"
+        "item": "https://www.propel.im"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.ocoiom.com/services"
+        "item": "https://www.propel.im/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "About",
-        "item": "https://www.ocoiom.com/about"
+        "item": "https://www.propel.im/about"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Contact",
-        "item": "https://www.ocoiom.com/contact"
+        "item": "https://www.propel.im/contact"
       }
     ]
   };
@@ -185,14 +154,14 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "OCO Limited",
-    "alternateName": "OCO Accounting & Advisory",
-    "url": "https://www.ocoiom.com",
+    "name": "Propel",
+    "alternateName": "Propel Digital & AI Studio",
+    "url": "https://www.propel.im",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.ocoiom.com/services?q={search_term_string}"
+        "urlTemplate": "https://www.propel.im/services?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -204,50 +173,42 @@ export default function StructuredData() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What accounting services does OCO Limited provide?",
+        "name": "What services does Propel provide?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "OCO Limited provides comprehensive accounting services including financial statement preparation (statutory and non-statutory), management accounts, tax compliance (personal and company tax returns, VAT returns), and audit liaison services. We handle everything from transaction recording to budget preparation and cash flow forecasts."
+          "text": "Propel provides digital product design, UX/UI design, web app development, AI systems and agents, process automation for professional services, and brand creative services. We combine design and engineering into one streamlined process."
         }
       },
       {
         "@type": "Question",
-        "name": "What is a fractional CFO service?",
+        "name": "What is Propel's approach to AI?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Fractional CFO services provide executive-level financial leadership without the full-time cost. OCO Limited offers strategic financial planning, board and stakeholder relations, cash flow management, M&A support, and exit planning. This service is ideal for businesses that need CFO expertise but don't require or can't afford a full-time CFO."
+          "text": "Propel uses AI strategically to enhance core workflows such as search, reporting and decision support. We build intelligent tools including AI chat agents, smart search systems, automated summarisation, and document extraction capabilities."
         }
       },
       {
         "@type": "Question",
-        "name": "Does OCO Limited provide business valuation services?",
+        "name": "Who does Propel work with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Gary O'Connor is a certified business valuer recognized by the Conseil Supérieur Ordre des Experts-Comptables (CSOEC). OCO Limited provides independent business valuations, complex dispute valuations, transaction valuations, and expert witness services."
+          "text": "Propel works with founders launching new products, professional service teams needing automation, legal, finance and corporate services, tech companies wanting clean UX, agencies needing specialist AI integration, and businesses modernising legacy systems."
         }
       },
       {
         "@type": "Question",
-        "name": "Who is Gary O'Connor?",
+        "name": "Where is Propel located?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Gary O'Connor is the Director and Founder of OCO Limited. He is a Fellow of the Association of Chartered Certified Accountants (ACCA) with over 25 years' experience in accounting, funds, and fiduciary services. He qualified with PricewaterhouseCoopers in 2004 and was the winner of the Isle of Man Institute of Directors (IoD) 'Director of the Year' award. Gary is also a certified business valuer."
+          "text": "Propel is based in the Isle of Man and serves clients in the Isle of Man, UK and internationally. We operate remotely while maintaining close partnerships with our clients."
         }
       },
       {
         "@type": "Question",
-        "name": "Where is OCO Limited located?",
+        "name": "How do I start a project with Propel?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "OCO Limited is based in the Isle of Man and primarily serves businesses in the Isle of Man region. We provide accounting, advisory, and CFO services to businesses of all sizes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What makes OCO Limited different from other accounting firms?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "OCO Limited combines deep financial expertise with a modern, technology-driven approach. We offer proactive partnership rather than just reporting numbers, industry expertise across multiple sectors, technology-forward solutions for efficiency and real-time insights, and scalable solutions that grow with your business. With over 25 years of experience and specialized certifications in business valuation, we provide comprehensive financial guidance."
+          "text": "Every project begins with discovery and definition. Contact us at enquiries@propel.im with details about what you want to build, problems you're trying to solve, who the users are, important workflows, and timeframes. We respond with a clear, structured plan and proposal."
         }
       }
     ]

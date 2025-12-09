@@ -4,14 +4,14 @@ import AnimatedLogo from './AnimatedLogo';
 
 export default function Footer() {
   const footerLinks = {
-    expertise: [
-      { label: 'Accounting', href: '/services#accounting' },
-      { label: 'Advisory', href: '/services#advisory' },
-      { label: 'CFO Services', href: '/services#cfo' }
+    services: [
+      { label: 'Digital Product', href: '/services#digital' },
+      { label: 'Automation', href: '/services#automation' },
+      { label: 'AI Engineering', href: '/services#ai' },
+      { label: 'Creative', href: '/services#creative' }
     ],
     connect: [
-      { label: 'LinkedIn', href: 'https://im.linkedin.com/in/gary-o-connor' },
-      { label: 'Email', href: 'mailto:enquiries@ocoiom.com' }
+      { label: 'Email', href: 'mailto:enquiries@propel.im' }
     ]
   };
 
@@ -23,13 +23,13 @@ export default function Footer() {
             <div className="mb-4">
               <AnimatedLogo size="small" color="white" />
             </div>
-            <p className="text-xs text-gray-400 font-light tracking-wide uppercase">Accounting / Advisory</p>
+            <p className="text-xs text-gray-400 font-light tracking-wide uppercase">Digital / AI Studio</p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Expertise</h4>
+            <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              {footerLinks.expertise.map(link => (
+              {footerLinks.services.map(link => (
                 <li key={link.href}>
                   <Link href={link.href} className="hover:text-[#FF5007] transition-colors">
                     {link.label}
@@ -86,43 +86,9 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          {/* Certifications and Badges */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6">
-            <div className="flex items-center gap-3">
-              <Image 
-                src="/acca-badge.png" 
-                alt="ACCA Badge" 
-                width={60} 
-                height={60}
-                className="object-contain"
-                loading="lazy"
-              />
-              <div className="text-sm text-gray-400 leading-tight">
-                <div>Chartered</div>
-                <div>Certified</div>
-                <div>Accountants</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Image 
-                src="/business-valuations-certificate.png" 
-                alt="Business Valuations Certificate" 
-                width={60} 
-                height={60}
-                className="object-contain"
-                loading="lazy"
-              />
-              <div className="text-sm text-gray-400 leading-tight">
-                <div>Certified</div>
-                <div>Business</div>
-                <div>Valuer</div>
-              </div>
-            </div>
-          </div>
-          
-          <p className="mb-4">&copy; 2025 OCO Limited (Company No. 138078C) - Accounting & Advisory. All rights reserved.</p>
+          <p className="mb-4">&copy; 2025 Propel. All rights reserved.</p>
           <p className="text-sm text-gray-500 max-w-4xl mx-auto px-4">
-            OCO Limited is registered as a designated business by the Isle of Man Financial Services Authority in accordance with the Designated Business (Registration and Oversight) Act 2015
+            Propel is a digital and AI studio based in the Isle of Man, serving clients internationally.
           </p>
         </div>
       </div>

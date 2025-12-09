@@ -5,66 +5,64 @@ import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
-    default: 'OCO Limited | Accounting & Advisory | Isle of Man',
-    template: '%s | OCO Limited - Accounting & Advisory'
+    default: 'Propel | Digital & AI Studio | Isle of Man',
+    template: '%s | Propel - Digital & AI Studio'
   },
-  description: 'OCO Limited is a leading accounting and advisory practice based in the Isle of Man. Expert accounting services, business valuation, and fractional CFO services by ACCA Fellow Gary O\'Connor.',
+  description: 'Propel is a modern digital and AI studio that designs and builds web apps, automation systems and intelligent digital products. UX design, AI engineering, and creative technology.',
   keywords: [
-    'OCO Limited',
-    'OCO accounting',
-    'OCO Isle of Man',
-    'OCO Limited Isle of Man',
-    'OCO accounting Isle of Man',
-    'OCO advisory',
-    'OCO Limited accounting',
-    'accounting services Isle of Man',
-    'advisory services Isle of Man',
-    'CFO services Isle of Man',
-    'business valuation Isle of Man',
-    'tax preparation Isle of Man',
-    'financial planning Isle of Man',
-    'Gary O\'Connor',
-    'Gary O\'Connor OCO',
-    'ACCA certified Isle of Man',
-    'Isle of Man accounting',
-    'fractional CFO',
-    'business strategy',
-    'financial reporting'
+    'Propel',
+    'propel.im',
+    'digital product design',
+    'AI engineering',
+    'automation studio',
+    'web app development',
+    'legal tech solutions',
+    'document automation',
+    'AI search',
+    'isle of man digital agency',
+    'corporate services automation',
+    'creative technology',
+    'UX design',
+    'AI agents',
+    'process automation',
+    'smart search',
+    'data processing',
+    'API integrations'
   ],
-  authors: [{ name: 'Gary O\'Connor', url: 'https://im.linkedin.com/in/gary-o-connor' }],
-  creator: 'OCO Limited',
-  publisher: 'OCO Limited',
+  authors: [{ name: 'Propel', url: 'https://www.propel.im' }],
+  creator: 'Propel',
+  publisher: 'Propel',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.ocoiom.com'),
+  metadataBase: new URL('https://www.propel.im'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_IM',
-    url: 'https://www.ocoiom.com',
-    siteName: 'OCO Limited',
-    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
-    description: 'OCO Limited is a leading accounting and advisory practice based in the Isle of Man. Expert accounting services, business valuation, and fractional CFO services.',
+    url: 'https://www.propel.im',
+    siteName: 'Propel',
+    title: 'Propel | Digital & AI Studio | Isle of Man',
+    description: 'Build intelligent products with speed, clarity and purpose. Digital product design, automation and AI engineering.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'OCO Limited - Accounting & Advisory Services',
+        alt: 'Propel - Digital & AI Studio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
-    description: 'OCO Limited is a leading accounting and advisory practice based in the Isle of Man. Expert accounting services, business valuation, and fractional CFO services.',
+    title: 'Propel | Digital & AI Studio | Isle of Man',
+    description: 'Build intelligent products with speed, clarity and purpose. Digital product design, automation and AI engineering.',
     images: ['/og-image.jpg'],
-    site: '@OCOLimited',
+    site: '@propelim',
   },
   robots: {
     index: true,
@@ -78,9 +76,6 @@ export const metadata = {
     },
   },
   verification: {
-    // Add your Google Search Console verification code here
-    // Get it from: https://search.google.com/search-console
-    // It will look like: 'abc123def456ghi789'
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
   },
   other: {

@@ -19,10 +19,10 @@ export default function AnimatedLogo({ className = "", size = "default", color =
   }, []);
 
   const sizeClasses = {
-    small: "w-16 h-5",
-    default: "w-24 h-8", 
-    large: "w-32 h-11",
-    xlarge: "w-40 h-14"
+    small: "w-20 h-5",
+    default: "w-28 h-7", 
+    large: "w-36 h-9",
+    xlarge: "w-44 h-11"
   };
 
   const pathVariants = {
@@ -31,8 +31,8 @@ export default function AnimatedLogo({ className = "", size = "default", color =
       pathLength: 1,
       opacity: 1,
       transition: {
-        pathLength: { duration: 1.5, delay: i * 0.2, ease: "easeInOut" },
-        opacity: { duration: 0.5, delay: i * 0.2 }
+        pathLength: { duration: 1.5, delay: i * 0.1, ease: "easeInOut" },
+        opacity: { duration: 0.5, delay: i * 0.1 }
       }
     })
   };
@@ -54,6 +54,9 @@ export default function AnimatedLogo({ className = "", size = "default", color =
     }
   };
 
+  // Use white for footer, orange for main nav
+  const fillColor = color === "white" ? "#FFFFFF" : color;
+
   return (
     <motion.div
       className={`${sizeClasses[size]} ${className}`}
@@ -62,35 +65,75 @@ export default function AnimatedLogo({ className = "", size = "default", color =
       animate={animationTrigger > 0 ? "glow" : "initial"}
       key={animationTrigger}
     >
-      <svg width="100%" height="100%" viewBox="0 0 726 248" fill="none">
-        {/* First O */}
+      <svg width="100%" height="100%" viewBox="0 0 420 105" fill="none">
+        {/* P */}
         <motion.path
-          d="M124 0C192.483 0 248 55.5167 248 124C248 192.483 192.483 248 124 248C55.5167 248 0 192.483 0 124C0 55.5167 55.5167 5.57757e-05 124 0ZM124 50C83.1309 50 50 83.1309 50 124C50 164.869 83.1309 198 124 198C164.869 198 198 164.869 198 124C198 83.1309 164.869 50 124 50Z"
-          fill={color}
+          d="M17.7289 54.0794H49.6909V14.4544H17.7289V54.0794ZM67.4198 13.4575V55.0762L53.9359 68.5338H17.7289V87.2248H0V0H53.9359L67.4198 13.4575Z"
+          fill={fillColor}
           variants={pathVariants}
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           custom={0}
         />
         
-        {/* C */}
+        {/* R */}
         <motion.path
-          d="M388.893 0C423.105 0 451.099 11.5 474.344 36C464 55.5 464 55.5 451.099 80.5C434.4 58.4109 413.971 49.7004 388.893 49.7004C351.704 49.7004 315.118 79.5861 315.118 124C315.118 168.414 352.707 198.3 388.893 198.3C417.359 198.3 432.099 187.5 451.099 168.5C463 193 465.156 195.656 476 215.444C429.5 245.5 416 248 388.893 248C320.469 248 265 192.483 265 124C265 55.5167 320.469 0 388.893 0Z"
-          fill={color}
+          d="M76.6596 87.2249V31.1518L90.3933 17.4451H126.351V33.3947H94.3885V87.2249H76.6596Z"
+          fill={fillColor}
           variants={pathVariants}
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           custom={1}
         />
         
-        {/* Second O */}
+        {/* O */}
         <motion.path
-          d="M602 0C670.483 0 726 55.5167 726 124C726 192.483 670.483 248 602 248C533.517 248 478 192.483 478 124C478 55.5168 533.517 0.000187755 602 0ZM602 50.2021C561.243 50.2023 528.203 83.2428 528.203 124C528.203 164.757 561.243 197.798 602 197.798C642.757 197.798 675.798 164.757 675.798 124C675.798 83.2427 642.757 50.2021 602 50.2021Z"
-          fill={color}
+          d="M133.183 74.0166V30.6534L146.417 17.4451H183.623L196.857 30.6534V74.0166L183.623 87.2249H146.417L133.183 74.0166ZM150.912 72.7705H179.128V31.8995H150.912V72.7705Z"
+          fill={fillColor}
           variants={pathVariants}
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           custom={2}
+        />
+        
+        {/* P */}
+        <motion.path
+          d="M207.674 104.67V17.4451H258.738L272.971 31.6502V73.0197L258.738 87.2249H225.403V104.67H207.674ZM255.242 32.3979H225.403V72.2721H255.242V32.3979Z"
+          fill={fillColor}
+          variants={pathVariants}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          custom={3}
+        />
+        
+        {/* E */}
+        <motion.path
+          d="M282.973 74.0166V30.6534L296.207 17.4451H345.399V56.5716H300.702V72.2721H342.902V87.2249H296.207L282.973 74.0166ZM300.702 46.8523L329.917 45.6062V31.401H300.702V46.8523Z"
+          fill={fillColor}
+          variants={pathVariants}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          custom={4}
+        />
+        
+        {/* L */}
+        <motion.path
+          d="M356.241 87.2248V0H373.97V87.2248H356.241Z"
+          fill={fillColor}
+          variants={pathVariants}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          custom={5}
+        />
+        
+        {/* Triangle */}
+        <motion.path
+          d="M404 70L417.856 87.25H390.144L404 70Z"
+          fill={fillColor}
+          variants={pathVariants}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          custom={6}
         />
       </svg>
     </motion.div>

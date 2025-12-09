@@ -4,35 +4,29 @@ import ContactForm from '@/components/ContactForm';
 import { Mail } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact OCO Limited | Accounting & Advisory | Isle of Man',
-  description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow. Call or email OCO accounting today at enquiries@ocoiom.com',
+  title: 'Contact Propel | Start a Project | Isle of Man',
+  description: 'Contact Propel to start your next digital project. We design and build modern web apps, automation systems and intelligent tools. Email enquiries@propel.im',
   keywords: [
-    'contact OCO Limited',
-    'OCO Limited contact',
-    'OCO accounting contact',
-    'contact accounting services Isle of Man',
-    'Isle of Man accounting consultation',
-    'Gary O\'Connor contact',
-    'OCO advisory consultation',
-    'financial advisory consultation',
-    'business valuation consultation',
-    'CFO services consultation',
-    'accounting services Isle of Man',
-    'enquiries@ocoiom.com',
-    'OCO Limited enquiries',
-    'professional financial guidance'
+    'contact Propel',
+    'start a project',
+    'digital product consultation',
+    'web app development',
+    'AI engineering consultation',
+    'automation consultation',
+    'Isle of Man digital agency',
+    'enquiries@propel.im'
   ],
   openGraph: {
-    title: 'Contact OCO Limited | Professional Financial Guidance',
-    description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man. Schedule a consultation with Gary O\'Connor, ACCA Fellow.',
-    url: 'https://www.ocoiom.com/contact',
-    siteName: 'OCO Limited',
+    title: 'Contact Propel | Start a Project',
+    description: 'Contact Propel to start your next digital project. We design and build modern web apps, automation systems and intelligent tools.',
+    url: 'https://www.propel.im/contact',
+    siteName: 'Propel',
     images: [
       {
-        url: '/og-contact.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Contact OCO Limited - Professional Accounting & Advisory Services',
+        alt: 'Contact Propel - Digital & AI Studio',
       },
     ],
     locale: 'en_IM',
@@ -40,12 +34,12 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact OCO Limited | Professional Financial Guidance',
-    description: 'Contact OCO Limited for expert accounting and advisory services in the Isle of Man.',
-    images: ['/og-contact.jpg'],
+    title: 'Contact Propel | Start a Project',
+    description: 'Contact Propel to start your next digital project.',
+    images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://www.ocoiom.com/contact',
+    canonical: 'https://www.propel.im/contact',
   },
 }
 
@@ -54,8 +48,8 @@ export default function Contact() {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      detail: "enquiries@ocoiom.com",
-      link: "mailto:enquiries@ocoiom.com"
+      detail: "enquiries@propel.im",
+      link: "mailto:enquiries@propel.im"
     },
   ];
 
@@ -67,10 +61,10 @@ export default function Contact() {
       <section className="relative min-h-[50vh] md:min-h-[40vh] bg-black flex items-center overflow-hidden pt-32 pb-16 md:pb-20">
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            Let's <span className="text-[#FF5007]">Connect</span>
+            Start a <span className="text-[#FF5007]">Project</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Ready to transform your financial operations? We're here to help.
+            Ready to build something great? We're here to help turn your concept into reality.
           </p>
         </div>
       </section>
@@ -83,10 +77,10 @@ export default function Contact() {
             <div>
               <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
               <p className="text-gray-600 mb-8">
-                Have a question about our services? Want to schedule a consultation? We'd love to hear from you.
+                Every project begins with discovery and definition. Outline your idea, goals and timeline. We respond with a clear, structured plan and proposal.
               </p>
               
-              <div className="space-y-6">
+              <div className="space-y-6 mb-8">
                 {contactInfo.map((item, idx) => (
                   <a 
                     key={idx}
@@ -100,6 +94,17 @@ export default function Contact() {
                     </div>
                   </a>
                 ))}
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-xl">
+                <h3 className="font-semibold text-lg mb-4">What to include:</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• What you want to build</li>
+                  <li>• Any problems you're trying to solve</li>
+                  <li>• Who the users are</li>
+                  <li>• Important workflows</li>
+                  <li>• Timeframes and budget</li>
+                </ul>
               </div>
             </div>
 

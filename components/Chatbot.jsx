@@ -34,7 +34,7 @@ export default function Chatbot() {
                 <MessageCircle size={16} />
               </div>
               <div>
-                <h3 className="font-semibold">OCOIOM Assistant</h3>
+                <h3 className="font-semibold">Propel Assistant</h3>
                 <p className="text-xs opacity-90">We're here to help!</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function Chatbot() {
             <div className="space-y-4">
               <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
                 <p className="text-sm text-gray-700">
-                  Hello! I'm your OCOIOM assistant. How can I help you today?
+                  Hello! I'm your Propel assistant. How can I help you today?
                 </p>
               </div>
               

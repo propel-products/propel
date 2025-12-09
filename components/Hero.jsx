@@ -14,13 +14,13 @@ export default function Hero() {
           <SequentialText delay={0.5} className="mb-6">
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-white leading-tight">
               <SequentialWords 
-                text="Financial Clarity" 
+                text="Build Intelligent" 
                 delay={0.5} 
                 wordDelay={0.15}
                 className="text-white text-4xl md:text-5xl lg:text-6xl"
               />
               <SequentialWords 
-                text="Strategic Growth" 
+                text="Products" 
                 delay={1.2} 
                 wordDelay={0.15}
                 className="text-[#FF5007] text-4xl md:text-5xl lg:text-6xl"
@@ -30,13 +30,13 @@ export default function Hero() {
           
           <SequentialText delay={1.8} className="mb-12">
             <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl">
-              <strong className="text-white">OCO Limited</strong> is a leading accounting and advisory practice based in the Isle of Man that empowers businesses to make confident financial decisions and achieve sustainable growth.
+              <strong className="text-white">Propel</strong> is a digital and AI studio that designs and builds modern web apps, automation systems and intelligent tools for teams who want to move fast without sacrificing quality.
             </p>
           </SequentialText>
           
           <SequentialText delay={2.5} className="flex flex-col sm:flex-row gap-4">
             <Button href="/contact" icon>
-              Schedule Consultation
+              Start a Project
             </Button>
             <Button href="/services" variant="secondary">
               Explore Services

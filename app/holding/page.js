@@ -1,8 +1,8 @@
 import AnimatedLogo from '@/components/AnimatedLogo';
 
 export const metadata = {
-  title: 'Coming Soon | OCO Limited - Accounting & Advisory',
-  description: 'OCO Limited website is coming soon. Expert accounting and advisory services for businesses in the Isle of Man.',
+  title: 'Coming Soon | Propel - Digital & AI Studio',
+  description: 'Propel website is coming soon. Digital product design, AI engineering, and automation for forward-thinking businesses.',
   robots: {
     index: false,
     follow: false,
@@ -31,7 +31,7 @@ export default function HoldingPage() {
           </p>
           
           <p className="text-lg text-gray-400 max-w-xl mx-auto">
-            OCO Limited provides expert accounting and advisory services for businesses in the Isle of Man.
+            Propel is a digital & AI studio building intelligent products, automation systems, and brand experiences.
           </p>
 
           {/* Contact Information */}
@@ -40,20 +40,20 @@ export default function HoldingPage() {
             
             <div className="flex justify-center items-center text-gray-300">
               <a 
-                href="mailto:enquiries@ocoiom.com" 
+                href="mailto:enquiries@propel.im" 
                 className="hover:text-[#FF5007] transition-colors duration-300 flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                enquiries@ocoiom.com
+                enquiries@propel.im
               </a>
             </div>
           </div>
 
           {/* Footer Note */}
           <p className="text-sm text-gray-500 pt-8">
-            © 2025 OCO Limited (Company No. 138078C) - Accounting & Advisory
+            © 2025 Propel - Digital & AI Studio
           </p>
         </div>
       </div>

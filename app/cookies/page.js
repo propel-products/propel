@@ -2,8 +2,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Cookie Policy | OCO Limited',
-  description: 'OCO Limited Cookie Policy - Information about how we use cookies on our website.',
+  title: 'Cookie Policy | Propel',
+  description: 'Propel Cookie Policy - Information about how we use cookies on our website.',
 };
 
 export default function CookiePolicy() {
@@ -31,7 +31,7 @@ export default function CookiePolicy() {
 
             <section>
               <h2 className="text-3xl font-bold text-white mb-4 mt-8">2. How We Use Cookies</h2>
-              <p>OCO Limited uses cookies on our website (www.ocoiom.com) for the following purposes:</p>
+              <p>Propel uses cookies on our website (propel.im) for the following purposes:</p>
               
               <h3 className="text-2xl font-semibold text-white mb-3 mt-6">Essential Cookies</h3>
               <p>These cookies are necessary for the website to function properly. They enable core functionality such as:</p>
@@ -135,7 +135,7 @@ export default function CookiePolicy() {
                 By continuing to use our website, you consent to our use of cookies in accordance with this Cookie Policy. If you do not agree to our use of cookies, please adjust your browser settings or refrain from using our website.
               </p>
               <p className="mt-4">
-                You can withdraw your consent at any time by adjusting your browser settings or contacting us at <a href="mailto:enquiries@ocoiom.com" className="text-[#FF5007] hover:underline">enquiries@ocoiom.com</a>.
+                You can withdraw your consent at any time by adjusting your browser settings or contacting us at <a href="mailto:enquiries@propel.im" className="text-[#FF5007] hover:underline">enquiries@propel.im</a>.
               </p>
             </section>
 
@@ -150,9 +150,9 @@ export default function CookiePolicy() {
               <h2 className="text-3xl font-bold text-white mb-4 mt-8">8. Contact Us</h2>
               <p>If you have questions about our use of cookies, please contact us:</p>
               <div className="mt-4 p-6 bg-gray-900 rounded-lg">
-                <p className="mb-2"><strong>OCO Limited</strong></p>
-                <p className="mb-2">Email: <a href="mailto:enquiries@ocoiom.com" className="text-[#FF5007] hover:underline">enquiries@ocoiom.com</a></p>
-                <p>Website: <a href="https://www.ocoiom.com" className="text-[#FF5007] hover:underline">www.ocoiom.com</a></p>
+                <p className="mb-2"><strong>Propel</strong></p>
+                <p className="mb-2">Email: <a href="mailto:enquiries@propel.im" className="text-[#FF5007] hover:underline">enquiries@propel.im</a></p>
+                <p>Website: <a href="https://propel.im" className="text-[#FF5007] hover:underline">propel.im</a></p>
               </div>
             </section>
 

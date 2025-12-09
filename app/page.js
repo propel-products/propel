@@ -9,38 +9,38 @@ import Link from 'next/link';
 export default function Home() {
   const services = [
     {
-      title: "Accounting Services",
-      description: "Complete financial reporting to keep your business running smoothly and compliant.",
-      features: ["Production of annual statutory or non-statutory financial statements", "Production of management accounts and management information", "Tax compliance", "Audit liaison services"]
+      title: "Digital Product",
+      description: "We design intuitive interfaces and create modern web applications that feel fast, fluid and effortless to use.",
+      features: ["UX and UI design", "Responsive web interfaces", "Component libraries", "Design systems and style guides"]
     },
     {
-      title: "Advisory Services",
-      description: "Strategic guidance to optimise your business performance and achieve your long-term financial goals.",
-      features: ["Business strategy and growth planning", "Performance analytics", "Independent business valuation services", "Non-Executive Director services"]
+      title: "Automation",
+      description: "We build systems that handle repetitive processes, streamline operations and reduce human error.",
+      features: ["Process automation", "Workflow orchestration", "Document generation", "API integrations"]
     },
     {
-      title: "CFO Services",
-      description: "Fractional CFO support providing executive-level financial leadership without the full-time cost.",
-      features: ["Financial strategy and planning", "Board and stakeholder relations", "Advising on cash flow management and additional sources to finance"]
+      title: "AI Engineering",
+      description: "We integrate AI to enhance search, reasoning, reporting, decision making and customer interaction.",
+      features: ["AI chat agents", "Smart search", "Document extraction", "Automated summarisation"]
     }
   ];
 
   const whyChooseUs = [
     { 
-      title: "Proactive Partnership", 
-      desc: "We don't just report numbers—we help you understand and act on them." 
+      title: "Speed without compromise", 
+      desc: "We work quickly but with clarity, delivering real progress at every stage." 
     },
     { 
-      title: "Industry Expertise", 
-      desc: "Specialised knowledge across multiple sectors and business stages." 
+      title: "Clean, modern design", 
+      desc: "Interfaces and interactions that feel intuitive and refined." 
     },
     { 
-      title: "Technology Forward", 
-      desc: "Leveraging the latest tools for efficiency and real-time insights." 
+      title: "Intelligent by default", 
+      desc: "AI is embedded where it enhances the product, not added as noise." 
     },
     { 
-      title: "Scalable Solutions", 
-      desc: "Services and expertise that grow with your business." 
+      title: "Built to scale", 
+      desc: "Every solution is designed to evolve, extend and integrate." 
     }
   ];
 
@@ -53,9 +53,9 @@ export default function Home() {
       <SequentialSection delay={3.5} className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <SequentialText delay={3.7} className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-black mb-4">Expertise</h2>
+            <h2 className="text-5xl font-bold text-black mb-4">What We Do</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              With over 25 years' experience solving complex business problems and unlocking growth, our comprehensive financial solutions are tailored to your business needs
+              From UX design and web development to AI agents and automated workflows, we combine design and engineering into one streamlined process.
             </p>
           </SequentialText>
 
@@ -90,10 +90,10 @@ export default function Home() {
             <SequentialText delay={6.7}>
               <div>
                 <h2 className="text-5xl font-bold mb-6">
-                  Why Choose <span className="text-[#FF5007]">OCO</span>
+                  Why <span className="text-[#FF5007]">Propel</span>
                 </h2>
                 <p className="text-xl text-gray-300 mb-8">
-                  We combine deep financial expertise with a modern, technology-driven approach to deliver exceptional results for our clients.
+                  We combine clean design with practical engineering to deliver exceptional digital products for our clients.
                 </p>
                 <div className="space-y-6">
                   {whyChooseUs.map((item, idx) => (
@@ -120,45 +120,34 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: 'OCO Limited | Accounting & Advisory | Isle of Man',
-  description: 'OCO Limited - Expert accounting and advisory services in the Isle of Man. ACCA Fellow Gary O\'Connor provides accounting, business valuation, and fractional CFO services. Contact OCO for professional financial guidance.',
+  title: 'Propel | Digital & AI Studio | Isle of Man',
+  description: 'Propel is a digital and AI studio that designs and builds modern web apps, automation systems and intelligent tools. UX design, AI engineering, and creative technology.',
   keywords: [
-    'OCO Limited',
-    'OCO accounting',
-    'OCO Isle of Man',
-    'OCO Limited Isle of Man',
-    'OCO accounting Isle of Man',
-    'OCO advisory',
-    'OCO Limited accounting services',
-    'accounting services Isle of Man',
-    'advisory services Isle of Man',
-    'CFO services Isle of Man',
-    'business valuation Isle of Man',
-    'tax preparation Isle of Man',
-    'financial planning Isle of Man',
-    'Gary O\'Connor OCO',
-    'Gary O\'Connor accountant',
-    'ACCA certified Isle of Man',
-    'Isle of Man accounting',
-    'fractional CFO Isle of Man',
-    'business strategy Isle of Man',
-    'financial reporting Isle of Man',
-    'bookkeeping services Isle of Man',
-    'management accounts Isle of Man',
-    'audit liaison Isle of Man',
-    'business growth planning Isle of Man'
+    'Propel',
+    'propel.im',
+    'digital product design',
+    'AI engineering',
+    'automation studio',
+    'web app development',
+    'UX design',
+    'AI agents',
+    'process automation',
+    'Isle of Man digital agency',
+    'smart search',
+    'document automation',
+    'creative technology'
   ],
   openGraph: {
-    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
-    description: 'OCO Limited - Expert accounting and advisory services in the Isle of Man. ACCA Fellow Gary O\'Connor provides accounting, business valuation, and fractional CFO services.',
-    url: 'https://www.ocoiom.com',
-    siteName: 'OCO Limited',
+    title: 'Propel | Digital & AI Studio | Isle of Man',
+    description: 'Build intelligent products with speed, clarity and purpose. Digital product design, automation and AI engineering.',
+    url: 'https://www.propel.im',
+    siteName: 'Propel',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'OCO Limited - Professional Accounting & Advisory Services in Isle of Man',
+        alt: 'Propel - Digital & AI Studio',
       },
     ],
     locale: 'en_IM',
@@ -166,12 +155,12 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OCO Limited | Accounting & Advisory | Isle of Man',
-    description: 'OCO Limited - Expert accounting and advisory services in the Isle of Man by ACCA Fellow Gary O\'Connor.',
+    title: 'Propel | Digital & AI Studio | Isle of Man',
+    description: 'Build intelligent products with speed, clarity and purpose.',
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://www.ocoiom.com',
+    canonical: 'https://www.propel.im',
   },
   robots: {
     index: true,
